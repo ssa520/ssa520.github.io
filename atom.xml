@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>秋的故事书</title>
+  <icon>https://github.com/ssa520/ssa520.github.io/icon.png</icon>
+  <subtitle>这份故事很长,我愿用余生与你共享~</subtitle>
+  <link href="https://github.com/ssa520/ssa520.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://github.com/ssa520/ssa520.github.io/"/>
+  <updated>2023-01-05T11:29:51.884Z</updated>
+  <id>https://github.com/ssa520/ssa520.github.io/</id>
+  
+  <author>
+    <name>秋的故事书</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://github.com/ssa520/ssa520.github.io/2023/01/05/hello-world/"/>
+    <id>https://github.com/ssa520/ssa520.github.io/2023/01/05/hello-world/</id>
+    <published>2023-01-05T11:30:32.578Z</published>
+    <updated>2023-01-05T11:29:51.884Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
