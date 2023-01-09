@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://ssa520.github.io/2023/01/09/hexo-github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
+    <loc>https://ssa520.github.io/project/2023/01/09/hexo-github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
     
     <lastmod>2023-01-09</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://ssa520.github.io/categories/index.html</loc>
+    <loc>https://ssa520.github.io/project/categories/index.html</loc>
     
     <lastmod>2023-01-09</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://ssa520.github.io/tags/index.html</loc>
+    <loc>https://ssa520.github.io/project/tags/index.html</loc>
     
     <lastmod>2023-01-09</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://ssa520.github.io/about/index.html</loc>
+    <loc>https://ssa520.github.io/project/about/index.html</loc>
     
     <lastmod>2023-01-09</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://ssa520.github.io/message/index.html</loc>
+    <loc>https://ssa520.github.io/project/message/index.html</loc>
     
     <lastmod>2023-01-09</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://ssa520.github.io/2023/01/05/hello-world/</loc>
+    <loc>https://ssa520.github.io/project/2023/01/05/hello-world/</loc>
     
     <lastmod>2023-01-05</lastmod>
     
@@ -57,7 +57,7 @@
   
 
   <url>
-    <loc>https://ssa520.github.io/</loc>
+    <loc>https://ssa520.github.io/project</loc>
     <lastmod>2023-01-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -65,7 +65,7 @@
 
   
   <url>
-    <loc>https://ssa520.github.io/tags/%E7%9F%A5%E8%AF%86%E5%88%86%E4%BA%AB/</loc>
+    <loc>https://ssa520.github.io/project/tags/%E7%9F%A5%E8%AF%86%E5%88%86%E4%BA%AB/</loc>
     <lastmod>2023-01-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -74,7 +74,7 @@
 
   
   <url>
-    <loc>https://ssa520.github.io/categories/%E6%84%BF/</loc>
+    <loc>https://ssa520.github.io/project/categories/%E6%84%BF/</loc>
     <lastmod>2023-01-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

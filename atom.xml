@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>秋的故事书</title>
-  <icon>https://ssa520.github.io/icon.png</icon>
+  <icon>https://ssa520.github.io/project/icon.png</icon>
   <subtitle>这份故事很长,我愿用余生与你共享~</subtitle>
-  <link href="https://ssa520.github.io/atom.xml" rel="self"/>
+  <link href="https://ssa520.github.io/project/atom.xml" rel="self"/>
   
-  <link href="https://ssa520.github.io/"/>
+  <link href="https://ssa520.github.io/project/"/>
   <updated>2023-01-09T05:35:29.429Z</updated>
-  <id>https://ssa520.github.io/</id>
+  <id>https://ssa520.github.io/project/</id>
   
   <author>
     <name>秋的故事书</name>
@@ -18,25 +18,25 @@
   
   <entry>
     <title>hexo-github博客搭建</title>
-    <link href="https://ssa520.github.io/2023/01/09/hexo-github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    <id>https://ssa520.github.io/2023/01/09/hexo-github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</id>
+    <link href="https://ssa520.github.io/project/2023/01/09/hexo-github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <id>https://ssa520.github.io/project/2023/01/09/hexo-github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</id>
     <published>2023-01-09T02:27:00.000Z</published>
     <updated>2023-01-09T05:35:29.429Z</updated>
     
     
     
     
-    <category term="愿" scheme="https://ssa520.github.io/categories/%E6%84%BF/"/>
+    <category term="愿" scheme="https://ssa520.github.io/project/categories/%E6%84%BF/"/>
     
     
-    <category term="知识分享" scheme="https://ssa520.github.io/tags/%E7%9F%A5%E8%AF%86%E5%88%86%E4%BA%AB/"/>
+    <category term="知识分享" scheme="https://ssa520.github.io/project/tags/%E7%9F%A5%E8%AF%86%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://ssa520.github.io/2023/01/05/hello-world/"/>
-    <id>https://ssa520.github.io/2023/01/05/hello-world/</id>
+    <link href="https://ssa520.github.io/project/2023/01/05/hello-world/"/>
+    <id>https://ssa520.github.io/project/2023/01/05/hello-world/</id>
     <published>2023-01-05T11:30:32.578Z</published>
     <updated>2023-01-05T11:29:51.884Z</updated>
     
