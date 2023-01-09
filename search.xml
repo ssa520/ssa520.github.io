@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo-github博客搭建</title>
+    <url>/2023/01/09/hexo-github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>愿</category>
+      </categories>
+      <tags>
+        <tag>知识分享</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
-    <url>/ssa520/ssa520.github.io/2023/01/05/hello-world/</url>
+    <url>/2023/01/05/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -17,26 +28,5 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>hexo-github博客搭建</title>
-    <url>/ssa520/ssa520.github.io/2023/01/09/hexo-github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<pre><code>小白有话说：博客来来回回建了十多次，第一次建立直接耗费了我三天的时间。
-</code></pre>
-<p>究其原因，就是中间的步骤出了点小插曲，希望大家建立博客时能够一步一个脚印，<br>一次性搭建完成。废话不多说，上三部曲：</p>
-<p>一、环境准备<br>1.1 NodeJs安装：<a href="https://nodejs.org/zh-cn/%EF%BC%8C%E5%AE%89%E8%A3%85%E6%97%B6%E4%B8%80%E7%9B%B4%E7%82%B9next%E5%8D%B3%E5%8F%AF%E3%80%82%E5%9B%A0%E4%B8%BAHexo%E6%98%AF%E5%9F%BA%E4%BA%8ENodeJs%E7%9A%84%EF%BC%8C%E6%89%80%E4%BB%A5%E9%9C%80%E8%A6%81%E5%AE%89%E8%A3%85NodeJs%E3%80%82%E5%AE%89%E8%A3%85%E5%AE%8C%E6%88%90%E5%90%8E%EF%BC%8C%E6%89%93%E5%BC%80cmd%E8%BE%93%E5%85%A5node">https://nodejs.org/zh-cn/，安装时一直点next即可。因为Hexo是基于NodeJs的，所以需要安装NodeJs。安装完成后，打开cmd输入node</a> -v，如果出现版本号，表示安装成功。</p>
-<p>1.2 Git安装：<a href="https://git-scm.com/downloads%EF%BC%8C%E5%AE%89%E8%A3%85%E6%97%B6%E4%B8%80%E8%B7%AFnext%E3%80%82%E5%AE%89%E8%A3%85%E5%AE%8C%E6%88%90%E5%90%8E%EF%BC%8C%E6%89%93%E5%BC%80cmd%E8%BE%93%E5%85%A5git">https://git-scm.com/downloads，安装时一路next。安装完成后，打开cmd输入git</a> –version检查安装，如果显示的是当前git的版本号，表示安装成功。<br>1.3 注册Github账号：因为我们需要把Hexo站点托管到GitHub上，所以我们需要一个GitHub账号。打开GitHub官网，点击Sigh up，然后输入邮箱、密码、用户名，通过人机验证以后，点击Create account创建账号就可以了。<br>1.4 Github创建个人仓库：</p>
-<p>username为你的GitHub用户名。</p>
-<p>二、安装hexo<br>1、创建一个文件夹blog，在此文件夹中点击右键打开git bash here，输入命令：npm install -g hexo-cli安装hexo，安装好以后输入hexo -v 检查安装，如果输出的是一堆版本号那就安装成功了。<br>2、输入hexo init 命令进行hexo初始化，会发现文件里面出现了许多文件。<br>3、配置好了，可以输入hexo g生成静态网页，然后输入hexo s打开本地服务器来查看网页，</p>
-<p>三、上传GitHub<br>   我们要把我们的博客上传到GitHub，首先要连接GitHub，<br>首先打开Git Bash，<br>输入git config –global user.name “GitHub账号的名字”，<br>再输入git config –global user.email “GitHub账号的邮箱”<br>然后输入ssh-keygen -t rsa -C “GitHub账号的邮箱”来生成SSH Key，按3次回车。<br>在电脑文件中查找.ssh，打开pub文件复制内容，紧接着进入github：<br>进入settings。</p>
-<p>Key处输入复制的公钥。<br>打开blog目录下的_config.yml文件，翻到最后进行修改</p>
-<p>branch处现在一般使用main，存储库链接为GitHub的存储库链接。<br>然后在cmd上输入npm install hexo-deployer-git –save安装GitHub推送插件，<br>安装好了以后再输入hexo clean,紧接着输入hexo g生成静态网页，再输入hexo d上传到GitHub就可以了，<br>然后上GitHub把分支调成master/main就可以看到推送的博客文件了。<br>博客地址就是你的储存库名字：即username.github.io。<br>小白第一次写文章，写的似乎有些糟糕，哦~不，是特别糟糕。<br>感谢大佬文章：<br><a href="https://blog.csdn.net/qq_46922488/article/details/119348718">https://blog.csdn.net/qq_46922488/article/details/119348718</a></p>
-]]></content>
-      <categories>
-        <category>愿</category>
-      </categories>
-      <tags>
-        <tag>知识分享</tag>
-      </tags>
   </entry>
 </search>
