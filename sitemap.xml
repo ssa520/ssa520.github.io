@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://github.com/ssa520/ssa520.github.io/message/index.html</loc>
+    
+    <lastmod>2023-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://github.com/ssa520/ssa520.github.io/2023/01/05/hello-world/</loc>
     
     <lastmod>2023-01-05</lastmod>
@@ -13,7 +22,7 @@
 
   <url>
     <loc>https://github.com/ssa520/ssa520.github.io</loc>
-    <lastmod>2023-01-08</lastmod>
+    <lastmod>2023-01-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
