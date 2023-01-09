@@ -1,3 +1,7 @@
+https://github.com/ssa520/ssa520.github.io/categories/index.html
+https://github.com/ssa520/ssa520.github.io/tags/index.html
+https://github.com/ssa520/ssa520.github.io/2023/01/09/hexo-github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/
+https://github.com/ssa520/ssa520.github.io/about/index.html
 https://github.com/ssa520/ssa520.github.io/message/index.html
 https://github.com/ssa520/ssa520.github.io/2023/01/05/hello-world/
 https://github.com/ssa520/ssa520.github.io
