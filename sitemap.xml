@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ssa520.github.io/2023/01/10/%E7%BA%AF%E6%96%87%E5%AD%97hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</loc>
+    
+    <lastmod>2023-01-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ssa520.github.io/categories/index.html</loc>
     
     <lastmod>2023-01-09</lastmod>
@@ -37,15 +46,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://ssa520.github.io/2023/01/05/hello-world/</loc>
-    
-    <lastmod>2023-01-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://ssa520.github.io/</loc>
@@ -54,6 +54,13 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://ssa520.github.io/tags/hexo/</loc>
+    <lastmod>2023-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 
   
