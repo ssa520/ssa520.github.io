@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hexo博客修饰</title>
-    <url>/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/</url>
-    <content><![CDATA[<p>接上集：上集讲到了搭建hexo博客,但是似乎有些平淡,这一集<del>就为他好好打扮一番吧！<br>注意：有些文件,如css、yml等不能打开,可切换为txt文件进行打开,并修改内容,修改过后记得去掉.txt哦</del></p>
-<p>第一步：安装主题，这里以yilia主题作为讲解。在myblog文件夹下打开git,输入命令：git clone <a href="https://github.com/litten/hexo-theme-yilia.git">https://github.com/litten/hexo-theme-yilia.git</a><br>第二步：打开根目录下的_config.yml文件,找到theme,修改为主题文件名</p>
-<h1 id="Extensions"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions</h1><h2 id="Plugins-https-hexo-io-plugins"><a href="#Plugins-https-hexo-io-plugins" class="headerlink" title="Plugins: https://hexo.io/plugins/"></a>Plugins: <a href="https://hexo.io/plugins/">https://hexo.io/plugins/</a></h2><h2 id="Themes-https-hexo-io-themes"><a href="#Themes-https-hexo-io-themes" class="headerlink" title="Themes: https://hexo.io/themes/"></a>Themes: <a href="https://hexo.io/themes/">https://hexo.io/themes/</a></h2><h1 id="theme-landscape-默认主题"><a href="#theme-landscape-默认主题" class="headerlink" title="theme: landscape  # 默认主题"></a>theme: landscape  # 默认主题</h1><p>theme: yilia<br>第三步：根目录下打开git,输入命令hexo -clean；hexo -g；hexo -s 打开本地网页,进行查看,先不要关,后面的修改尽量做到完成一项或两项就刷新一遍,查看是否有问题,无则下一步,否则把刚才的修改暂时改回(记得为自己留个备份~)<br>第四步：请在主题配置文件(_config.yml)中开头添加以下内容：</p>
-<h1 id="Site-网站"><a href="#Site-网站" class="headerlink" title="Site 网站"></a>Site 网站</h1><p>title: ‘’             # 网站标题<br>subtitle: ‘’          # 网站副标题<br>description: ‘’       # 网站描述<br>keywords: ‘’<br>author: ‘’            # 博主的名字<br>language: zh-CN       # 网站使用的语言<br>timezone: ‘’          # 网站时区。Hexo 默认使用您电脑的时区<br><img src="/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/001.jpg"></p>
-]]></content>
-      <categories>
-        <category>文字天下</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>纯文字hexo博客搭建教程</title>
     <url>/2023/01/10/%E7%BA%AF%E6%96%87%E5%AD%97hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<p>​            关于Hexo博客搭建，一步一个脚印慢慢来，不要因为一个不在意，换来后面东寻西问都难以解决的问题，那就得不偿失了哦<del>。<span id="more"></span>别放弃，问题实在解决不了大不了重头再来嘛</del>没准就可以顺利成功了呢！</p>
@@ -28,6 +13,37 @@
 <p>repo: 你的GitHub仓库的SSH链接</p>
 <p>branch: main                                                      接下来，我们需要安装一个插件，在myblog文件夹中打开git bash here,输入命令：npm install hexo-deployer-git –save。依次执行以下命令hexo -c;hexo -g;hexo -d。(其中，hexo -c可使用hexo -clean,hexo -d可使用hexo -deploy)。注意：最后一条命令(hexo -d)最后会让输入一个yes，不要忘了哈<del>，回到GitHub上打开仓库，看到各种各样的文件，表示部署成功，此时你的博客链接为：<a href="https://github用户名+.github.io,打开/">https://GitHub用户名+.github.io,打开</a></del>恭喜你，走向成功！！！</p>
 <p>​            是不是对页面不太感兴趣？莫慌莫慌，俺也一样！！！明天教你，嘻嘻<del>加油！！！如果过程中有问题，欢迎加我qq进行询问！可是我是小白诶</del>我也不可能都会，如果我也解决不了，请你不要着急！！！待我去找学长聊聊天~</p>
+]]></content>
+      <categories>
+        <category>文字天下</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo博客修饰</title>
+    <url>/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/</url>
+    <content><![CDATA[<p>接上集：上集讲到了搭建hexo博客,但是似乎有些平淡,这一集<del>就为他好好打扮一番吧！<span id="more"></span><br>注意：有些文件,如css、yml等不能打开,可切换为txt文件进行打开,并修改内容,修改过后记得去掉.txt哦</del></p>
+<p>第一步：安装主题，这里以yilia主题作为讲解。在myblog文件夹下打开git,输入命令：git clone <a href="https://github.com/litten/hexo-theme-yilia.git">https://github.com/litten/hexo-theme-yilia.git</a><br>第二步：打开根目录下的_config.yml文件,找到theme,修改为主题文件名,即 theme: yilia<br>第三步：根目录下打开git,输入命令hexo -clean；hexo -g；hexo -s 打开本地网页,进行查看,先不要关,后面的修改尽量做到完成一项或两项就刷新一遍,查看是否有问题,无则下一步,否则把刚才的修改暂时改回(记得为自己留个备份~)<br>第四步：请在主题配置文件(_config.yml)中开头添加以下内容：<br>#Site 网站<br>title: ‘’             # 网站标题<br>subtitle: ‘’          # 网站副标题<br>description: ‘’       # 网站描述<br>keywords: ‘’<br>author: ‘’            # 博主的名字<br>language: zh-CN       # 网站使用的语言<br>timezone: ‘’          # 网站时区。Hexo 默认使用您电脑的时区<br><img src="/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/001.jpg"><br>第五步：配置–所有文章,步骤可在本地博客打开”所有文章”查看。<br>第六步：代码高亮<br>在主题目录下打开配置文件,添加如下代码：<br>#代码高亮<br>highlight:<br>  enable: true<br>  line_number: true<br>  auto_detect: true<br>  tab_replace: ‘’<br>  wrap: true<br>  hljs: false<br>第七步：打开主题配置文件,修改头像、图标等。可把图片存入主题目录下的source-img文件中<br><img src="/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/002.jpg"><br>第八步：左侧显示总文章数,打开themes\yilia\layout_partical\left-col.ejs文件<br>找到下面一段：<br><img src="/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/003.jpg"><br>在后面添加：</p>
+<nav>
+    总文章数 <%=site.posts.length%>
+</%=site.posts.length%></nav>
+
+<p>第九步：添加字数统计,输入命令安装hexo-wordcount：npm install hexo-wordcount –save<br>打开layout_partical\article.ejs文件,在header下面添加如下代码：</p>
+<div align="center" class="post-count">
+    字数：<%= wordcount(post.content) %>字 | 预计阅读时长：<%= min2read(post.content) %>分钟
+</%=></%=></div>
+
+<p>打开layout_partical\left-col.ejs文件,添加如下代码：</p>
+<nav>
+    总字数 <span class="post-count"><%= totalcount(site, '0,0.0a') %></%=></span>
+</nav>
+第十步：背景添加、音乐、头像旋转等功能,可参考以下文章：https://blog.csdn.net/weixin_41599858/article/details/104786874
+https://blog.csdn.net/weixin_41599858/article/details/104786874
+
+
+
 ]]></content>
       <categories>
         <category>文字天下</category>
