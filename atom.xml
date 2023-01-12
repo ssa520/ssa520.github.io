@@ -6,7 +6,7 @@
   <link href="https://ssa520.github.io/atom.xml" rel="self"/>
   
   <link href="https://ssa520.github.io/"/>
-  <updated>2023-01-11T03:20:02.754Z</updated>
+  <updated>2023-01-12T03:24:39.844Z</updated>
   <id>https://ssa520.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo博客修饰</title>
+    <link href="https://ssa520.github.io/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/"/>
+    <id>https://ssa520.github.io/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/</id>
+    <published>2023-01-12T02:56:12.000Z</published>
+    <updated>2023-01-12T03:24:39.844Z</updated>
+    
+    <content type="html"><![CDATA[<p>接上集：上集讲到了搭建hexo博客,但是似乎有些平淡,这一集<del>就为他好好打扮一番吧！<br>注意：有些文件,如css、yml等不能打开,可切换为txt文件进行打开,并修改内容,修改过后记得去掉.txt哦</del></p><p>第一步：安装主题，这里以yilia主题作为讲解。在myblog文件夹下打开git,输入命令：git clone <a href="https://github.com/litten/hexo-theme-yilia.git">https://github.com/litten/hexo-theme-yilia.git</a><br>第二步：打开根目录下的_config.yml文件,找到theme,修改为主题文件名</p><h1 id="Extensions"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions</h1><h2 id="Plugins-https-hexo-io-plugins"><a href="#Plugins-https-hexo-io-plugins" class="headerlink" title="Plugins: https://hexo.io/plugins/"></a>Plugins: <a href="https://hexo.io/plugins/">https://hexo.io/plugins/</a></h2><h2 id="Themes-https-hexo-io-themes"><a href="#Themes-https-hexo-io-themes" class="headerlink" title="Themes: https://hexo.io/themes/"></a>Themes: <a href="https://hexo.io/themes/">https://hexo.io/themes/</a></h2><h1 id="theme-landscape-默认主题"><a href="#theme-landscape-默认主题" class="headerlink" title="theme: landscape  # 默认主题"></a>theme: landscape  # 默认主题</h1><p>theme: yilia<br>第三步：根目录下打开git,输入命令hexo -clean；hexo -g；hexo -s 打开本地网页,进行查看,先不要关,后面的修改尽量做到完成一项或两项就刷新一遍,查看是否有问题,无则下一步,否则把刚才的修改暂时改回(记得为自己留个备份~)<br>第四步：请在主题配置文件(_config.yml)中开头添加以下内容：</p><h1 id="Site-网站"><a href="#Site-网站" class="headerlink" title="Site 网站"></a>Site 网站</h1><p>title: ‘’             # 网站标题<br>subtitle: ‘’          # 网站副标题<br>description: ‘’       # 网站描述<br>keywords: ‘’<br>author: ‘’            # 博主的名字<br>language: zh-CN       # 网站使用的语言<br>timezone: ‘’          # 网站时区。Hexo 默认使用您电脑的时区<br><img src="/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/001.jpg"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;接上集：上集讲到了搭建hexo博客,但是似乎有些平淡,这一集&lt;del&gt;就为他好好打扮一番吧！&lt;br&gt;注意：有些文件,如css、yml等不能打开,可切换为txt文件进行打开,并修改内容,修改过后记得去掉.txt哦&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;第一步：安装主题，这里以yilia主</summary>
+      
+    
+    
+    
+    <category term="文字天下" scheme="https://ssa520.github.io/categories/%E6%96%87%E5%AD%97%E5%A4%A9%E4%B8%8B/"/>
+    
+    
+    <category term="hexo" scheme="https://ssa520.github.io/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>纯文字hexo博客搭建教程</title>
