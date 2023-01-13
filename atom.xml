@@ -6,7 +6,7 @@
   <link href="https://ssa520.github.io/atom.xml" rel="self"/>
   
   <link href="https://ssa520.github.io/"/>
-  <updated>2023-01-12T03:59:34.244Z</updated>
+  <updated>2023-01-12T11:10:23.667Z</updated>
   <id>https://ssa520.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://ssa520.github.io/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/"/>
     <id>https://ssa520.github.io/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/</id>
     <published>2023-01-12T02:56:12.000Z</published>
-    <updated>2023-01-12T03:59:34.244Z</updated>
+    <updated>2023-01-12T11:10:23.667Z</updated>
     
     <content type="html"><![CDATA[<p>接上集：上集讲到了搭建hexo博客,但是似乎有些平淡,这一集<del>就为他好好打扮一番吧！<span id="more"></span><br>注意：有些文件,如css、yml等不能打开,可切换为txt文件进行打开,并修改内容,修改过后记得去掉.txt哦</del></p><p>第一步：安装主题，这里以yilia主题作为讲解。在myblog文件夹下打开git,输入命令：git clone <a href="https://github.com/litten/hexo-theme-yilia.git">https://github.com/litten/hexo-theme-yilia.git</a><br>第二步：打开根目录下的_config.yml文件,找到theme,修改为主题文件名,即 theme: yilia<br>第三步：根目录下打开git,输入命令hexo -clean；hexo -g；hexo -s 打开本地网页,进行查看,先不要关,后面的修改尽量做到完成一项或两项就刷新一遍,查看是否有问题,无则下一步,否则把刚才的修改暂时改回(记得为自己留个备份~)<br>第四步：请在主题配置文件(_config.yml)中开头添加以下内容：<br>#Site 网站<br>title: ‘’             # 网站标题<br>subtitle: ‘’          # 网站副标题<br>description: ‘’       # 网站描述<br>keywords: ‘’<br>author: ‘’            # 博主的名字<br>language: zh-CN       # 网站使用的语言<br>timezone: ‘’          # 网站时区。Hexo 默认使用您电脑的时区<br><img src="/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/001.jpg"><br>第五步：配置–所有文章,步骤可在本地博客打开”所有文章”查看。<br>第六步：代码高亮<br>在主题目录下打开配置文件,添加如下代码：<br>#代码高亮<br>highlight:<br>  enable: true<br>  line_number: true<br>  auto_detect: true<br>  tab_replace: ‘’<br>  wrap: true<br>  hljs: false<br>第七步：打开主题配置文件,修改头像、图标等。可把图片存入主题目录下的source-img文件中<br><img src="/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/002.jpg"><br>第八步：左侧显示总文章数,打开themes\yilia\layout_partical\left-col.ejs文件<br>找到下面一段：<br><img src="/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/003.jpg"><br>在后面添加：</p><nav>    总文章数 <%=site.posts.length%></%=site.posts.length%></nav><p>第九步：添加字数统计,输入命令安装hexo-wordcount：npm install hexo-wordcount –save<br>打开layout_partical\article.ejs文件,在header下面添加如下代码：</p><div align="center" class="post-count">    字数：<%= wordcount(post.content) %>字 | 预计阅读时长：<%= min2read(post.content) %>分钟</%=></%=></div><p>打开layout_partical\left-col.ejs文件,添加如下代码：</p><nav>    总字数 <span class="post-count"><%= totalcount(site, '0,0.0a') %></%=></span></nav>第十步：背景添加、音乐、头像旋转等功能,可参考以下文章：https://blog.csdn.net/weixin_41599858/article/details/104786874https://blog.csdn.net/weixin_41599858/article/details/104786874]]></content>
     
