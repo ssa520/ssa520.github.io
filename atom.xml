@@ -6,7 +6,7 @@
   <link href="https://ssa520.github.io/atom.xml" rel="self"/>
   
   <link href="https://ssa520.github.io/"/>
-  <updated>2023-01-12T11:10:23.667Z</updated>
+  <updated>2023-01-13T06:02:43.878Z</updated>
   <id>https://ssa520.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ctf古典密码</title>
+    <link href="https://ssa520.github.io/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/"/>
+    <id>https://ssa520.github.io/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/</id>
+    <published>2023-01-13T05:34:22.000Z</published>
+    <updated>2023-01-13T06:02:43.878Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1、埃及文字"><a href="#1、埃及文字" class="headerlink" title="1、埃及文字"></a>1、埃及文字</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/001.jpg"></p><span id="more"></span><h1 id="2、跳舞的小人"><a href="#2、跳舞的小人" class="headerlink" title="2、跳舞的小人"></a>2、跳舞的小人</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/001.png"></p><h1 id="3、盲文"><a href="#3、盲文" class="headerlink" title="3、盲文"></a>3、盲文</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/002.jpg"></p><h1 id="4、音乐密码"><a href="#4、音乐密码" class="headerlink" title="4、音乐密码"></a>4、音乐密码</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/003.png"></p><h1 id="5、猪圈密码"><a href="#5、猪圈密码" class="headerlink" title="5、猪圈密码"></a>5、猪圈密码</h1><p><a href="http://www.metools.info/code/c90.html">http://www.metools.info/code/c90.html</a></p><h1 id="6、棋盘密码"><a href="#6、棋盘密码" class="headerlink" title="6、棋盘密码"></a>6、棋盘密码</h1><p><a href="https://www.qqxiuzi.cn/bianma/qipanmima.php">https://www.qqxiuzi.cn/bianma/qipanmima.php</a></p><h1 id="7、元音密码"><a href="#7、元音密码" class="headerlink" title="7、元音密码"></a>7、元音密码</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/004.png"></p><h1 id="8、培根密码"><a href="#8、培根密码" class="headerlink" title="8、培根密码"></a>8、培根密码</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/005.png"></p><h1 id="9、栅栏密码"><a href="#9、栅栏密码" class="headerlink" title="9、栅栏密码"></a>9、栅栏密码</h1><p><a href="https://www.qqxiuzi.cn/bianma/zhalanmima.php">https://www.qqxiuzi.cn/bianma/zhalanmima.php</a></p><h1 id="10、博多密码"><a href="#10、博多密码" class="headerlink" title="10、博多密码"></a>10、博多密码</h1><p><a href="https://www.boxentriq.com/code-breaking/baudot-code">https://www.boxentriq.com/code-breaking/baudot-code</a></p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;1、埃及文字&quot;&gt;&lt;a href=&quot;#1、埃及文字&quot; class=&quot;headerlink&quot; title=&quot;1、埃及文字&quot;&gt;&lt;/a&gt;1、埃及文字&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/001.jpg&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="ctf" scheme="https://ssa520.github.io/categories/ctf/"/>
+    
+    
+    <category term="crypto" scheme="https://ssa520.github.io/tags/crypto/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo博客修饰</title>
