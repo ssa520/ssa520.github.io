@@ -3,9 +3,8 @@
   <entry>
     <title>ctf古典密码</title>
     <url>/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/</url>
-    <content><![CDATA[<h1 id="1、埃及文字"><a href="#1、埃及文字" class="headerlink" title="1、埃及文字"></a>1、埃及文字</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/001.jpg"></p>
-<span id="more"></span>
-
+    <content><![CDATA[<h1 id="1、埃及文字"><a href="#1、埃及文字" class="headerlink" title="1、埃及文字"></a>1、埃及文字</h1><span id="more"></span>
+<p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/001.jpg"></p>
 <h1 id="2、跳舞的小人"><a href="#2、跳舞的小人" class="headerlink" title="2、跳舞的小人"></a>2、跳舞的小人</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/001.png"></p>
 <h1 id="3、盲文"><a href="#3、盲文" class="headerlink" title="3、盲文"></a>3、盲文</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/002.jpg"></p>
 <h1 id="4、音乐密码"><a href="#4、音乐密码" class="headerlink" title="4、音乐密码"></a>4、音乐密码</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/003.png"></p>
@@ -66,7 +65,7 @@ https://blog.csdn.net/weixin_41599858/article/details/104786874
 <p>type: git</p>
 <p>repo: 你的GitHub仓库的SSH链接</p>
 <p>branch: main                                                      接下来，我们需要安装一个插件，在myblog文件夹中打开git bash here,输入命令：npm install hexo-deployer-git –save。依次执行以下命令hexo -c;hexo -g;hexo -d。(其中，hexo -c可使用hexo -clean,hexo -d可使用hexo -deploy)。注意：最后一条命令(hexo -d)最后会让输入一个yes，不要忘了哈!，回到GitHub上打开仓库，看到各种各样的文件，表示部署成功，此时你的博客链接为：<a href="https://github用户名+.github.io,打开.恭喜你,走向成功!!!/">https://GitHub用户名+.github.io,打开.恭喜你，走向成功！！！</a></p>
-<p>​            是不是对页面不太感兴趣？莫慌莫慌，俺也一样！！！明天教你，嘻嘻<del>加油！！！如果过程中有问题，欢迎加我qq进行询问！可是我是小白诶,我也不可能都会，如果我也解决不了，请你不要着急！！！待我去找学长聊聊天</del></p>
+<p>​            是不是对页面不太感兴趣？莫慌莫慌，俺也一样！！！明天教你，嘻嘻~加油！！！如果过程中有问题，欢迎加我qq进行询问！可是我是小白诶,我也不可能都会，如果我也解决不了，请你不要着急！！！待我去找学长聊聊天</p>
 ]]></content>
       <categories>
         <category>文字天下</category>
