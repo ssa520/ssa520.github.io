@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ssa520.github.io/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/</loc>
+    
+    <lastmod>2023-01-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ssa520.github.io/2023/01/19/BugKu-where-is-flag-5/</loc>
+    
+    <lastmod>2023-01-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ssa520.github.io/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/</loc>
     
     <lastmod>2023-01-14</lastmod>
@@ -67,7 +85,7 @@
 
   <url>
     <loc>https://ssa520.github.io/</loc>
-    <lastmod>2023-01-18</lastmod>
+    <lastmod>2023-01-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -75,14 +93,14 @@
   
   <url>
     <loc>https://ssa520.github.io/tags/crypto/</loc>
-    <lastmod>2023-01-18</lastmod>
+    <lastmod>2023-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ssa520.github.io/tags/hexo/</loc>
-    <lastmod>2023-01-18</lastmod>
+    <lastmod>2023-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -91,14 +109,14 @@
   
   <url>
     <loc>https://ssa520.github.io/categories/ctf/</loc>
-    <lastmod>2023-01-18</lastmod>
+    <lastmod>2023-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ssa520.github.io/categories/%E6%96%87%E5%AD%97%E5%A4%A9%E4%B8%8B/</loc>
-    <lastmod>2023-01-18</lastmod>
+    <lastmod>2023-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

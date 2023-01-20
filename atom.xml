@@ -6,7 +6,7 @@
   <link href="https://ssa520.github.io/atom.xml" rel="self"/>
   
   <link href="https://ssa520.github.io/"/>
-  <updated>2023-01-14T12:02:38.029Z</updated>
+  <updated>2023-01-20T12:08:37.419Z</updated>
   <id>https://ssa520.github.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>bugku-crypto题目</title>
+    <link href="https://ssa520.github.io/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/"/>
+    <id>https://ssa520.github.io/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/</id>
+    <published>2023-01-20T09:05:11.000Z</published>
+    <updated>2023-01-20T12:08:37.419Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="抄错的字符"><a href="#抄错的字符" class="headerlink" title="抄错的字符"></a>抄错的字符</h1><span id="more"></span><p><img src="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/001.jpg"><br>找出与数字形状相近的字母：I=&gt;1;b=&gt;6;g=&gt;9;Z=&gt;2;S=&gt;5<br>字符串后加一个‘=’,分为四个一组,利用base64解码得flag<br>QW1h base64解码为 Ama<br>BL92 base64解码为 _v<br>ZXJ5 base64解码为 ery<br>X2Nv base64解码为 _co<br>b2w= base64解码为 ol<br>得flag：flag{Aman_very_cool}</p><h1 id><a href="#" class="headerlink" title="/.-"></a>/.-</h1><p><img src="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/002.jpg"><br>摩斯密码解密： <a href="https://www.atool99.com/morse.php">https://www.atool99.com/morse.php</a><br>解密得：FLAG%u7bD3FCBF17F9399504%u7d<br>%u7b和%u7d就是两个花括号,所有字母均改为小写</p><h1 id="聪明的小羊"><a href="#聪明的小羊" class="headerlink" title="聪明的小羊"></a>聪明的小羊</h1><p><img src="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/003.jpg"><br>提示用栅栏密码解密：<a href="https://www.qqxiuzi.cn/bianma/zhalanmima.php">https://www.qqxiuzi.cn/bianma/zhalanmima.php</a><br>两个栅栏，使用两个一组<br>解密得flag</p><h1 id="ok"><a href="#ok" class="headerlink" title="ok"></a>ok</h1><p><img src="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/004.jpg"><br>打开文件复制所有内容<br>打开 <a href="https://www.splitbrain.org/services/ook">https://www.splitbrain.org/services/ook</a><br>解密得flag</p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;抄错的字符&quot;&gt;&lt;a href=&quot;#抄错的字符&quot; class=&quot;headerlink&quot; title=&quot;抄错的字符&quot;&gt;&lt;/a&gt;抄错的字符&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="ctf" scheme="https://ssa520.github.io/categories/ctf/"/>
+    
+    
+    <category term="crypto" scheme="https://ssa520.github.io/tags/crypto/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>BugKu where is flag 5</title>
+    <link href="https://ssa520.github.io/2023/01/19/BugKu-where-is-flag-5/"/>
+    <id>https://ssa520.github.io/2023/01/19/BugKu-where-is-flag-5/</id>
+    <published>2023-01-19T06:12:59.000Z</published>
+    <updated>2023-01-19T06:31:41.445Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/2023/01/19/BugKu-where-is-flag-5/001.jpg"></p><span id="more"></span><p>下载文件后打开：Gx8EAA8SCBIfHQARCxMUHwsAHRwRHh8BEQwaFBQfGwMYCBYRHx4SBRQdGR8HAQ0QFQ==<br>利用base64解码，得到：b’\x1b\x1f\x04\x00\x0f\x12\x08\x12\x1f\x1d\x00\x11\x0b\x13\x14\x1f\x0b\x00\x1d\x1c\x11\x1e\x1f\x01\x11\x0c\x1a\x14\x14\x1f\x1b\x03\x18\x08\x16\x11\x1f\x1e\x12\x05\x14\x1d\x19\x1f\x07\x01\r\x10\x15’<br><img src="/2023/01/19/BugKu-where-is-flag-5/003.jpg"><br>利用如下代码转换为二进制：<br>          enc = ‘Gx8EAA8SCBIfHQARCxMUHwsAHRwRHh8BEQwaFBQfGwMYCBYRHx4SBRQdGR8HAQ0QFQ==’<br>          text = base64.b64decode(enc)<br>          bin_data = [“0”*(5-len(i))+i if len(i)!=5 else i for i in [bin(j).replace(‘0b’,’’) for j in text]]</p><p>将每一个二进制的相同位数的数据取出，再以长度7切片转换为字符：<br>flag = ‘’<br>data1 = ‘’<br>for j in range(5):<br>    for i in bin_data:<br>        data1 +=i[j]<br>for n in range(0,len(data1),7):<br>    flag +=chr(int(str(data1[n:n+7]),2))</p><h1 id="脚本"><a href="#脚本" class="headerlink" title="脚本"></a>脚本</h1><p>import base64</p><p>enc = ‘Gx8EAA8SCBIfHQARCxMUHwsAHRwRHh8BEQwaFBQfGwMYCBYRHx4SBRQdGR8HAQ0QFQ==’<br>text = base64.b64decode(enc)<br>bin_data = [“0”*(5-len(i))+i if len(i)!=5 else i for i in [bin(j).replace(‘0b’,’’) for j in text]]<br>flag = ‘’<br>data1 = ‘’<br>for j in range(5):<br>    for i in bin_data:<br>        data1 +=i[j]<br>for k in range(0,len(data1),7):<br>    flag +=chr(int(str(data1[k:k+7]),2))<br>print(flag)</p><h1 id="flag：bugku-ce26f61d40fea75fc0b980d7588e"><a href="#flag：bugku-ce26f61d40fea75fc0b980d7588e" class="headerlink" title="flag：bugku{ce26f61d40fea75fc0b980d7588e}"></a>flag：bugku{ce26f61d40fea75fc0b980d7588e}</h1>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2023/01/19/BugKu-where-is-flag-5/001.jpg&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="ctf" scheme="https://ssa520.github.io/categories/ctf/"/>
+    
+    
+    <category term="crypto" scheme="https://ssa520.github.io/tags/crypto/"/>
+    
+  </entry>
   
   <entry>
     <title>ctf古典密码</title>
