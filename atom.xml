@@ -6,7 +6,7 @@
   <link href="https://ssa520.github.io/atom.xml" rel="self"/>
   
   <link href="https://ssa520.github.io/"/>
-  <updated>2023-01-20T12:08:37.419Z</updated>
+  <updated>2023-01-21T17:12:45.338Z</updated>
   <id>https://ssa520.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ctf-crypto题目</title>
+    <link href="https://ssa520.github.io/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/"/>
+    <id>https://ssa520.github.io/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/</id>
+    <published>2023-01-21T16:33:55.000Z</published>
+    <updated>2023-01-21T17:12:45.338Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="lt-gt"><a href="#lt-gt" class="headerlink" title="[+-&lt;&gt;]"></a>[+-&lt;&gt;]</h1><span id="more"></span><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/001.jpg"><br>brainfuck解密：<a href="https://ctf.bugku.com/tool/brainfuck">https://ctf.bugku.com/tool/brainfuck</a><br>得flag：flag{0d86208ac54fbf12}</p><h1 id="把猪困在猪圈里"><a href="#把猪困在猪圈里" class="headerlink" title="把猪困在猪圈里"></a>把猪困在猪圈里</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/002.jpg"><br>由题可知，一定是猪圈加密；<br>查看文件，发现末尾是=，又是猪圈，所以base64转图片<a href="https://tool.jisuapi.com/base642pic.html">https://tool.jisuapi.com/base642pic.html</a><br>再去猪圈解密<a href="http://www.metools.info/code/c90.html">http://www.metools.info/code/c90.html</a></p><h1 id="你喜欢下棋吗"><a href="#你喜欢下棋吗" class="headerlink" title="你喜欢下棋吗"></a>你喜欢下棋吗</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/003.jpg"><br>第一个棋盘密码<a href="https://www.qqxiuzi.cn/bianma/qipanmima.php%E8%A7%A3%E5%AF%86%E5%90%8E">https://www.qqxiuzi.cn/bianma/qipanmima.php解密后</a><br>博多密码解密<a href="https://www.boxentriq.com/code-breaking/baudot-code">https://www.boxentriq.com/code-breaking/baudot-code</a><br>得flag: bugku{baud0tc0de}</p><h1 id="小山丘的秘密"><a href="#小山丘的秘密" class="headerlink" title="小山丘的秘密"></a>小山丘的秘密</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/004.jpg"><br>打开图片后发现是一个棋盘，经查阅发现为希尔密码<br>一般的希尔密码是：A=0 B=1  C=2  但是开局文件就告诉我们  A=1  因此这里我们要更改一下解码时字母表的顺序：  Z=0  A=1  B=2<br>将z提前  得到密钥  abczadefz<br>解码得flag</p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;lt-gt&quot;&gt;&lt;a href=&quot;#lt-gt&quot; class=&quot;headerlink&quot; title=&quot;[+-&amp;lt;&amp;gt;]&quot;&gt;&lt;/a&gt;[+-&amp;lt;&amp;gt;]&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="ctf" scheme="https://ssa520.github.io/categories/ctf/"/>
+    
+    
+    <category term="crypto" scheme="https://ssa520.github.io/tags/crypto/"/>
+    
+  </entry>
   
   <entry>
     <title>bugku-crypto题目</title>
