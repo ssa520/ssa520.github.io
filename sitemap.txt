@@ -1,3 +1,4 @@
+https://ssa520.github.io/2023/01/26/bugku-crypto%E9%A2%98%E7%9B%AE-%E4%BA%8C/
 https://ssa520.github.io/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/
 https://ssa520.github.io/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/
 https://ssa520.github.io/2023/01/19/BugKu-where-is-flag-5/
