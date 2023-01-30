@@ -1,3 +1,4 @@
+https://ssa520.github.io/2023/01/30/ctf-base%E5%AE%B6%E6%97%8F/
 https://ssa520.github.io/2023/01/27/bugku-crypto-%E9%A2%98%E7%9B%AE-%E4%B8%89/
 https://ssa520.github.io/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/
 https://ssa520.github.io/2023/01/26/bugku-crypto%E9%A2%98%E7%9B%AE-%E4%BA%8C/
