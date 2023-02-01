@@ -6,7 +6,7 @@
   <link href="https://ssa520.github.io/atom.xml" rel="self"/>
   
   <link href="https://ssa520.github.io/"/>
-  <updated>2023-01-30T12:31:24.801Z</updated>
+  <updated>2023-02-01T11:26:00.067Z</updated>
   <id>https://ssa520.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>RSA</title>
+    <link href="https://ssa520.github.io/2023/02/01/RSA/"/>
+    <id>https://ssa520.github.io/2023/02/01/RSA/</id>
+    <published>2023-02-01T11:10:45.000Z</published>
+    <updated>2023-02-01T11:26:00.067Z</updated>
+    
+    <content type="html"><![CDATA[<p>  RSA一般指RSA算法(非对称加密算法)<span id="more"></span>，RSA公开密钥密码体制是一种使用不同的加密密钥与解密密钥，“由已知加密密钥推导出解密密钥在计算上是不可行的”密码体制。<br>RSA算法是第一个能同时用于加密和数字签名的算法，也易于理解和操作。RSA的算法涉及三个参数，n、e1、e2。其中，n是两个大质数p、q的积，n的二进制表示时所占用的位数，就是所谓的密钥长度。e1和e2是一对相关的值，e1可以任意取。</p><p>  p和q的位数相同可获得最大程度的安全性，计算乘积n=p*q；RSA加解密的算法完全相同，设A为明文，B为密文，则A=B^d mod n；B=A^e mod n；(mod:相当于求模运算)<br>公钥加密体制中，一般用公钥加密，私钥解密。e1和e2可以互换使用，即：​A=B^e mod n；​B=A^d mod n;</p><p>  明文加密：加密消息m时，首先将它分为比n小的数据分组（采用二级制数，选取小于n的2的最大次幂），也就是说，若果p和n为100位的素数，那么n将有200位，每个消息分组m应该小于200位长<br>　用户加密密钥将数字化明文分组信息加密成密文。由C≡M^e(mod n)得密文<br>  密文解密：用户收到密文，若将其解密，只需要计算 M≡c^d(mod n)得明文</p><p>最常用的三个e值：3, 17, 65537</p><p>RSA计算脚本可借鉴：<a href="https://blog.csdn.net/zip471642048/article/details/123041993">https://blog.csdn.net/zip471642048/article/details/123041993</a></p><p>​</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;  RSA一般指RSA算法(非对称加密算法)&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="ctf" scheme="https://ssa520.github.io/tags/ctf/"/>
+    
+  </entry>
   
   <entry>
     <title>ctf-base家族</title>
