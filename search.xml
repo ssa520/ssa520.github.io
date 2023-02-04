@@ -18,6 +18,16 @@
       </tags>
   </entry>
   <entry>
+    <title>1和0的故事</title>
+    <url>/2023/02/04/1%E5%92%8C0%E7%9A%84%E6%95%85%E4%BA%8B/</url>
+    <content><![CDATA[<h1 id="1和0的故事"><a href="#1和0的故事" class="headerlink" title="1和0的故事"></a>1和0的故事<span id="more"></span></h1><p><img src="/2023/02/04/1%E5%92%8C0%E7%9A%84%E6%95%85%E4%BA%8B/001.jpg"><br>下载文件后记事本打开，发现全部为1和0，可联想到二维码，尝试转换。<br>利用python脚本转换为二维码<br>以下是我在网络上查找的脚本供参考：<br>from PIL import Image<br>MAX = 25<br>#二维码大小<br>pic = Image.new(“RGB”,(MAX, MAX))<br>#str = “””1111111001110010001111111100000100001111010100000110111010011100010010111011011101010111100001011101101110101010101000101110110000010011000101010000011111111010101010101111111000000000100000110000000011000111011101101000110000001000010110010010010100010011110100001110111001100111101001010110010010011000001001100001001101000111100011111101110010100010110111110011011111101111000110110010010101101100100011110011111111111011100000000101100011000101001111111010010100101010001100000101010101010001100110111010001001111111100101011101000011001011110111101110100100110010010000110000010110000110110110011111111011010000101110101<br>#”””#修改后的二维码<br>str=”””0000000001110010000000000000000000001111010000000000000000011100010000000000000000010111100000000000000000001010101000000000000000000011000101000000000000000010101010100000000000000000100000110000000011000111011101101000110000001000010110010010010100010011110100001110111001100111101001010110010010011000001001100001001101000111100011111101110010100010110111110011011111101111000110110010010101101100100011110011111111111011100000000101100011000101000000000010010100101010001000000001010101010001100100000000001001111111100100000000000011001011110111000000000100110010010000100000000110000110110110010000000011010000101110101<br>“””#原二维码<br>i=0<br>for y in range (0,MAX):<br>    for x in range (0,MAX):<br>        if(str[i] == ‘1’):<br>            pic.putpixel([x,y],(0, 0, 0))<br>        else:<br>            pic.putpixel([x,y],(255,255,255))<br>        i = i+1<br>pic.show()<br>pic.save(“5.png”)<br>#由于直接预览分辨率太低，所以保存下来观看</p>
+<p>“””<br>PIL.Image.new(模式, 大小, 颜色)  //此处需了解并使用PIL<br>“””<br>得到一个残缺的二维码，利用ps进行补齐，扫描二维码得flag：flag{QR_c0de_1s_1nterest1n9}</p>
+]]></content>
+      <tags>
+        <tag>ctf</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>RSA</title>
     <url>/2023/02/01/RSA/</url>
     <content><![CDATA[<p>  RSA一般指RSA算法(非对称加密算法)<span id="more"></span>，RSA公开密钥密码体制是一种使用不同的加密密钥与解密密钥，“由已知加密密钥推导出解密密钥在计算上是不可行的”密码体制。<br>RSA算法是第一个能同时用于加密和数字签名的算法，也易于理解和操作。RSA的算法涉及三个参数，n、e1、e2。其中，n是两个大质数p、q的积，n的二进制表示时所占用的位数，就是所谓的密钥长度。e1和e2是一对相关的值，e1可以任意取。</p>
@@ -113,6 +123,28 @@
       </tags>
   </entry>
   <entry>
+    <title>ctf-base家族</title>
+    <url>/2023/01/30/ctf-base%E5%AE%B6%E6%97%8F/</url>
+    <content><![CDATA[<h1 id="base16"><a href="#base16" class="headerlink" title="base16"></a>base16</h1><span id="more"></span>
+<p>base16编码使用16个ASCII可打印字符（数字0-9和字母A-F）对任意字节数据进行编码。<br>base16先获取输入字符串每个字节的二进制值（不足8比特在高位补0），然后将其串联进来再按照4比特一组进行切分，将每组二进制数分别转换成十进制<br>Base16不用到填充符号“=”<br><a href="https://ctf.bugku.com/tool/base16">https://ctf.bugku.com/tool/base16</a></p>
+<h1 id="base32"><a href="#base32" class="headerlink" title="base32"></a>base32</h1><p>编码后的字符只会在大写字母（A-Z）和数字234567 32个字符组成，因为base32是5bit为一组，所以编码长度必须是40bit的倍数（5和8的最小公倍数）<br>因为必须为40bit的倍数，所以如果不足的话，会在第一个不满足5bit的小组进行补0，然后进行编码，在结果补上占位符=，一个等号5bit，最多出现6个<br><a href="https://ctf.bugku.com/tool/base32">https://ctf.bugku.com/tool/base32</a></p>
+<h1 id="base36"><a href="#base36" class="headerlink" title="base36"></a>base36</h1><p>base36编码是使用0~9的数字，加上所有26个字母，所有的字母要不全大写，要不全小写。<br><a href="http://www.hiencode.com/base36w.html">http://www.hiencode.com/base36w.html</a></p>
+<h1 id="base58"><a href="#base58" class="headerlink" title="base58"></a>base58</h1><p>字符为：123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz(无I、O、l)<br><a href="https://ctf.bugku.com/tool/base58">https://ctf.bugku.com/tool/base58</a></p>
+<h1 id="base62"><a href="#base62" class="headerlink" title="base62"></a>base62</h1><p>Base62编码是由10个数字、26个大写英文字母和26个小写英文字母组成<br><a href="https://ctf.bugku.com/tool/base62">https://ctf.bugku.com/tool/base62</a></p>
+<h1 id="base64"><a href="#base64" class="headerlink" title="base64"></a>base64</h1><p>编码后的字符只会在A-Z a-z 0-9（共62个）另外加上+  /两个符号,3个字节由4个base64单元来表示<br>如果要编码的字节数不能被3整除，最后会多出1个或2个字节，则用占位符=（一个代表一个字节）所以最多出现两个等号。<br><a href="https://www.qqxiuzi.cn/bianma/base64.htm">https://www.qqxiuzi.cn/bianma/base64.htm</a></p>
+<h1 id="base85"><a href="#base85" class="headerlink" title="base85"></a>base85</h1><p>Base85是一种类似于Base64的二进制文本编码形式，通过使用五个ASCII字符来表示四个字节的二进制数据<br>特点是奇怪的字符比较多，但是很难出现等号<br><a href="http://www.atoolbox.net/Tool.php?Id=934">http://www.atoolbox.net/Tool.php?Id=934</a><br><a href="https://ctf.bugku.com/tool/base85">https://ctf.bugku.com/tool/base85</a></p>
+<h1 id="base91"><a href="#base91" class="headerlink" title="base91"></a>base91</h1><p>base91的密文由91个字符（0-9，a-z，A-Z,!#$%&amp;()*+,./:;&lt;=&gt;?@[]^_`{|}~”）组成<br>从94个可打印ASCII字符（0x21-0x7E）中，以下三个字符被省略以构建base91字母：<br>-（破折号，0x2D）<br>\（反斜杠，0x5C）<br>‘（撇号，0x27）<br><a href="http://www.atoolbox.net/Tool.php?Id=935">http://www.atoolbox.net/Tool.php?Id=935</a></p>
+<h1 id="base92"><a href="#base92" class="headerlink" title="base92"></a>base92</h1><p>比base91 多一个字符 〜<br><a href="https://ctf.bugku.com/tool/base92">https://ctf.bugku.com/tool/base92</a></p>
+<h1 id="base100"><a href="#base100" class="headerlink" title="base100"></a>base100</h1><p><a href="https://ctf.bugku.com/tool/base100">https://ctf.bugku.com/tool/base100</a><br>base100: 👟👜👣👦📦💳💃👮👣👛🐥🐨🐩🐫🐬🐭<br>特征：Emoji表情组成</p>
+]]></content>
+      <categories>
+        <category>ctf</category>
+      </categories>
+      <tags>
+        <tag>crypto</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ctf-crypto题目</title>
     <url>/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/</url>
     <content><![CDATA[<h1 id="lt-gt"><a href="#lt-gt" class="headerlink" title="[+-&lt;&gt;]"></a>[+-&lt;&gt;]</h1><span id="more"></span>
@@ -129,19 +161,19 @@
       </tags>
   </entry>
   <entry>
-    <title>ctf-base家族</title>
-    <url>/2023/01/30/ctf-base%E5%AE%B6%E6%97%8F/</url>
-    <content><![CDATA[<h1 id="base16"><a href="#base16" class="headerlink" title="base16"></a>base16</h1><span id="more"></span>
-<p>base16编码使用16个ASCII可打印字符（数字0-9和字母A-F）对任意字节数据进行编码。<br>base16先获取输入字符串每个字节的二进制值（不足8比特在高位补0），然后将其串联进来再按照4比特一组进行切分，将每组二进制数分别转换成十进制<br>Base16不用到填充符号“=”<br><a href="https://ctf.bugku.com/tool/base16">https://ctf.bugku.com/tool/base16</a></p>
-<h1 id="base32"><a href="#base32" class="headerlink" title="base32"></a>base32</h1><p>编码后的字符只会在大写字母（A-Z）和数字234567 32个字符组成，因为base32是5bit为一组，所以编码长度必须是40bit的倍数（5和8的最小公倍数）<br>因为必须为40bit的倍数，所以如果不足的话，会在第一个不满足5bit的小组进行补0，然后进行编码，在结果补上占位符=，一个等号5bit，最多出现6个<br><a href="https://ctf.bugku.com/tool/base32">https://ctf.bugku.com/tool/base32</a></p>
-<h1 id="base36"><a href="#base36" class="headerlink" title="base36"></a>base36</h1><p>base36编码是使用0~9的数字，加上所有26个字母，所有的字母要不全大写，要不全小写。<br><a href="http://www.hiencode.com/base36w.html">http://www.hiencode.com/base36w.html</a></p>
-<h1 id="base58"><a href="#base58" class="headerlink" title="base58"></a>base58</h1><p>字符为：123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz(无I、O、l)<br><a href="https://ctf.bugku.com/tool/base58">https://ctf.bugku.com/tool/base58</a></p>
-<h1 id="base62"><a href="#base62" class="headerlink" title="base62"></a>base62</h1><p>Base62编码是由10个数字、26个大写英文字母和26个小写英文字母组成<br><a href="https://ctf.bugku.com/tool/base62">https://ctf.bugku.com/tool/base62</a></p>
-<h1 id="base64"><a href="#base64" class="headerlink" title="base64"></a>base64</h1><p>编码后的字符只会在A-Z a-z 0-9（共62个）另外加上+  /两个符号,3个字节由4个base64单元来表示<br>如果要编码的字节数不能被3整除，最后会多出1个或2个字节，则用占位符=（一个代表一个字节）所以最多出现两个等号。<br><a href="https://www.qqxiuzi.cn/bianma/base64.htm">https://www.qqxiuzi.cn/bianma/base64.htm</a></p>
-<h1 id="base85"><a href="#base85" class="headerlink" title="base85"></a>base85</h1><p>Base85是一种类似于Base64的二进制文本编码形式，通过使用五个ASCII字符来表示四个字节的二进制数据<br>特点是奇怪的字符比较多，但是很难出现等号<br><a href="http://www.atoolbox.net/Tool.php?Id=934">http://www.atoolbox.net/Tool.php?Id=934</a><br><a href="https://ctf.bugku.com/tool/base85">https://ctf.bugku.com/tool/base85</a></p>
-<h1 id="base91"><a href="#base91" class="headerlink" title="base91"></a>base91</h1><p>base91的密文由91个字符（0-9，a-z，A-Z,!#$%&amp;()*+,./:;&lt;=&gt;?@[]^_`{|}~”）组成<br>从94个可打印ASCII字符（0x21-0x7E）中，以下三个字符被省略以构建base91字母：<br>-（破折号，0x2D）<br>\（反斜杠，0x5C）<br>‘（撇号，0x27）<br><a href="http://www.atoolbox.net/Tool.php?Id=935">http://www.atoolbox.net/Tool.php?Id=935</a></p>
-<h1 id="base92"><a href="#base92" class="headerlink" title="base92"></a>base92</h1><p>比base91 多一个字符 〜<br><a href="https://ctf.bugku.com/tool/base92">https://ctf.bugku.com/tool/base92</a></p>
-<h1 id="base100"><a href="#base100" class="headerlink" title="base100"></a>base100</h1><p><a href="https://ctf.bugku.com/tool/base100">https://ctf.bugku.com/tool/base100</a><br>base100: 👟👜👣👦📦💳💃👮👣👛🐥🐨🐩🐫🐬🐭<br>特征：Emoji表情组成</p>
+    <title>ctf古典密码</title>
+    <url>/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/</url>
+    <content><![CDATA[<h1 id="1、埃及文字"><a href="#1、埃及文字" class="headerlink" title="1、埃及文字"></a>1、埃及文字</h1><span id="more"></span>
+<p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/001.jpg"></p>
+<h1 id="2、跳舞的小人"><a href="#2、跳舞的小人" class="headerlink" title="2、跳舞的小人"></a>2、跳舞的小人</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/001.png"></p>
+<h1 id="3、盲文"><a href="#3、盲文" class="headerlink" title="3、盲文"></a>3、盲文</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/002.jpg"></p>
+<h1 id="4、音乐密码"><a href="#4、音乐密码" class="headerlink" title="4、音乐密码"></a>4、音乐密码</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/003.png"></p>
+<h1 id="5、猪圈密码"><a href="#5、猪圈密码" class="headerlink" title="5、猪圈密码"></a>5、猪圈密码</h1><p><a href="http://www.metools.info/code/c90.html">http://www.metools.info/code/c90.html</a></p>
+<h1 id="6、棋盘密码"><a href="#6、棋盘密码" class="headerlink" title="6、棋盘密码"></a>6、棋盘密码</h1><p><a href="https://www.qqxiuzi.cn/bianma/qipanmima.php">https://www.qqxiuzi.cn/bianma/qipanmima.php</a></p>
+<h1 id="7、元音密码"><a href="#7、元音密码" class="headerlink" title="7、元音密码"></a>7、元音密码</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/004.png"></p>
+<h1 id="8、培根密码"><a href="#8、培根密码" class="headerlink" title="8、培根密码"></a>8、培根密码</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/005.png"></p>
+<h1 id="9、栅栏密码"><a href="#9、栅栏密码" class="headerlink" title="9、栅栏密码"></a>9、栅栏密码</h1><p><a href="https://www.qqxiuzi.cn/bianma/zhalanmima.php">https://www.qqxiuzi.cn/bianma/zhalanmima.php</a></p>
+<h1 id="10、博多密码"><a href="#10、博多密码" class="headerlink" title="10、博多密码"></a>10、博多密码</h1><p><a href="https://www.boxentriq.com/code-breaking/baudot-code">https://www.boxentriq.com/code-breaking/baudot-code</a></p>
 ]]></content>
       <categories>
         <category>ctf</category>
@@ -179,28 +211,6 @@ https://blog.csdn.net/weixin_41599858/article/details/104786874
       </categories>
       <tags>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ctf古典密码</title>
-    <url>/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/</url>
-    <content><![CDATA[<h1 id="1、埃及文字"><a href="#1、埃及文字" class="headerlink" title="1、埃及文字"></a>1、埃及文字</h1><span id="more"></span>
-<p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/001.jpg"></p>
-<h1 id="2、跳舞的小人"><a href="#2、跳舞的小人" class="headerlink" title="2、跳舞的小人"></a>2、跳舞的小人</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/001.png"></p>
-<h1 id="3、盲文"><a href="#3、盲文" class="headerlink" title="3、盲文"></a>3、盲文</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/002.jpg"></p>
-<h1 id="4、音乐密码"><a href="#4、音乐密码" class="headerlink" title="4、音乐密码"></a>4、音乐密码</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/003.png"></p>
-<h1 id="5、猪圈密码"><a href="#5、猪圈密码" class="headerlink" title="5、猪圈密码"></a>5、猪圈密码</h1><p><a href="http://www.metools.info/code/c90.html">http://www.metools.info/code/c90.html</a></p>
-<h1 id="6、棋盘密码"><a href="#6、棋盘密码" class="headerlink" title="6、棋盘密码"></a>6、棋盘密码</h1><p><a href="https://www.qqxiuzi.cn/bianma/qipanmima.php">https://www.qqxiuzi.cn/bianma/qipanmima.php</a></p>
-<h1 id="7、元音密码"><a href="#7、元音密码" class="headerlink" title="7、元音密码"></a>7、元音密码</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/004.png"></p>
-<h1 id="8、培根密码"><a href="#8、培根密码" class="headerlink" title="8、培根密码"></a>8、培根密码</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/005.png"></p>
-<h1 id="9、栅栏密码"><a href="#9、栅栏密码" class="headerlink" title="9、栅栏密码"></a>9、栅栏密码</h1><p><a href="https://www.qqxiuzi.cn/bianma/zhalanmima.php">https://www.qqxiuzi.cn/bianma/zhalanmima.php</a></p>
-<h1 id="10、博多密码"><a href="#10、博多密码" class="headerlink" title="10、博多密码"></a>10、博多密码</h1><p><a href="https://www.boxentriq.com/code-breaking/baudot-code">https://www.boxentriq.com/code-breaking/baudot-code</a></p>
-]]></content>
-      <categories>
-        <category>ctf</category>
-      </categories>
-      <tags>
-        <tag>crypto</tag>
       </tags>
   </entry>
   <entry>
