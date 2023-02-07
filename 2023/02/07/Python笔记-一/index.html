@@ -6,20 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://ssa520.github.io">
-  <title>tages | 秋的故事书</title>
+  <title>Python笔记(一) | 秋的故事书</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一个收藏回忆与分享技术的地方！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tages">
-<meta property="og:url" content="https://ssa520.github.io/tages/index.html">
+  <meta name="description" content="Python基础语法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python笔记(一)">
+<meta property="og:url" content="https://ssa520.github.io/2023/02/07/Python%E7%AC%94%E8%AE%B0-%E4%B8%80/index.html">
 <meta property="og:site_name" content="秋的故事书">
-<meta property="og:description" content="一个收藏回忆与分享技术的地方！">
+<meta property="og:description" content="Python基础语法">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-01-12T10:53:04.000Z">
-<meta property="article:modified_time" content="2023-01-12T10:53:04.961Z">
+<meta property="og:image" content="https://ssa520.github.io/2023/02/07/Python%E7%AC%94%E8%AE%B0-%E4%B8%80/001.jpg">
+<meta property="article:published_time" content="2023-02-07T02:34:11.000Z">
+<meta property="article:modified_time" content="2023-02-07T03:14:05.810Z">
 <meta property="article:author" content="秋的故事书">
-<meta property="article:tag" content="#">
+<meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ssa520.github.io/2023/02/07/Python%E7%AC%94%E8%AE%B0-%E4%B8%80/001.jpg">
   
     <link rel="alternative" href="/atom.xml" title="秋的故事书" type="application/atom+xml">
   
@@ -184,30 +186,48 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-Python笔记-一" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      tages
+      Python笔记(一)
     </h1>
   
 
         
-        <a href="/tages/index.html" class="archive-article-date">
-  	<time datetime="2023-01-12T10:53:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-12</time>
+        <a href="/2023/02/07/Python%E7%AC%94%E8%AE%B0-%E4%B8%80/" class="archive-article-date">
+  	<time datetime="2023-02-07T02:34:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-02-07</time>
 </a>
         
       </header>
       <div align="center" class="post-count">
-    字数：0字 | 预计阅读时长：1分钟
+    字数：958字 | 预计阅读时长：3分钟
 </div>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="Python基础语法"><a href="#Python基础语法" class="headerlink" title="Python基础语法"></a>Python基础语法</h1><span id="more"></span>
+
+<h1 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h1><p>默认情况下，Python源码文件为UTF-8编码，所有字符串都是unicode字符串。也可以为源码文件指定不同的编码</p>
+<h1 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h1><p>1、第一个字符必须是字母表中字母或下划线<br>2、标识符的其他部分由字母、数字、下划线组成<br>3、标识符对大小写敏感<br>在Python3中，非ASCII编码的标识符也是允许的</p>
+<h1 id="Python保留字"><a href="#Python保留字" class="headerlink" title="Python保留字"></a>Python保留字</h1><p>保留字即为关键字，不能把他们用作任何标识符名称。Python的标准库提供了一个关键词模块，可以使用它来查看当前版本的所有保留字<br><img src="/2023/02/07/Python%E7%AC%94%E8%AE%B0-%E4%B8%80/001.jpg">此处为解释器执行结果<br>Python脚本应写为：<br>import keyword<br>print(keyword.kwlist)</p>
+<h1 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h1><p>Python中单行注释以#开头，多行注释采用三对单引号或三对双引号将注释括起来</p>
+<h1 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h1><p>Python最具特色的就是使用缩进来表示代码块。缩进的空格数是可变的，但是同一个代码块的语句必须包含相同的缩进空格数。</p>
+<h1 id="标准数据类型"><a href="#标准数据类型" class="headerlink" title="标准数据类型"></a>标准数据类型</h1><p>Python中有六个标准的数据类型：<br>1、Number：数字  2、String：字符串  3、List：列表  4、Tuple：元组  5、Set：集合  6、Dictionary：字典<br>其中，124为不可变数据，356为可变数据<br>(可变数据和不可变数据是相对于引用地址来说的，不可变数据类型不允许变量的值发生变化，如果改变了的变量的值，相当于新建了一个对象，而对于相同的值的对象，内部会有一个引用计数来记录有多少个变量引用了这个对象。可变数据类型允许变量的值发生变化。对变量进行修改操作只会改变变量的值，不会新建对象，变量引用的地址也不会发生变化，不过对于相同的值的不同对象，在内存中则会存在不同的对象，即每个对象都有自己的地址，相当于内存中对于同值的对象保存了多份，这里不存在引用计数，是实实在在的对象。</p>
+<p>简单地讲，可变数据和不可变数据的“变”是相对于引用地址来说的，不是不能改变其数据，而是改变数据的时候会不会改变变量的引用地址。)</p>
+<h1 id="类型判断"><a href="#类型判断" class="headerlink" title="类型判断"></a>类型判断</h1><p>Python可以用type函数来检查一个变量的类型，使用方法如下：</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>x = “513yyds”<br>type(x)<br>&lt;type ‘str’&gt;<br>x=100<br>type(x)<br>&lt;type ‘int’&gt;<br>x=(‘1’,’2’,’3’)<br>type(x)<br>&lt;type ‘tuple’&gt;<br>x = [‘1’,’2’,’3’]<br>type(x)<br>&lt;type ‘list’&gt;<br>在脚本中：<br>x = “513yyds”<br>print(type(x))</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h1 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h1><p>1、Python 中单引号和双引号使用完全相同，但单引号和双引号不能匹配。<br>2、使用三对引号(‘’’或”””)可以囊括一个多行字符串。<br>3、与其他语言相似，python也使用 ‘&#39;作为转义字符<br>4、自然字符串， 通过在字符串前加 r 或 R。 如 r”this is a line with \n” 则\n会显示，并不是换行。<br>5、Python 允许处理 unicode 字符串，加前缀 u 或 U， 如 u”this is an unicode string”。<br>6、字符串是不可变的。<br>7、按字面意义级联字符串，如”this “ “is “ “string”会被自动转换为this is string。<br>8、字符串可以用 + 运算符连接在一起，用 * 运算符重复。<br>9、Python 中的字符串有两种索引方式，从左往右以 0 开始，从右往左以 -1 开始。<br>10、Python中的字符串不能改变。<br>11、Python 没有单独的字符类型，一个字符就是长度为 1 的字符串。<br>12、字符串的截取的语法格式如下：变量 [头下标: 尾下标: 步长]</p>
+
       
       
         
@@ -220,7 +240,7 @@
                 
                 <br>
                 <strong>本文链接：</strong>
-                https://ssa520.github.io/tages/
+                https://ssa520.github.io/2023/02/07/Python%E7%AC%94%E8%AE%B0-%E4%B8%80/
                 <br>
                 <strong>版权声明：</strong>
                 本作品采用
@@ -275,6 +295,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -325,7 +356,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://ssa520.github.io/tages/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://ssa520.github.io/2023/02/07/Python%E7%AC%94%E8%AE%B0-%E4%B8%80/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -337,6 +368,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2023/02/04/1%E5%92%8C0%E7%9A%84%E6%95%85%E4%BA%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">1和0的故事</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -409,7 +450,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
