@@ -6,7 +6,7 @@
   <link href="https://ssa520.github.io/atom.xml" rel="self"/>
   
   <link href="https://ssa520.github.io/"/>
-  <updated>2023-02-07T03:14:05.810Z</updated>
+  <updated>2023-02-08T02:48:32.614Z</updated>
   <id>https://ssa520.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python笔记(二)</title>
+    <link href="https://ssa520.github.io/2023/02/08/Python%E7%AC%94%E8%AE%B0-%E4%BA%8C/"/>
+    <id>https://ssa520.github.io/2023/02/08/Python%E7%AC%94%E8%AE%B0-%E4%BA%8C/</id>
+    <published>2023-02-08T02:01:10.000Z</published>
+    <updated>2023-02-08T02:48:32.614Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="空行"><a href="#空行" class="headerlink" title="空行"></a>空行</h1><p>函数之间或类的方法之间用空行分隔，表示一段新代码的开始。<span id="more"></span>类和函数入口之间也用两行空行分隔，以突出函数入口的开始。<br>空行与代码缩进不同。书写时不插入空行，Python解释器运行也不会出错。<br>空行的作用：分隔两段不同功能或含义的代码，便于日后代码的维护或重构。空行也是程序代码的一部分</p><h1 id="输入和等待用户输入"><a href="#输入和等待用户输入" class="headerlink" title="输入和等待用户输入"></a>输入和等待用户输入</h1><p>input函数可以用来接受输入，它可以传入一个字符串，当input函数调用的时候，会在控制台打印这个字符串。<br>input函数会读取输入内容直到读到回车，也就是说，内容输入完毕后要按回车键才能执行。</p><h1 id="同一行显示多条语句"><a href="#同一行显示多条语句" class="headerlink" title="同一行显示多条语句"></a>同一行显示多条语句</h1><p>Python可以在同一行中使用多条语句，语句之间使用分号分隔。</p><h1 id="多个语句构成代码组"><a href="#多个语句构成代码组" class="headerlink" title="多个语句构成代码组"></a>多个语句构成代码组</h1><p>缩进相同的一组语句构成代码块，称之为代码组。<br>像if、while、def和class这样的复合语句，首行以关键字开始，以冒号结束，该行之后的一行或多行代码构成代码组。<br>将首行及后面的代码组称为一个子句</p><h1 id="print输出"><a href="#print输出" class="headerlink" title="print输出"></a>print输出</h1><p>print函数是Python的基本输出函数，可以将变量蔬菜到控制台。<br>print默认输入是换行的，如果要实现不换行需要在变量末尾加上 end=” “</p><h1 id="import与from…import"><a href="#import与from…import" class="headerlink" title="import与from…import"></a>import与from…import</h1><p>在Python中用import或from…import来导入相应的模块<br>将整个模块 (somemodule) 导入，格式为：​ import somemodule​<br>从某个模块中导入某个函数,格式为：​ from somemodule import somefunction​<br>从某个模块中导入多个函数,格式为：​ from somemodule import firstfunc, secondfunc, thirdfunc​<br>将某个模块中的全部函数导入，格式为：​ from somemodule import *​</p><h1 id="命令行参数"><a href="#命令行参数" class="headerlink" title="命令行参数"></a>命令行参数</h1><p>很多程序可以执行一些操作来查看一些基本信息，Python可以使用-h参数查看各参数帮助信息<br>$ python -h<br>usage: python [option] … [-c cmd<br>| -m mod | file | -] [arg] …<br>Options and arguments (and<br>corresponding environment<br>variables):<br>-c cmd : program passed in as<br>string (terminates option list)<br>-d     : debug output from parser<br>(also PYTHONDEBUG=x)<br>-E     : ignore environment<br>variables (such as PYTHONPATH)<br>-h     : print this help message and exit</p><p>【 etc. 】</p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;空行&quot;&gt;&lt;a href=&quot;#空行&quot; class=&quot;headerlink&quot; title=&quot;空行&quot;&gt;&lt;/a&gt;空行&lt;/h1&gt;&lt;p&gt;函数之间或类的方法之间用空行分隔，表示一段新代码的开始。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Python" scheme="https://ssa520.github.io/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>Python笔记(一)</title>

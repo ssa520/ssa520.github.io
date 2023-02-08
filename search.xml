@@ -54,6 +54,22 @@
       </tags>
   </entry>
   <entry>
+    <title>Python笔记(二)</title>
+    <url>/2023/02/08/Python%E7%AC%94%E8%AE%B0-%E4%BA%8C/</url>
+    <content><![CDATA[<h1 id="空行"><a href="#空行" class="headerlink" title="空行"></a>空行</h1><p>函数之间或类的方法之间用空行分隔，表示一段新代码的开始。<span id="more"></span>类和函数入口之间也用两行空行分隔，以突出函数入口的开始。<br>空行与代码缩进不同。书写时不插入空行，Python解释器运行也不会出错。<br>空行的作用：分隔两段不同功能或含义的代码，便于日后代码的维护或重构。空行也是程序代码的一部分</p>
+<h1 id="输入和等待用户输入"><a href="#输入和等待用户输入" class="headerlink" title="输入和等待用户输入"></a>输入和等待用户输入</h1><p>input函数可以用来接受输入，它可以传入一个字符串，当input函数调用的时候，会在控制台打印这个字符串。<br>input函数会读取输入内容直到读到回车，也就是说，内容输入完毕后要按回车键才能执行。</p>
+<h1 id="同一行显示多条语句"><a href="#同一行显示多条语句" class="headerlink" title="同一行显示多条语句"></a>同一行显示多条语句</h1><p>Python可以在同一行中使用多条语句，语句之间使用分号分隔。</p>
+<h1 id="多个语句构成代码组"><a href="#多个语句构成代码组" class="headerlink" title="多个语句构成代码组"></a>多个语句构成代码组</h1><p>缩进相同的一组语句构成代码块，称之为代码组。<br>像if、while、def和class这样的复合语句，首行以关键字开始，以冒号结束，该行之后的一行或多行代码构成代码组。<br>将首行及后面的代码组称为一个子句</p>
+<h1 id="print输出"><a href="#print输出" class="headerlink" title="print输出"></a>print输出</h1><p>print函数是Python的基本输出函数，可以将变量蔬菜到控制台。<br>print默认输入是换行的，如果要实现不换行需要在变量末尾加上 end=” “</p>
+<h1 id="import与from…import"><a href="#import与from…import" class="headerlink" title="import与from…import"></a>import与from…import</h1><p>在Python中用import或from…import来导入相应的模块<br>将整个模块 (somemodule) 导入，格式为：​ import somemodule​<br>从某个模块中导入某个函数,格式为：​ from somemodule import somefunction​<br>从某个模块中导入多个函数,格式为：​ from somemodule import firstfunc, secondfunc, thirdfunc​<br>将某个模块中的全部函数导入，格式为：​ from somemodule import *​</p>
+<h1 id="命令行参数"><a href="#命令行参数" class="headerlink" title="命令行参数"></a>命令行参数</h1><p>很多程序可以执行一些操作来查看一些基本信息，Python可以使用-h参数查看各参数帮助信息<br>$ python -h<br>usage: python [option] … [-c cmd<br>| -m mod | file | -] [arg] …<br>Options and arguments (and<br>corresponding environment<br>variables):<br>-c cmd : program passed in as<br>string (terminates option list)<br>-d     : debug output from parser<br>(also PYTHONDEBUG=x)<br>-E     : ignore environment<br>variables (such as PYTHONPATH)<br>-h     : print this help message and exit</p>
+<p>【 etc. 】</p>
+]]></content>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>RSA</title>
     <url>/2023/02/01/RSA/</url>
     <content><![CDATA[<p>  RSA一般指RSA算法(非对称加密算法)<span id="more"></span>，RSA公开密钥密码体制是一种使用不同的加密密钥与解密密钥，“由已知加密密钥推导出解密密钥在计算上是不可行的”密码体制。<br>RSA算法是第一个能同时用于加密和数字签名的算法，也易于理解和操作。RSA的算法涉及三个参数，n、e1、e2。其中，n是两个大质数p、q的积，n的二进制表示时所占用的位数，就是所谓的密钥长度。e1和e2是一对相关的值，e1可以任意取。</p>
@@ -133,22 +149,6 @@
       </tags>
   </entry>
   <entry>
-    <title>bugku-crypto题目</title>
-    <url>/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/</url>
-    <content><![CDATA[<h1 id="抄错的字符"><a href="#抄错的字符" class="headerlink" title="抄错的字符"></a>抄错的字符</h1><span id="more"></span>
-<p><img src="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/001.jpg"><br>找出与数字形状相近的字母：I=&gt;1;b=&gt;6;g=&gt;9;Z=&gt;2;S=&gt;5<br>字符串后加一个‘=’,分为四个一组,利用base64解码得flag<br>QW1h base64解码为 Ama<br>BL92 base64解码为 _v<br>ZXJ5 base64解码为 ery<br>X2Nv base64解码为 _co<br>b2w= base64解码为 ol<br>得flag：flag{Aman_very_cool}</p>
-<h1 id><a href="#" class="headerlink" title="/.-"></a>/.-</h1><p><img src="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/002.jpg"><br>摩斯密码解密： <a href="https://www.atool99.com/morse.php">https://www.atool99.com/morse.php</a><br>解密得：FLAG%u7bD3FCBF17F9399504%u7d<br>%u7b和%u7d就是两个花括号,所有字母均改为小写</p>
-<h1 id="聪明的小羊"><a href="#聪明的小羊" class="headerlink" title="聪明的小羊"></a>聪明的小羊</h1><p><img src="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/003.jpg"><br>提示用栅栏密码解密：<a href="https://www.qqxiuzi.cn/bianma/zhalanmima.php">https://www.qqxiuzi.cn/bianma/zhalanmima.php</a><br>两个栅栏，使用两个一组<br>解密得flag</p>
-<h1 id="ok"><a href="#ok" class="headerlink" title="ok"></a>ok</h1><p><img src="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/004.jpg"><br>打开文件复制所有内容<br>打开 <a href="https://www.splitbrain.org/services/ook">https://www.splitbrain.org/services/ook</a><br>解密得flag</p>
-]]></content>
-      <categories>
-        <category>ctf</category>
-      </categories>
-      <tags>
-        <tag>crypto</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>ctf-base家族</title>
     <url>/2023/01/30/ctf-base%E5%AE%B6%E6%97%8F/</url>
     <content><![CDATA[<h1 id="base16"><a href="#base16" class="headerlink" title="base16"></a>base16</h1><span id="more"></span>
@@ -171,19 +171,13 @@
       </tags>
   </entry>
   <entry>
-    <title>ctf古典密码</title>
-    <url>/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/</url>
-    <content><![CDATA[<h1 id="1、埃及文字"><a href="#1、埃及文字" class="headerlink" title="1、埃及文字"></a>1、埃及文字</h1><span id="more"></span>
-<p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/001.jpg"></p>
-<h1 id="2、跳舞的小人"><a href="#2、跳舞的小人" class="headerlink" title="2、跳舞的小人"></a>2、跳舞的小人</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/001.png"></p>
-<h1 id="3、盲文"><a href="#3、盲文" class="headerlink" title="3、盲文"></a>3、盲文</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/002.jpg"></p>
-<h1 id="4、音乐密码"><a href="#4、音乐密码" class="headerlink" title="4、音乐密码"></a>4、音乐密码</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/003.png"></p>
-<h1 id="5、猪圈密码"><a href="#5、猪圈密码" class="headerlink" title="5、猪圈密码"></a>5、猪圈密码</h1><p><a href="http://www.metools.info/code/c90.html">http://www.metools.info/code/c90.html</a></p>
-<h1 id="6、棋盘密码"><a href="#6、棋盘密码" class="headerlink" title="6、棋盘密码"></a>6、棋盘密码</h1><p><a href="https://www.qqxiuzi.cn/bianma/qipanmima.php">https://www.qqxiuzi.cn/bianma/qipanmima.php</a></p>
-<h1 id="7、元音密码"><a href="#7、元音密码" class="headerlink" title="7、元音密码"></a>7、元音密码</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/004.png"></p>
-<h1 id="8、培根密码"><a href="#8、培根密码" class="headerlink" title="8、培根密码"></a>8、培根密码</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/005.png"></p>
-<h1 id="9、栅栏密码"><a href="#9、栅栏密码" class="headerlink" title="9、栅栏密码"></a>9、栅栏密码</h1><p><a href="https://www.qqxiuzi.cn/bianma/zhalanmima.php">https://www.qqxiuzi.cn/bianma/zhalanmima.php</a></p>
-<h1 id="10、博多密码"><a href="#10、博多密码" class="headerlink" title="10、博多密码"></a>10、博多密码</h1><p><a href="https://www.boxentriq.com/code-breaking/baudot-code">https://www.boxentriq.com/code-breaking/baudot-code</a></p>
+    <title>bugku-crypto题目</title>
+    <url>/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/</url>
+    <content><![CDATA[<h1 id="抄错的字符"><a href="#抄错的字符" class="headerlink" title="抄错的字符"></a>抄错的字符</h1><span id="more"></span>
+<p><img src="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/001.jpg"><br>找出与数字形状相近的字母：I=&gt;1;b=&gt;6;g=&gt;9;Z=&gt;2;S=&gt;5<br>字符串后加一个‘=’,分为四个一组,利用base64解码得flag<br>QW1h base64解码为 Ama<br>BL92 base64解码为 _v<br>ZXJ5 base64解码为 ery<br>X2Nv base64解码为 _co<br>b2w= base64解码为 ol<br>得flag：flag{Aman_very_cool}</p>
+<h1 id><a href="#" class="headerlink" title="/.-"></a>/.-</h1><p><img src="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/002.jpg"><br>摩斯密码解密： <a href="https://www.atool99.com/morse.php">https://www.atool99.com/morse.php</a><br>解密得：FLAG%u7bD3FCBF17F9399504%u7d<br>%u7b和%u7d就是两个花括号,所有字母均改为小写</p>
+<h1 id="聪明的小羊"><a href="#聪明的小羊" class="headerlink" title="聪明的小羊"></a>聪明的小羊</h1><p><img src="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/003.jpg"><br>提示用栅栏密码解密：<a href="https://www.qqxiuzi.cn/bianma/zhalanmima.php">https://www.qqxiuzi.cn/bianma/zhalanmima.php</a><br>两个栅栏，使用两个一组<br>解密得flag</p>
+<h1 id="ok"><a href="#ok" class="headerlink" title="ok"></a>ok</h1><p><img src="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/004.jpg"><br>打开文件复制所有内容<br>打开 <a href="https://www.splitbrain.org/services/ook">https://www.splitbrain.org/services/ook</a><br>解密得flag</p>
 ]]></content>
       <categories>
         <category>ctf</category>
@@ -200,6 +194,28 @@
 <h1 id="把猪困在猪圈里"><a href="#把猪困在猪圈里" class="headerlink" title="把猪困在猪圈里"></a>把猪困在猪圈里</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/002.jpg"><br>由题可知，一定是猪圈加密；<br>查看文件，发现末尾是=，又是猪圈，所以base64转图片<a href="https://tool.jisuapi.com/base642pic.html">https://tool.jisuapi.com/base642pic.html</a><br>再去猪圈解密<a href="http://www.metools.info/code/c90.html">http://www.metools.info/code/c90.html</a></p>
 <h1 id="你喜欢下棋吗"><a href="#你喜欢下棋吗" class="headerlink" title="你喜欢下棋吗"></a>你喜欢下棋吗</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/003.jpg"><br>第一个棋盘密码<a href="https://www.qqxiuzi.cn/bianma/qipanmima.php%E8%A7%A3%E5%AF%86%E5%90%8E">https://www.qqxiuzi.cn/bianma/qipanmima.php解密后</a><br>博多密码解密<a href="https://www.boxentriq.com/code-breaking/baudot-code">https://www.boxentriq.com/code-breaking/baudot-code</a><br>得flag: bugku{baud0tc0de}</p>
 <h1 id="小山丘的秘密"><a href="#小山丘的秘密" class="headerlink" title="小山丘的秘密"></a>小山丘的秘密</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/004.jpg"><br>打开图片后发现是一个棋盘，经查阅发现为希尔密码<br>一般的希尔密码是：A=0 B=1  C=2  但是开局文件就告诉我们  A=1  因此这里我们要更改一下解码时字母表的顺序：  Z=0  A=1  B=2<br>将z提前  得到密钥  abczadefz<br>解码得flag</p>
+]]></content>
+      <categories>
+        <category>ctf</category>
+      </categories>
+      <tags>
+        <tag>crypto</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ctf古典密码</title>
+    <url>/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/</url>
+    <content><![CDATA[<h1 id="1、埃及文字"><a href="#1、埃及文字" class="headerlink" title="1、埃及文字"></a>1、埃及文字</h1><span id="more"></span>
+<p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/001.jpg"></p>
+<h1 id="2、跳舞的小人"><a href="#2、跳舞的小人" class="headerlink" title="2、跳舞的小人"></a>2、跳舞的小人</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/001.png"></p>
+<h1 id="3、盲文"><a href="#3、盲文" class="headerlink" title="3、盲文"></a>3、盲文</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/002.jpg"></p>
+<h1 id="4、音乐密码"><a href="#4、音乐密码" class="headerlink" title="4、音乐密码"></a>4、音乐密码</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/003.png"></p>
+<h1 id="5、猪圈密码"><a href="#5、猪圈密码" class="headerlink" title="5、猪圈密码"></a>5、猪圈密码</h1><p><a href="http://www.metools.info/code/c90.html">http://www.metools.info/code/c90.html</a></p>
+<h1 id="6、棋盘密码"><a href="#6、棋盘密码" class="headerlink" title="6、棋盘密码"></a>6、棋盘密码</h1><p><a href="https://www.qqxiuzi.cn/bianma/qipanmima.php">https://www.qqxiuzi.cn/bianma/qipanmima.php</a></p>
+<h1 id="7、元音密码"><a href="#7、元音密码" class="headerlink" title="7、元音密码"></a>7、元音密码</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/004.png"></p>
+<h1 id="8、培根密码"><a href="#8、培根密码" class="headerlink" title="8、培根密码"></a>8、培根密码</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/005.png"></p>
+<h1 id="9、栅栏密码"><a href="#9、栅栏密码" class="headerlink" title="9、栅栏密码"></a>9、栅栏密码</h1><p><a href="https://www.qqxiuzi.cn/bianma/zhalanmima.php">https://www.qqxiuzi.cn/bianma/zhalanmima.php</a></p>
+<h1 id="10、博多密码"><a href="#10、博多密码" class="headerlink" title="10、博多密码"></a>10、博多密码</h1><p><a href="https://www.boxentriq.com/code-breaking/baudot-code">https://www.boxentriq.com/code-breaking/baudot-code</a></p>
 ]]></content>
       <categories>
         <category>ctf</category>
