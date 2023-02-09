@@ -54,6 +54,19 @@
       </tags>
   </entry>
   <entry>
+    <title>Python笔记(三)</title>
+    <url>/2023/02/09/Python%E7%AC%94%E8%AE%B0-%E4%B8%89/</url>
+    <content><![CDATA[<h1 id="Python编程第一步"><a href="#Python编程第一步" class="headerlink" title="Python编程第一步"></a>Python编程第一步</h1><span id="more"></span>
+<h1 id="斐波那契数列："><a href="#斐波那契数列：" class="headerlink" title="斐波那契数列："></a>斐波那契数列：</h1><p>a,b = 0,1<br>while b &lt; 10:<br>    print(b)<br>    a,b = b,a+b(先计算右边的表达式，然后同时赋值给左边)<br>输出结果：1 \n 1 \n 2 \n3 \n 5 \n 8<br>第一行包含了一个复合赋值：变量a和b同时得到新值0和1<br>最后一行也使用了复合赋值的方法：等价于c=a,a=b,b=b+c</p>
+<h1 id="end关键字"><a href="#end关键字" class="headerlink" title="end关键字"></a>end关键字</h1><p>关键字end可以用于将结果输出到同一行，或者在输出的末尾添加不同的字符<br>a,b = 0,1<br>while b &lt; 1024:<br>    print(b, end=’,’)<br>    a, b = b, a+b<br>输出结果：1,1,2,3,5,8,13,21,34,55,89,144……</p>
+<h1 id="if条件控制"><a href="#if条件控制" class="headerlink" title="if条件控制"></a>if条件控制</h1><p>age = int(input(“请输入你家狗狗的年龄: “))<br>print(“”)<br>if age &lt; 0:<br>  print(“请输入正确的年龄。”)<br>elif age == 1:<br>  print(“相当于 14 岁的人。”)<br>elif age == 2:<br>  print(“相当于 22 岁的人。”)<br>elif age &gt; 2:<br>  human = 22 + (age -2)*5<br>  print(“对应人类年龄: “, human)</p>
+<h3 id="退出提示，本地环境下可以使用这样的退出提示使代码更易用"><a href="#退出提示，本地环境下可以使用这样的退出提示使代码更易用" class="headerlink" title="退出提示，本地环境下可以使用这样的退出提示使代码更易用"></a>退出提示，本地环境下可以使用这样的退出提示使代码更易用</h3><p>input(‘点击 enter 键退出’)</p>
+]]></content>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python笔记(二)</title>
     <url>/2023/02/08/Python%E7%AC%94%E8%AE%B0-%E4%BA%8C/</url>
     <content><![CDATA[<h1 id="空行"><a href="#空行" class="headerlink" title="空行"></a>空行</h1><p>函数之间或类的方法之间用空行分隔，表示一段新代码的开始。<span id="more"></span>类和函数入口之间也用两行空行分隔，以突出函数入口的开始。<br>空行与代码缩进不同。书写时不插入空行，Python解释器运行也不会出错。<br>空行的作用：分隔两段不同功能或含义的代码，便于日后代码的维护或重构。空行也是程序代码的一部分</p>
@@ -149,28 +162,6 @@
       </tags>
   </entry>
   <entry>
-    <title>ctf-base家族</title>
-    <url>/2023/01/30/ctf-base%E5%AE%B6%E6%97%8F/</url>
-    <content><![CDATA[<h1 id="base16"><a href="#base16" class="headerlink" title="base16"></a>base16</h1><span id="more"></span>
-<p>base16编码使用16个ASCII可打印字符（数字0-9和字母A-F）对任意字节数据进行编码。<br>base16先获取输入字符串每个字节的二进制值（不足8比特在高位补0），然后将其串联进来再按照4比特一组进行切分，将每组二进制数分别转换成十进制<br>Base16不用到填充符号“=”<br><a href="https://ctf.bugku.com/tool/base16">https://ctf.bugku.com/tool/base16</a></p>
-<h1 id="base32"><a href="#base32" class="headerlink" title="base32"></a>base32</h1><p>编码后的字符只会在大写字母（A-Z）和数字234567 32个字符组成，因为base32是5bit为一组，所以编码长度必须是40bit的倍数（5和8的最小公倍数）<br>因为必须为40bit的倍数，所以如果不足的话，会在第一个不满足5bit的小组进行补0，然后进行编码，在结果补上占位符=，一个等号5bit，最多出现6个<br><a href="https://ctf.bugku.com/tool/base32">https://ctf.bugku.com/tool/base32</a></p>
-<h1 id="base36"><a href="#base36" class="headerlink" title="base36"></a>base36</h1><p>base36编码是使用0~9的数字，加上所有26个字母，所有的字母要不全大写，要不全小写。<br><a href="http://www.hiencode.com/base36w.html">http://www.hiencode.com/base36w.html</a></p>
-<h1 id="base58"><a href="#base58" class="headerlink" title="base58"></a>base58</h1><p>字符为：123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz(无I、O、l)<br><a href="https://ctf.bugku.com/tool/base58">https://ctf.bugku.com/tool/base58</a></p>
-<h1 id="base62"><a href="#base62" class="headerlink" title="base62"></a>base62</h1><p>Base62编码是由10个数字、26个大写英文字母和26个小写英文字母组成<br><a href="https://ctf.bugku.com/tool/base62">https://ctf.bugku.com/tool/base62</a></p>
-<h1 id="base64"><a href="#base64" class="headerlink" title="base64"></a>base64</h1><p>编码后的字符只会在A-Z a-z 0-9（共62个）另外加上+  /两个符号,3个字节由4个base64单元来表示<br>如果要编码的字节数不能被3整除，最后会多出1个或2个字节，则用占位符=（一个代表一个字节）所以最多出现两个等号。<br><a href="https://www.qqxiuzi.cn/bianma/base64.htm">https://www.qqxiuzi.cn/bianma/base64.htm</a></p>
-<h1 id="base85"><a href="#base85" class="headerlink" title="base85"></a>base85</h1><p>Base85是一种类似于Base64的二进制文本编码形式，通过使用五个ASCII字符来表示四个字节的二进制数据<br>特点是奇怪的字符比较多，但是很难出现等号<br><a href="http://www.atoolbox.net/Tool.php?Id=934">http://www.atoolbox.net/Tool.php?Id=934</a><br><a href="https://ctf.bugku.com/tool/base85">https://ctf.bugku.com/tool/base85</a></p>
-<h1 id="base91"><a href="#base91" class="headerlink" title="base91"></a>base91</h1><p>base91的密文由91个字符（0-9，a-z，A-Z,!#$%&amp;()*+,./:;&lt;=&gt;?@[]^_`{|}~”）组成<br>从94个可打印ASCII字符（0x21-0x7E）中，以下三个字符被省略以构建base91字母：<br>-（破折号，0x2D）<br>\（反斜杠，0x5C）<br>‘（撇号，0x27）<br><a href="http://www.atoolbox.net/Tool.php?Id=935">http://www.atoolbox.net/Tool.php?Id=935</a></p>
-<h1 id="base92"><a href="#base92" class="headerlink" title="base92"></a>base92</h1><p>比base91 多一个字符 〜<br><a href="https://ctf.bugku.com/tool/base92">https://ctf.bugku.com/tool/base92</a></p>
-<h1 id="base100"><a href="#base100" class="headerlink" title="base100"></a>base100</h1><p><a href="https://ctf.bugku.com/tool/base100">https://ctf.bugku.com/tool/base100</a><br>base100: 👟👜👣👦📦💳💃👮👣👛🐥🐨🐩🐫🐬🐭<br>特征：Emoji表情组成</p>
-]]></content>
-      <categories>
-        <category>ctf</category>
-      </categories>
-      <tags>
-        <tag>crypto</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>bugku-crypto题目</title>
     <url>/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/</url>
     <content><![CDATA[<h1 id="抄错的字符"><a href="#抄错的字符" class="headerlink" title="抄错的字符"></a>抄错的字符</h1><span id="more"></span>
@@ -187,13 +178,19 @@
       </tags>
   </entry>
   <entry>
-    <title>ctf-crypto题目</title>
-    <url>/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/</url>
-    <content><![CDATA[<h1 id="lt-gt"><a href="#lt-gt" class="headerlink" title="[+-&lt;&gt;]"></a>[+-&lt;&gt;]</h1><span id="more"></span>
-<p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/001.jpg"><br>brainfuck解密：<a href="https://ctf.bugku.com/tool/brainfuck">https://ctf.bugku.com/tool/brainfuck</a><br>得flag：flag{0d86208ac54fbf12}</p>
-<h1 id="把猪困在猪圈里"><a href="#把猪困在猪圈里" class="headerlink" title="把猪困在猪圈里"></a>把猪困在猪圈里</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/002.jpg"><br>由题可知，一定是猪圈加密；<br>查看文件，发现末尾是=，又是猪圈，所以base64转图片<a href="https://tool.jisuapi.com/base642pic.html">https://tool.jisuapi.com/base642pic.html</a><br>再去猪圈解密<a href="http://www.metools.info/code/c90.html">http://www.metools.info/code/c90.html</a></p>
-<h1 id="你喜欢下棋吗"><a href="#你喜欢下棋吗" class="headerlink" title="你喜欢下棋吗"></a>你喜欢下棋吗</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/003.jpg"><br>第一个棋盘密码<a href="https://www.qqxiuzi.cn/bianma/qipanmima.php%E8%A7%A3%E5%AF%86%E5%90%8E">https://www.qqxiuzi.cn/bianma/qipanmima.php解密后</a><br>博多密码解密<a href="https://www.boxentriq.com/code-breaking/baudot-code">https://www.boxentriq.com/code-breaking/baudot-code</a><br>得flag: bugku{baud0tc0de}</p>
-<h1 id="小山丘的秘密"><a href="#小山丘的秘密" class="headerlink" title="小山丘的秘密"></a>小山丘的秘密</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/004.jpg"><br>打开图片后发现是一个棋盘，经查阅发现为希尔密码<br>一般的希尔密码是：A=0 B=1  C=2  但是开局文件就告诉我们  A=1  因此这里我们要更改一下解码时字母表的顺序：  Z=0  A=1  B=2<br>将z提前  得到密钥  abczadefz<br>解码得flag</p>
+    <title>ctf-base家族</title>
+    <url>/2023/01/30/ctf-base%E5%AE%B6%E6%97%8F/</url>
+    <content><![CDATA[<h1 id="base16"><a href="#base16" class="headerlink" title="base16"></a>base16</h1><span id="more"></span>
+<p>base16编码使用16个ASCII可打印字符（数字0-9和字母A-F）对任意字节数据进行编码。<br>base16先获取输入字符串每个字节的二进制值（不足8比特在高位补0），然后将其串联进来再按照4比特一组进行切分，将每组二进制数分别转换成十进制<br>Base16不用到填充符号“=”<br><a href="https://ctf.bugku.com/tool/base16">https://ctf.bugku.com/tool/base16</a></p>
+<h1 id="base32"><a href="#base32" class="headerlink" title="base32"></a>base32</h1><p>编码后的字符只会在大写字母（A-Z）和数字234567 32个字符组成，因为base32是5bit为一组，所以编码长度必须是40bit的倍数（5和8的最小公倍数）<br>因为必须为40bit的倍数，所以如果不足的话，会在第一个不满足5bit的小组进行补0，然后进行编码，在结果补上占位符=，一个等号5bit，最多出现6个<br><a href="https://ctf.bugku.com/tool/base32">https://ctf.bugku.com/tool/base32</a></p>
+<h1 id="base36"><a href="#base36" class="headerlink" title="base36"></a>base36</h1><p>base36编码是使用0~9的数字，加上所有26个字母，所有的字母要不全大写，要不全小写。<br><a href="http://www.hiencode.com/base36w.html">http://www.hiencode.com/base36w.html</a></p>
+<h1 id="base58"><a href="#base58" class="headerlink" title="base58"></a>base58</h1><p>字符为：123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz(无I、O、l)<br><a href="https://ctf.bugku.com/tool/base58">https://ctf.bugku.com/tool/base58</a></p>
+<h1 id="base62"><a href="#base62" class="headerlink" title="base62"></a>base62</h1><p>Base62编码是由10个数字、26个大写英文字母和26个小写英文字母组成<br><a href="https://ctf.bugku.com/tool/base62">https://ctf.bugku.com/tool/base62</a></p>
+<h1 id="base64"><a href="#base64" class="headerlink" title="base64"></a>base64</h1><p>编码后的字符只会在A-Z a-z 0-9（共62个）另外加上+  /两个符号,3个字节由4个base64单元来表示<br>如果要编码的字节数不能被3整除，最后会多出1个或2个字节，则用占位符=（一个代表一个字节）所以最多出现两个等号。<br><a href="https://www.qqxiuzi.cn/bianma/base64.htm">https://www.qqxiuzi.cn/bianma/base64.htm</a></p>
+<h1 id="base85"><a href="#base85" class="headerlink" title="base85"></a>base85</h1><p>Base85是一种类似于Base64的二进制文本编码形式，通过使用五个ASCII字符来表示四个字节的二进制数据<br>特点是奇怪的字符比较多，但是很难出现等号<br><a href="http://www.atoolbox.net/Tool.php?Id=934">http://www.atoolbox.net/Tool.php?Id=934</a><br><a href="https://ctf.bugku.com/tool/base85">https://ctf.bugku.com/tool/base85</a></p>
+<h1 id="base91"><a href="#base91" class="headerlink" title="base91"></a>base91</h1><p>base91的密文由91个字符（0-9，a-z，A-Z,!#$%&amp;()*+,./:;&lt;=&gt;?@[]^_`{|}~”）组成<br>从94个可打印ASCII字符（0x21-0x7E）中，以下三个字符被省略以构建base91字母：<br>-（破折号，0x2D）<br>\（反斜杠，0x5C）<br>‘（撇号，0x27）<br><a href="http://www.atoolbox.net/Tool.php?Id=935">http://www.atoolbox.net/Tool.php?Id=935</a></p>
+<h1 id="base92"><a href="#base92" class="headerlink" title="base92"></a>base92</h1><p>比base91 多一个字符 〜<br><a href="https://ctf.bugku.com/tool/base92">https://ctf.bugku.com/tool/base92</a></p>
+<h1 id="base100"><a href="#base100" class="headerlink" title="base100"></a>base100</h1><p><a href="https://ctf.bugku.com/tool/base100">https://ctf.bugku.com/tool/base100</a><br>base100: 👟👜👣👦📦💳💃👮👣👛🐥🐨🐩🐫🐬🐭<br>特征：Emoji表情组成</p>
 ]]></content>
       <categories>
         <category>ctf</category>
@@ -253,6 +250,22 @@ https://blog.csdn.net/weixin_41599858/article/details/104786874
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ctf-crypto题目</title>
+    <url>/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/</url>
+    <content><![CDATA[<h1 id="lt-gt"><a href="#lt-gt" class="headerlink" title="[+-&lt;&gt;]"></a>[+-&lt;&gt;]</h1><span id="more"></span>
+<p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/001.jpg"><br>brainfuck解密：<a href="https://ctf.bugku.com/tool/brainfuck">https://ctf.bugku.com/tool/brainfuck</a><br>得flag：flag{0d86208ac54fbf12}</p>
+<h1 id="把猪困在猪圈里"><a href="#把猪困在猪圈里" class="headerlink" title="把猪困在猪圈里"></a>把猪困在猪圈里</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/002.jpg"><br>由题可知，一定是猪圈加密；<br>查看文件，发现末尾是=，又是猪圈，所以base64转图片<a href="https://tool.jisuapi.com/base642pic.html">https://tool.jisuapi.com/base642pic.html</a><br>再去猪圈解密<a href="http://www.metools.info/code/c90.html">http://www.metools.info/code/c90.html</a></p>
+<h1 id="你喜欢下棋吗"><a href="#你喜欢下棋吗" class="headerlink" title="你喜欢下棋吗"></a>你喜欢下棋吗</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/003.jpg"><br>第一个棋盘密码<a href="https://www.qqxiuzi.cn/bianma/qipanmima.php%E8%A7%A3%E5%AF%86%E5%90%8E">https://www.qqxiuzi.cn/bianma/qipanmima.php解密后</a><br>博多密码解密<a href="https://www.boxentriq.com/code-breaking/baudot-code">https://www.boxentriq.com/code-breaking/baudot-code</a><br>得flag: bugku{baud0tc0de}</p>
+<h1 id="小山丘的秘密"><a href="#小山丘的秘密" class="headerlink" title="小山丘的秘密"></a>小山丘的秘密</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/004.jpg"><br>打开图片后发现是一个棋盘，经查阅发现为希尔密码<br>一般的希尔密码是：A=0 B=1  C=2  但是开局文件就告诉我们  A=1  因此这里我们要更改一下解码时字母表的顺序：  Z=0  A=1  B=2<br>将z提前  得到密钥  abczadefz<br>解码得flag</p>
+]]></content>
+      <categories>
+        <category>ctf</category>
+      </categories>
+      <tags>
+        <tag>crypto</tag>
       </tags>
   </entry>
   <entry>
