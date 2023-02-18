@@ -67,19 +67,17 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/%E7%9B%AE%E5%BD%95">目录</a></li>
-	        
-				<li><a href="/categories/%E5%88%86%E7%B1%BB">分类</a></li>
+				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 	        
 			</ul>
 		</nav>
 		<nav>
-    <a>总文章数 15</a>
+    <a>总文章数 17</a>
 </nav>
 		<nav class="header-smart-menu">
     		
     			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">目录标签</a>
     			
             
     			
@@ -141,8 +139,6 @@
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
@@ -162,14 +158,12 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 70%">
+				<ul style="width: 50%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/tags/%E7%9B%AE%E5%BD%95">目录</a></li>
-		        
-					<li style="width: 33.333333333333336%"><a href="/categories/%E5%88%86%E7%B1%BB">分类</a></li>
+					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -205,7 +199,23 @@
     字数：562字 | 预计阅读时长：2分钟
 </div>
     
-    <div class="article-entry" itemprop="articleBody">
+    <div 
+
+	
+		<h1 id="base16"><a href="#base16" class="headerlink" title="base16"></a>base16</h1><span id="more"></span>
+<p>base16编码使用16个ASCII可打印字符（数字0-9和字母A-F）对任意字节数据进行编码。<br>base16先获取输入字符串每个字节的二进制值（不足8比特在高位补0），然后将其串联进来再按照4比特一组进行切分，将每组二进制数分别转换成十进制<br>Base16不用到填充符号“=”<br><a target="_blank" rel="noopener" href="https://ctf.bugku.com/tool/base16">https://ctf.bugku.com/tool/base16</a></p>
+<h1 id="base32"><a href="#base32" class="headerlink" title="base32"></a>base32</h1><p>编码后的字符只会在大写字母（A-Z）和数字234567 32个字符组成，因为base32是5bit为一组，所以编码长度必须是40bit的倍数（5和8的最小公倍数）<br>因为必须为40bit的倍数，所以如果不足的话，会在第一个不满足5bit的小组进行补0，然后进行编码，在结果补上占位符=，一个等号5bit，最多出现6个<br><a target="_blank" rel="noopener" href="https://ctf.bugku.com/tool/base32">https://ctf.bugku.com/tool/base32</a></p>
+<h1 id="base36"><a href="#base36" class="headerlink" title="base36"></a>base36</h1><p>base36编码是使用0~9的数字，加上所有26个字母，所有的字母要不全大写，要不全小写。<br><a target="_blank" rel="noopener" href="http://www.hiencode.com/base36w.html">http://www.hiencode.com/base36w.html</a></p>
+<h1 id="base58"><a href="#base58" class="headerlink" title="base58"></a>base58</h1><p>字符为：123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz(无I、O、l)<br><a target="_blank" rel="noopener" href="https://ctf.bugku.com/tool/base58">https://ctf.bugku.com/tool/base58</a></p>
+<h1 id="base62"><a href="#base62" class="headerlink" title="base62"></a>base62</h1><p>Base62编码是由10个数字、26个大写英文字母和26个小写英文字母组成<br><a target="_blank" rel="noopener" href="https://ctf.bugku.com/tool/base62">https://ctf.bugku.com/tool/base62</a></p>
+<h1 id="base64"><a href="#base64" class="headerlink" title="base64"></a>base64</h1><p>编码后的字符只会在A-Z a-z 0-9（共62个）另外加上+  /两个符号,3个字节由4个base64单元来表示<br>如果要编码的字节数不能被3整除，最后会多出1个或2个字节，则用占位符=（一个代表一个字节）所以最多出现两个等号。<br><a target="_blank" rel="noopener" href="https://www.qqxiuzi.cn/bianma/base64.htm">https://www.qqxiuzi.cn/bianma/base64.htm</a></p>
+<h1 id="base85"><a href="#base85" class="headerlink" title="base85"></a>base85</h1><p>Base85是一种类似于Base64的二进制文本编码形式，通过使用五个ASCII字符来表示四个字节的二进制数据<br>特点是奇怪的字符比较多，但是很难出现等号<br><a target="_blank" rel="noopener" href="http://www.atoolbox.net/Tool.php?Id=934">http://www.atoolbox.net/Tool.php?Id=934</a><br><a target="_blank" rel="noopener" href="https://ctf.bugku.com/tool/base85">https://ctf.bugku.com/tool/base85</a></p>
+<h1 id="base91"><a href="#base91" class="headerlink" title="base91"></a>base91</h1><p>base91的密文由91个字符（0-9，a-z，A-Z,!#$%&amp;()*+,./:;&lt;=&gt;?@[]^_`{|}~”）组成<br>从94个可打印ASCII字符（0x21-0x7E）中，以下三个字符被省略以构建base91字母：<br>-（破折号，0x2D）<br>\（反斜杠，0x5C）<br>‘（撇号，0x27）<br><a target="_blank" rel="noopener" href="http://www.atoolbox.net/Tool.php?Id=935">http://www.atoolbox.net/Tool.php?Id=935</a></p>
+<h1 id="base92"><a href="#base92" class="headerlink" title="base92"></a>base92</h1><p>比base91 多一个字符 〜<br><a target="_blank" rel="noopener" href="https://ctf.bugku.com/tool/base92">https://ctf.bugku.com/tool/base92</a></p>
+<h1 id="base100"><a href="#base100" class="headerlink" title="base100"></a>base100</h1><p><a target="_blank" rel="noopener" href="https://ctf.bugku.com/tool/base100">https://ctf.bugku.com/tool/base100</a><br>base100: 👟👜👣👦📦💳💃👮👣👛🐥🐨🐩🐫🐬🐭<br>特征：Emoji表情组成</p>
+
+	
+>
       
         <h1 id="base16"><a href="#base16" class="headerlink" title="base16"></a>base16</h1><span id="more"></span>
 <p>base16编码使用16个ASCII可打印字符（数字0-9和字母A-F）对任意字节数据进行编码。<br>base16先获取输入字符串每个字节的二进制值（不足8比特在高位补0），然后将其串联进来再按照4比特一组进行切分，将每组二进制数分别转换成十进制<br>Base16不用到填充符号“=”<br><a target="_blank" rel="noopener" href="https://ctf.bugku.com/tool/base16">https://ctf.bugku.com/tool/base16</a></p>
@@ -502,7 +512,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">目录标签</a></li>
       
         
       
@@ -599,19 +609,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             </li>
           
             <li class="search-li">
-              <a href="/liyilinl.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿林的世界</a>
+              <a href="https://liyilinl.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿林的世界</a>
             </li>
           
             <li class="search-li">
-              <a href="/zhangshi99.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿卓的世界</a>
+              <a href="https://zhangshi99.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿卓的世界</a>
             </li>
           
             <li class="search-li">
-              <a href="/yeshenyue233.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿雷的世界</a>
+              <a href="https://yeshenyue233.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿雷的世界</a>
             </li>
           
             <li class="search-li">
-              <a href="/ayandeboke.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿炎的世界</a>
+              <a href="https://ayandeboke.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿炎的世界</a>
             </li>
           
             <li class="search-li">

@@ -6,7 +6,7 @@
   <link href="https://ssa520.github.io/atom.xml" rel="self"/>
   
   <link href="https://ssa520.github.io/"/>
-  <updated>2023-02-09T02:29:37.858Z</updated>
+  <updated>2023-02-16T12:16:03.526Z</updated>
   <id>https://ssa520.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>buuctf解题</title>
+    <link href="https://ssa520.github.io/2023/02/16/buuctf%E8%A7%A3%E9%A2%98/"/>
+    <id>https://ssa520.github.io/2023/02/16/buuctf%E8%A7%A3%E9%A2%98/</id>
+    <published>2023-02-16T12:05:40.000Z</published>
+    <updated>2023-02-16T12:16:03.526Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="MD5"><a href="#MD5" class="headerlink" title="MD5"></a>MD5</h1><span id="more"></span><p>直接MD5解密即可得flag</p><h1 id="一眼就解密"><a href="#一眼就解密" class="headerlink" title="一眼就解密"></a>一眼就解密</h1><p>base64解密可得flag</p><h1 id="url编码"><a href="#url编码" class="headerlink" title="url编码"></a>url编码</h1><p>url编码解码得flag</p><h1 id="看我回旋踢"><a href="#看我回旋踢" class="headerlink" title="看我回旋踢"></a>看我回旋踢</h1><p>ROT13解密可得flag<br>ROT13（回转13位）是一种简易的替换式密码算法。它是一种在英文网络论坛用作隐藏八卦、妙句、谜题解答以及某些脏话的工具，目的是逃过版主或管理员的匆匆一瞥。ROT13 也是过去在古罗马开发的凯撒密码的一种变体。ROT13是它自身的逆反，即：要还原成原文只要使用同一算法即可得，故同样的操作可用于加密与解密。该算法并没有提供真正密码学上的保全，故它不应该被用于需要保全的用途上。它常常被当作弱加密示例的典型。</p><h1 id="摩丝"><a href="#摩丝" class="headerlink" title="摩丝"></a>摩丝</h1><p>摩斯密码解密得flag</p><h1 id="password"><a href="#password" class="headerlink" title="password"></a>password</h1><p>打开文件后发现人名以及生日，key{**********}可以知道有10个字符。尝试key{zs+生日}，发现错误。将key调改为flag即可。</p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;MD5&quot;&gt;&lt;a href=&quot;#MD5&quot; class=&quot;headerlink&quot; title=&quot;MD5&quot;&gt;&lt;/a&gt;MD5&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="buuctf" scheme="https://ssa520.github.io/categories/buuctf/"/>
+    
+    
+    <category term="ctf" scheme="https://ssa520.github.io/tags/ctf/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AWD比赛</title>
+    <link href="https://ssa520.github.io/2023/02/14/AWD%E6%AF%94%E8%B5%9B/"/>
+    <id>https://ssa520.github.io/2023/02/14/AWD%E6%AF%94%E8%B5%9B/</id>
+    <published>2023-02-14T07:11:02.000Z</published>
+    <updated>2023-02-14T07:24:46.338Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="AWD比赛总结"><a href="#AWD比赛总结" class="headerlink" title="AWD比赛总结"></a>AWD比赛总结<span id="more"></span></h1><h1 id="比赛介绍"><a href="#比赛介绍" class="headerlink" title="比赛介绍"></a>比赛介绍</h1><p>AWD赛制是按照分组来进行比赛的</p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;AWD比赛总结&quot;&gt;&lt;a href=&quot;#AWD比赛总结&quot; class=&quot;headerlink&quot; title=&quot;AWD比赛总结&quot;&gt;&lt;/a&gt;AWD比赛总结&lt;/h1&gt;</summary>
+    
+    
+    
+    
+    <category term="ctf" scheme="https://ssa520.github.io/tags/ctf/"/>
+    
+  </entry>
   
   <entry>
     <title>Python笔记(三)</title>

@@ -28,6 +28,15 @@
       </tags>
   </entry>
   <entry>
+    <title>AWD比赛</title>
+    <url>/2023/02/14/AWD%E6%AF%94%E8%B5%9B/</url>
+    <content><![CDATA[<h1 id="AWD比赛总结"><a href="#AWD比赛总结" class="headerlink" title="AWD比赛总结"></a>AWD比赛总结<span id="more"></span></h1><h1 id="比赛介绍"><a href="#比赛介绍" class="headerlink" title="比赛介绍"></a>比赛介绍</h1><p>AWD赛制是按照分组来进行比赛的</p>
+]]></content>
+      <tags>
+        <tag>ctf</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python笔记(一)</title>
     <url>/2023/02/07/Python%E7%AC%94%E8%AE%B0-%E4%B8%80/</url>
     <content><![CDATA[<h1 id="Python基础语法"><a href="#Python基础语法" class="headerlink" title="Python基础语法"></a>Python基础语法</h1><span id="more"></span>
@@ -83,20 +92,6 @@
       </tags>
   </entry>
   <entry>
-    <title>RSA</title>
-    <url>/2023/02/01/RSA/</url>
-    <content><![CDATA[<p>  RSA一般指RSA算法(非对称加密算法)<span id="more"></span>，RSA公开密钥密码体制是一种使用不同的加密密钥与解密密钥，“由已知加密密钥推导出解密密钥在计算上是不可行的”密码体制。<br>RSA算法是第一个能同时用于加密和数字签名的算法，也易于理解和操作。RSA的算法涉及三个参数，n、e1、e2。其中，n是两个大质数p、q的积，n的二进制表示时所占用的位数，就是所谓的密钥长度。e1和e2是一对相关的值，e1可以任意取。</p>
-<p>  p和q的位数相同可获得最大程度的安全性，计算乘积n=p*q；RSA加解密的算法完全相同，设A为明文，B为密文，则A=B^d mod n；B=A^e mod n；(mod:相当于求模运算)<br>公钥加密体制中，一般用公钥加密，私钥解密。e1和e2可以互换使用，即：​A=B^e mod n；​B=A^d mod n;</p>
-<p>  明文加密：加密消息m时，首先将它分为比n小的数据分组（采用二级制数，选取小于n的2的最大次幂），也就是说，若果p和n为100位的素数，那么n将有200位，每个消息分组m应该小于200位长<br>　用户加密密钥将数字化明文分组信息加密成密文。由C≡M^e(mod n)得密文<br>  密文解密：用户收到密文，若将其解密，只需要计算 M≡c^d(mod n)得明文</p>
-<p>最常用的三个e值：3, 17, 65537</p>
-<p>RSA计算脚本可借鉴：<a href="https://blog.csdn.net/zip471642048/article/details/123041993">https://blog.csdn.net/zip471642048/article/details/123041993</a></p>
-<p>​</p>
-]]></content>
-      <tags>
-        <tag>ctf</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>bugku-crypto-题目(三)</title>
     <url>/2023/01/27/bugku-crypto-%E9%A2%98%E7%9B%AE-%E4%B8%89/</url>
     <content><![CDATA[<h1 id="一段新闻"><a href="#一段新闻" class="headerlink" title="一段新闻"></a>一段新闻</h1><span id="more"></span>
@@ -120,6 +115,20 @@
       </categories>
       <tags>
         <tag>crypto</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>RSA</title>
+    <url>/2023/02/01/RSA/</url>
+    <content><![CDATA[<p>  RSA一般指RSA算法(非对称加密算法)<span id="more"></span>，RSA公开密钥密码体制是一种使用不同的加密密钥与解密密钥，“由已知加密密钥推导出解密密钥在计算上是不可行的”密码体制。<br>RSA算法是第一个能同时用于加密和数字签名的算法，也易于理解和操作。RSA的算法涉及三个参数，n、e1、e2。其中，n是两个大质数p、q的积，n的二进制表示时所占用的位数，就是所谓的密钥长度。e1和e2是一对相关的值，e1可以任意取。</p>
+<p>  p和q的位数相同可获得最大程度的安全性，计算乘积n=p*q；RSA加解密的算法完全相同，设A为明文，B为密文，则A=B^d mod n；B=A^e mod n；(mod:相当于求模运算)<br>公钥加密体制中，一般用公钥加密，私钥解密。e1和e2可以互换使用，即：​A=B^e mod n；​B=A^d mod n;</p>
+<p>  明文加密：加密消息m时，首先将它分为比n小的数据分组（采用二级制数，选取小于n的2的最大次幂），也就是说，若果p和n为100位的素数，那么n将有200位，每个消息分组m应该小于200位长<br>　用户加密密钥将数字化明文分组信息加密成密文。由C≡M^e(mod n)得密文<br>  密文解密：用户收到密文，若将其解密，只需要计算 M≡c^d(mod n)得明文</p>
+<p>最常用的三个e值：3, 17, 65537</p>
+<p>RSA计算脚本可借鉴：<a href="https://blog.csdn.net/zip471642048/article/details/123041993">https://blog.csdn.net/zip471642048/article/details/123041993</a></p>
+<p>​</p>
+]]></content>
+      <tags>
+        <tag>ctf</tag>
       </tags>
   </entry>
   <entry>
@@ -200,6 +209,40 @@
       </tags>
   </entry>
   <entry>
+    <title>buuctf解题</title>
+    <url>/2023/02/16/buuctf%E8%A7%A3%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="MD5"><a href="#MD5" class="headerlink" title="MD5"></a>MD5</h1><span id="more"></span>
+<p>直接MD5解密即可得flag</p>
+<h1 id="一眼就解密"><a href="#一眼就解密" class="headerlink" title="一眼就解密"></a>一眼就解密</h1><p>base64解密可得flag</p>
+<h1 id="url编码"><a href="#url编码" class="headerlink" title="url编码"></a>url编码</h1><p>url编码解码得flag</p>
+<h1 id="看我回旋踢"><a href="#看我回旋踢" class="headerlink" title="看我回旋踢"></a>看我回旋踢</h1><p>ROT13解密可得flag<br>ROT13（回转13位）是一种简易的替换式密码算法。它是一种在英文网络论坛用作隐藏八卦、妙句、谜题解答以及某些脏话的工具，目的是逃过版主或管理员的匆匆一瞥。ROT13 也是过去在古罗马开发的凯撒密码的一种变体。ROT13是它自身的逆反，即：要还原成原文只要使用同一算法即可得，故同样的操作可用于加密与解密。该算法并没有提供真正密码学上的保全，故它不应该被用于需要保全的用途上。它常常被当作弱加密示例的典型。</p>
+<h1 id="摩丝"><a href="#摩丝" class="headerlink" title="摩丝"></a>摩丝</h1><p>摩斯密码解密得flag</p>
+<h1 id="password"><a href="#password" class="headerlink" title="password"></a>password</h1><p>打开文件后发现人名以及生日，key{**********}可以知道有10个字符。尝试key{zs+生日}，发现错误。将key调改为flag即可。</p>
+]]></content>
+      <categories>
+        <category>buuctf</category>
+      </categories>
+      <tags>
+        <tag>ctf</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ctf-crypto题目</title>
+    <url>/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/</url>
+    <content><![CDATA[<h1 id="lt-gt"><a href="#lt-gt" class="headerlink" title="[+-&lt;&gt;]"></a>[+-&lt;&gt;]</h1><span id="more"></span>
+<p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/001.jpg"><br>brainfuck解密：<a href="https://ctf.bugku.com/tool/brainfuck">https://ctf.bugku.com/tool/brainfuck</a><br>得flag：flag{0d86208ac54fbf12}</p>
+<h1 id="把猪困在猪圈里"><a href="#把猪困在猪圈里" class="headerlink" title="把猪困在猪圈里"></a>把猪困在猪圈里</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/002.jpg"><br>由题可知，一定是猪圈加密；<br>查看文件，发现末尾是=，又是猪圈，所以base64转图片<a href="https://tool.jisuapi.com/base642pic.html">https://tool.jisuapi.com/base642pic.html</a><br>再去猪圈解密<a href="http://www.metools.info/code/c90.html">http://www.metools.info/code/c90.html</a></p>
+<h1 id="你喜欢下棋吗"><a href="#你喜欢下棋吗" class="headerlink" title="你喜欢下棋吗"></a>你喜欢下棋吗</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/003.jpg"><br>第一个棋盘密码<a href="https://www.qqxiuzi.cn/bianma/qipanmima.php%E8%A7%A3%E5%AF%86%E5%90%8E">https://www.qqxiuzi.cn/bianma/qipanmima.php解密后</a><br>博多密码解密<a href="https://www.boxentriq.com/code-breaking/baudot-code">https://www.boxentriq.com/code-breaking/baudot-code</a><br>得flag: bugku{baud0tc0de}</p>
+<h1 id="小山丘的秘密"><a href="#小山丘的秘密" class="headerlink" title="小山丘的秘密"></a>小山丘的秘密</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/004.jpg"><br>打开图片后发现是一个棋盘，经查阅发现为希尔密码<br>一般的希尔密码是：A=0 B=1  C=2  但是开局文件就告诉我们  A=1  因此这里我们要更改一下解码时字母表的顺序：  Z=0  A=1  B=2<br>将z提前  得到密钥  abczadefz<br>解码得flag</p>
+]]></content>
+      <categories>
+        <category>ctf</category>
+      </categories>
+      <tags>
+        <tag>crypto</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ctf古典密码</title>
     <url>/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/</url>
     <content><![CDATA[<h1 id="1、埃及文字"><a href="#1、埃及文字" class="headerlink" title="1、埃及文字"></a>1、埃及文字</h1><span id="more"></span>
@@ -250,22 +293,6 @@ https://blog.csdn.net/weixin_41599858/article/details/104786874
       </categories>
       <tags>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ctf-crypto题目</title>
-    <url>/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/</url>
-    <content><![CDATA[<h1 id="lt-gt"><a href="#lt-gt" class="headerlink" title="[+-&lt;&gt;]"></a>[+-&lt;&gt;]</h1><span id="more"></span>
-<p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/001.jpg"><br>brainfuck解密：<a href="https://ctf.bugku.com/tool/brainfuck">https://ctf.bugku.com/tool/brainfuck</a><br>得flag：flag{0d86208ac54fbf12}</p>
-<h1 id="把猪困在猪圈里"><a href="#把猪困在猪圈里" class="headerlink" title="把猪困在猪圈里"></a>把猪困在猪圈里</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/002.jpg"><br>由题可知，一定是猪圈加密；<br>查看文件，发现末尾是=，又是猪圈，所以base64转图片<a href="https://tool.jisuapi.com/base642pic.html">https://tool.jisuapi.com/base642pic.html</a><br>再去猪圈解密<a href="http://www.metools.info/code/c90.html">http://www.metools.info/code/c90.html</a></p>
-<h1 id="你喜欢下棋吗"><a href="#你喜欢下棋吗" class="headerlink" title="你喜欢下棋吗"></a>你喜欢下棋吗</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/003.jpg"><br>第一个棋盘密码<a href="https://www.qqxiuzi.cn/bianma/qipanmima.php%E8%A7%A3%E5%AF%86%E5%90%8E">https://www.qqxiuzi.cn/bianma/qipanmima.php解密后</a><br>博多密码解密<a href="https://www.boxentriq.com/code-breaking/baudot-code">https://www.boxentriq.com/code-breaking/baudot-code</a><br>得flag: bugku{baud0tc0de}</p>
-<h1 id="小山丘的秘密"><a href="#小山丘的秘密" class="headerlink" title="小山丘的秘密"></a>小山丘的秘密</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/004.jpg"><br>打开图片后发现是一个棋盘，经查阅发现为希尔密码<br>一般的希尔密码是：A=0 B=1  C=2  但是开局文件就告诉我们  A=1  因此这里我们要更改一下解码时字母表的顺序：  Z=0  A=1  B=2<br>将z提前  得到密钥  abczadefz<br>解码得flag</p>
-]]></content>
-      <categories>
-        <category>ctf</category>
-      </categories>
-      <tags>
-        <tag>crypto</tag>
       </tags>
   </entry>
   <entry>

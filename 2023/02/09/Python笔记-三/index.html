@@ -67,19 +67,17 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/%E7%9B%AE%E5%BD%95">目录</a></li>
-	        
-				<li><a href="/categories/%E5%88%86%E7%B1%BB">分类</a></li>
+				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 	        
 			</ul>
 		</nav>
 		<nav>
-    <a>总文章数 15</a>
+    <a>总文章数 17</a>
 </nav>
 		<nav class="header-smart-menu">
     		
     			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">目录标签</a>
     			
             
     			
@@ -141,8 +139,6 @@
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
@@ -162,14 +158,12 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 70%">
+				<ul style="width: 50%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/tags/%E7%9B%AE%E5%BD%95">目录</a></li>
-		        
-					<li style="width: 33.333333333333336%"><a href="/categories/%E5%88%86%E7%B1%BB">分类</a></li>
+					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -205,7 +199,17 @@
     字数：275字 | 预计阅读时长：1分钟
 </div>
     
-    <div class="article-entry" itemprop="articleBody">
+    <div 
+
+	
+		<h1 id="Python编程第一步"><a href="#Python编程第一步" class="headerlink" title="Python编程第一步"></a>Python编程第一步</h1><span id="more"></span>
+<h1 id="斐波那契数列："><a href="#斐波那契数列：" class="headerlink" title="斐波那契数列："></a>斐波那契数列：</h1><p>a,b = 0,1<br>while b &lt; 10:<br>    print(b)<br>    a,b = b,a+b(先计算右边的表达式，然后同时赋值给左边)<br>输出结果：1 \n 1 \n 2 \n3 \n 5 \n 8<br>第一行包含了一个复合赋值：变量a和b同时得到新值0和1<br>最后一行也使用了复合赋值的方法：等价于c=a,a=b,b=b+c</p>
+<h1 id="end关键字"><a href="#end关键字" class="headerlink" title="end关键字"></a>end关键字</h1><p>关键字end可以用于将结果输出到同一行，或者在输出的末尾添加不同的字符<br>a,b = 0,1<br>while b &lt; 1024:<br>    print(b, end=’,’)<br>    a, b = b, a+b<br>输出结果：1,1,2,3,5,8,13,21,34,55,89,144……</p>
+<h1 id="if条件控制"><a href="#if条件控制" class="headerlink" title="if条件控制"></a>if条件控制</h1><p>age = int(input(“请输入你家狗狗的年龄: “))<br>print(“”)<br>if age &lt; 0:<br>  print(“请输入正确的年龄。”)<br>elif age == 1:<br>  print(“相当于 14 岁的人。”)<br>elif age == 2:<br>  print(“相当于 22 岁的人。”)<br>elif age &gt; 2:<br>  human = 22 + (age -2)*5<br>  print(“对应人类年龄: “, human)</p>
+<h3 id="退出提示，本地环境下可以使用这样的退出提示使代码更易用"><a href="#退出提示，本地环境下可以使用这样的退出提示使代码更易用" class="headerlink" title="退出提示，本地环境下可以使用这样的退出提示使代码更易用"></a>退出提示，本地环境下可以使用这样的退出提示使代码更易用</h3><p>input(‘点击 enter 键退出’)</p>
+
+	
+>
       
         <h1 id="Python编程第一步"><a href="#Python编程第一步" class="headerlink" title="Python编程第一步"></a>Python编程第一步</h1><span id="more"></span>
 <h1 id="斐波那契数列："><a href="#斐波那契数列：" class="headerlink" title="斐波那契数列："></a>斐波那契数列：</h1><p>a,b = 0,1<br>while b &lt; 10:<br>    print(b)<br>    a,b = b,a+b(先计算右边的表达式，然后同时赋值给左边)<br>输出结果：1 \n 1 \n 2 \n3 \n 5 \n 8<br>第一行包含了一个复合赋值：变量a和b同时得到新值0和1<br>最后一行也使用了复合赋值的方法：等价于c=a,a=b,b=b+c</p>
@@ -355,6 +359,15 @@
   
 <nav id="article-nav">
   
+    <a href="/2023/02/14/AWD%E6%AF%94%E8%B5%9B/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          AWD比赛
+        
+      </div>
+    </a>
+  
   
     <a href="/2023/02/08/Python%E7%AC%94%E8%AE%B0-%E4%BA%8C/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">Python笔记(二)</div>
@@ -476,7 +489,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">目录标签</a></li>
       
         
       
@@ -573,19 +586,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             </li>
           
             <li class="search-li">
-              <a href="/liyilinl.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿林的世界</a>
+              <a href="https://liyilinl.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿林的世界</a>
             </li>
           
             <li class="search-li">
-              <a href="/zhangshi99.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿卓的世界</a>
+              <a href="https://zhangshi99.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿卓的世界</a>
             </li>
           
             <li class="search-li">
-              <a href="/yeshenyue233.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿雷的世界</a>
+              <a href="https://yeshenyue233.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿雷的世界</a>
             </li>
           
             <li class="search-li">
-              <a href="/ayandeboke.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿炎的世界</a>
+              <a href="https://ayandeboke.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿炎的世界</a>
             </li>
           
             <li class="search-li">

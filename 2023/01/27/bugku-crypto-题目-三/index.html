@@ -72,19 +72,17 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/%E7%9B%AE%E5%BD%95">目录</a></li>
-	        
-				<li><a href="/categories/%E5%88%86%E7%B1%BB">分类</a></li>
+				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 	        
 			</ul>
 		</nav>
 		<nav>
-    <a>总文章数 15</a>
+    <a>总文章数 17</a>
 </nav>
 		<nav class="header-smart-menu">
     		
     			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">目录标签</a>
     			
             
     			
@@ -146,8 +144,6 @@
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
@@ -167,14 +163,12 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 70%">
+				<ul style="width: 50%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/tags/%E7%9B%AE%E5%BD%95">目录</a></li>
-		        
-					<li style="width: 33.333333333333336%"><a href="/categories/%E5%88%86%E7%B1%BB">分类</a></li>
+					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -210,7 +204,27 @@
     字数：682字 | 预计阅读时长：3分钟
 </div>
     
-    <div class="article-entry" itemprop="articleBody">
+    <div 
+
+	
+		<h1 id="一段新闻"><a href="#一段新闻" class="headerlink" title="一段新闻"></a>一段新闻</h1><span id="more"></span>
+<p><img src="/2023/01/27/bugku-crypto-%E9%A2%98%E7%9B%AE-%E4%B8%89/001.jpg"><br>打开后由列数得知有隐藏字符，隐藏字符解密<br>利用社会主义核心价值观编码解密得flag</p>
+<h1 id="这是个盲兔子-竟然在唱歌"><a href="#这是个盲兔子-竟然在唱歌" class="headerlink" title="这是个盲兔子,竟然在唱歌!"></a>这是个盲兔子,竟然在唱歌!</h1><p><img src="/2023/01/27/bugku-crypto-%E9%A2%98%E7%9B%AE-%E4%B8%89/002.jpg"><br>盲文解密 <a target="_blank" rel="noopener" href="https://www.qqxiuzi.cn/bianma/wenbenjiami.php?s=mangwen">https://www.qqxiuzi.cn/bianma/wenbenjiami.php?s=mangwen</a><br>rabbit解密 <a target="_blank" rel="noopener" href="https://www.sojson.com/encrypt_rabbit.html">https://www.sojson.com/encrypt_rabbit.html</a><br>音乐解密 <a target="_blank" rel="noopener" href="https://www.qqxiuzi.cn/bianma/wenbenjiami.php?s=yinyue">https://www.qqxiuzi.cn/bianma/wenbenjiami.php?s=yinyue</a><br>得出flag</p>
+<h1 id="道友不来算一算凶吉？"><a href="#道友不来算一算凶吉？" class="headerlink" title="道友不来算一算凶吉？"></a>道友不来算一算凶吉？</h1><p><img src="/2023/01/27/bugku-crypto-%E9%A2%98%E7%9B%AE-%E4%B8%89/003.jpg"><br>易经有64卦 采用编码: 000000 — 1111111<br>利用python的字典 依次替换密文,二进制转字符串<br>每8位一组转10进制转ascll字符，base64解密<br>脚本：<br>import base64<br>s = ‘升益艮归妹井萃旅离旅困未济屯未济中孚未济升困噬嗑鼎震巽噬嗑解节井萃离未济蒙归妹大畜无妄解兑临睽升睽未济无妄遁涣归妹’<br>dic = {‘坤’: ‘000000’, ‘剥’: ‘000001’, ‘比’: ‘000010’, ‘观’: ‘000011’, ‘豫’: ‘000100’, ‘晋’: ‘000101’, ‘萃’: ‘000110’, ‘否’: ‘000111’, ‘谦’: ‘001000’, ‘艮’: ‘001001’, ‘蹇’: ‘001010’, ‘渐’: ‘001011’, ‘小过’: ‘001100’, ‘旅’: ‘001101’, ‘咸’: ‘001110’, ‘遁’: ‘001111’, ‘师’: ‘010000’, ‘蒙’: ‘010001’, ‘坎’: ‘010010’, ‘涣’: ‘010011’, ‘解’: ‘010100’, ‘未济’: ‘010101’, ‘困’: ‘010110’, ‘讼’: ‘010111’, ‘升’: ‘011000’, ‘蛊’: ‘011001’, ‘井’: ‘011010’, ‘巽’: ‘011011’, ‘恒’: ‘011100’, ‘鼎’: ‘011101’, ‘大过’: ‘011110’, ‘姤’: ‘011111’,<br>       ‘复’: ‘100000’, ‘颐’: ‘100001’, ‘屯’: ‘100010’, ‘益’: ‘100011’, ‘震’: ‘100100’, ‘噬嗑’: ‘100101’, ‘随’: ‘100110’, ‘无妄’: ‘100111’, ‘明夷’: ‘101000’, ‘贲’: ‘101001’, ‘既济’: ‘101010’, ‘家人’: ‘101011’, ‘丰’: ‘101100’, ‘离’: ‘101101’, ‘革’: ‘101110’, ‘同人’: ‘101111’, ‘临’: ‘110000’, ‘损’: ‘110001’, ‘节’: ‘110010’, ‘中孚’: ‘110011’, ‘归妹’: ‘110100’, ‘睽’: ‘110101’, ‘兑’: ‘110110’, ‘履’: ‘110111’, ‘泰’: ‘111000’, ‘大畜’: ‘111001’, ‘需’: ‘111010’, ‘小畜’: ‘111011’, ‘大壮’: ‘111100’, ‘大有’: ‘111101’, ‘夬’: ‘111110’, ‘乾’: ‘111111’}<br>l = []<br>k = 0  # 两个字符的标志位<br>for i in range(len(s)):<br>    if k == 1:<br>        k = 0<br>        continue<br>    try:<br>        l.append(dic[s[i]])<br>    except:<br>        l.append(dic[s[i]+s[i+1]])<br>        k = 1</p>
+<p>ss = ‘’.join(l)</p>
+<h1 id="print-ss"><a href="#print-ss" class="headerlink" title="print(ss)"></a>print(ss)</h1><p>enc = ‘’<br>for i in range(0, len(ss), 8):<br>    enc += chr(eval(‘0b’+ss[i:i+8]))</p>
+<h1 id="print-enc"><a href="#print-enc" class="headerlink" title="print(enc)"></a>print(enc)</h1><p>s = base64.b64decode(enc).decode()</p>
+<h1 id="print-s"><a href="#print-s" class="headerlink" title="print(s)"></a>print(s)</h1><p>def encrypt4(enc):<br>    temp = ‘’<br>    offset = 5<br>    for i in range(len(enc)):<br>        temp += chr(ord(enc[i])-offset-i)<br>    return(temp)</p>
+<p>def decrypt4(enc):<br>    temp = ‘’<br>    offset = 5<br>    for i in range(len(enc)):<br>        temp += chr(ord(enc[i])+offset+i)<br>    return(temp)</p>
+<p>a, b = 5, 7</p>
+<p>def encrpyt5(flag):<br>    enc = ‘’<br>    for i in flag:<br>        enc += chr((a*(ord(i)-97)+b) % 26+97)<br>    return(enc)</p>
+<p>def decrypt5(flag):<br>    enc = ‘’<br>    for i in flag:<br>        for k in range(20):<br>            if (ord(i) - 97 - b+26*k) % a == 0:<br>                enc += chr((ord(i) - 97 - b + 26 * k) // a + 97)<br>                break<br>    return(enc)</p>
+<p>print(decrypt5(decrypt4(s)))</p>
+<p>得出flag</p>
+<h1 id="散乱的密文"><a href="#散乱的密文" class="headerlink" title="散乱的密文"></a>散乱的密文</h1><p><img src="/2023/01/27/bugku-crypto-%E9%A2%98%E7%9B%AE-%E4%B8%89/004.jpg"><br>考察置换密码<br>根据“一张纸条上凌乱的写着2 1 6 5 3 4”的这个提示分析可知：加密方法为六个字符一组，进行置换<br>求解明文的方法：六个一组按照提示的置换顺序还原<br>查找一个脚本：<br>c=”lf5{ag024c483549d7fd@@1}”<br>table=[2,1,6,5,3,4]<br>flag=’’<br>for i in range(len(c)):<br>    if i%6==0:<br>        temp_str=c[i:i+6]#六个一组做处理<br>        print(temp_str)<br>        temp_dict={k:v for k,v in zip(table,temp_str)}#用zip<br>        print(temp_dict)<br>        sorted_dict=sorted(temp_dict.items(),key=lambda x:x[0])<br>        print(sorted_dict)<br>        for j in range(6):<br>            flag+=sorted_dict[j][1]<br>    else:<br>        continue<br>print(flag[0:-2])<br>可得出flag</p>
+
+	
+>
       
         <h1 id="一段新闻"><a href="#一段新闻" class="headerlink" title="一段新闻"></a>一段新闻</h1><span id="more"></span>
 <p><img src="/2023/01/27/bugku-crypto-%E9%A2%98%E7%9B%AE-%E4%B8%89/001.jpg"><br>打开后由列数得知有隐藏字符，隐藏字符解密<br>利用社会主义核心价值观编码解密得flag</p>
@@ -511,7 +525,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">目录标签</a></li>
       
         
       
@@ -608,19 +622,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             </li>
           
             <li class="search-li">
-              <a href="/liyilinl.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿林的世界</a>
+              <a href="https://liyilinl.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿林的世界</a>
             </li>
           
             <li class="search-li">
-              <a href="/zhangshi99.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿卓的世界</a>
+              <a href="https://zhangshi99.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿卓的世界</a>
             </li>
           
             <li class="search-li">
-              <a href="/yeshenyue233.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿雷的世界</a>
+              <a href="https://yeshenyue233.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿雷的世界</a>
             </li>
           
             <li class="search-li">
-              <a href="/ayandeboke.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿炎的世界</a>
+              <a href="https://ayandeboke.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿炎的世界</a>
             </li>
           
             <li class="search-li">

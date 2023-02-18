@@ -67,19 +67,17 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/%E7%9B%AE%E5%BD%95">目录</a></li>
-	        
-				<li><a href="/categories/%E5%88%86%E7%B1%BB">分类</a></li>
+				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 	        
 			</ul>
 		</nav>
 		<nav>
-    <a>总文章数 15</a>
+    <a>总文章数 17</a>
 </nav>
 		<nav class="header-smart-menu">
     		
     			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">目录标签</a>
     			
             
     			
@@ -141,8 +139,6 @@
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
@@ -162,14 +158,12 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 70%">
+				<ul style="width: 50%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/tags/%E7%9B%AE%E5%BD%95">目录</a></li>
-		        
-					<li style="width: 33.333333333333336%"><a href="/categories/%E5%88%86%E7%B1%BB">分类</a></li>
+					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -205,7 +199,20 @@
     字数：560字 | 预计阅读时长：2分钟
 </div>
     
-    <div class="article-entry" itemprop="articleBody">
+    <div 
+
+	
+		<h1 id="空行"><a href="#空行" class="headerlink" title="空行"></a>空行</h1><p>函数之间或类的方法之间用空行分隔，表示一段新代码的开始。<span id="more"></span>类和函数入口之间也用两行空行分隔，以突出函数入口的开始。<br>空行与代码缩进不同。书写时不插入空行，Python解释器运行也不会出错。<br>空行的作用：分隔两段不同功能或含义的代码，便于日后代码的维护或重构。空行也是程序代码的一部分</p>
+<h1 id="输入和等待用户输入"><a href="#输入和等待用户输入" class="headerlink" title="输入和等待用户输入"></a>输入和等待用户输入</h1><p>input函数可以用来接受输入，它可以传入一个字符串，当input函数调用的时候，会在控制台打印这个字符串。<br>input函数会读取输入内容直到读到回车，也就是说，内容输入完毕后要按回车键才能执行。</p>
+<h1 id="同一行显示多条语句"><a href="#同一行显示多条语句" class="headerlink" title="同一行显示多条语句"></a>同一行显示多条语句</h1><p>Python可以在同一行中使用多条语句，语句之间使用分号分隔。</p>
+<h1 id="多个语句构成代码组"><a href="#多个语句构成代码组" class="headerlink" title="多个语句构成代码组"></a>多个语句构成代码组</h1><p>缩进相同的一组语句构成代码块，称之为代码组。<br>像if、while、def和class这样的复合语句，首行以关键字开始，以冒号结束，该行之后的一行或多行代码构成代码组。<br>将首行及后面的代码组称为一个子句</p>
+<h1 id="print输出"><a href="#print输出" class="headerlink" title="print输出"></a>print输出</h1><p>print函数是Python的基本输出函数，可以将变量蔬菜到控制台。<br>print默认输入是换行的，如果要实现不换行需要在变量末尾加上 end=” “</p>
+<h1 id="import与from…import"><a href="#import与from…import" class="headerlink" title="import与from…import"></a>import与from…import</h1><p>在Python中用import或from…import来导入相应的模块<br>将整个模块 (somemodule) 导入，格式为：​ import somemodule​<br>从某个模块中导入某个函数,格式为：​ from somemodule import somefunction​<br>从某个模块中导入多个函数,格式为：​ from somemodule import firstfunc, secondfunc, thirdfunc​<br>将某个模块中的全部函数导入，格式为：​ from somemodule import *​</p>
+<h1 id="命令行参数"><a href="#命令行参数" class="headerlink" title="命令行参数"></a>命令行参数</h1><p>很多程序可以执行一些操作来查看一些基本信息，Python可以使用-h参数查看各参数帮助信息<br>$ python -h<br>usage: python [option] … [-c cmd<br>| -m mod | file | -] [arg] …<br>Options and arguments (and<br>corresponding environment<br>variables):<br>-c cmd : program passed in as<br>string (terminates option list)<br>-d     : debug output from parser<br>(also PYTHONDEBUG=x)<br>-E     : ignore environment<br>variables (such as PYTHONPATH)<br>-h     : print this help message and exit</p>
+<p>【 etc. 】</p>
+
+	
+>
       
         <h1 id="空行"><a href="#空行" class="headerlink" title="空行"></a>空行</h1><p>函数之间或类的方法之间用空行分隔，表示一段新代码的开始。<span id="more"></span>类和函数入口之间也用两行空行分隔，以突出函数入口的开始。<br>空行与代码缩进不同。书写时不插入空行，Python解释器运行也不会出错。<br>空行的作用：分隔两段不同功能或含义的代码，便于日后代码的维护或重构。空行也是程序代码的一部分</p>
 <h1 id="输入和等待用户输入"><a href="#输入和等待用户输入" class="headerlink" title="输入和等待用户输入"></a>输入和等待用户输入</h1><p>input函数可以用来接受输入，它可以传入一个字符串，当input函数调用的时候，会在控制台打印这个字符串。<br>input函数会读取输入内容直到读到回车，也就是说，内容输入完毕后要按回车键才能执行。</p>
@@ -488,7 +495,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">目录标签</a></li>
       
         
       
@@ -585,19 +592,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             </li>
           
             <li class="search-li">
-              <a href="/liyilinl.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿林的世界</a>
+              <a href="https://liyilinl.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿林的世界</a>
             </li>
           
             <li class="search-li">
-              <a href="/zhangshi99.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿卓的世界</a>
+              <a href="https://zhangshi99.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿卓的世界</a>
             </li>
           
             <li class="search-li">
-              <a href="/yeshenyue233.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿雷的世界</a>
+              <a href="https://yeshenyue233.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿雷的世界</a>
             </li>
           
             <li class="search-li">
-              <a href="/ayandeboke.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿炎的世界</a>
+              <a href="https://ayandeboke.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿炎的世界</a>
             </li>
           
             <li class="search-li">

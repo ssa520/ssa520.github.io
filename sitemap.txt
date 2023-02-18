@@ -1,3 +1,7 @@
+https://ssa520.github.io/2023/02/16/buuctf%E8%A7%A3%E9%A2%98/
+https://ssa520.github.io/2023/02/14/AWD%E6%AF%94%E8%B5%9B/
+https://ssa520.github.io/categories/index.html
+https://ssa520.github.io/tags/index.html
 https://ssa520.github.io/2023/02/09/Python%E7%AC%94%E8%AE%B0-%E4%B8%89/
 https://ssa520.github.io/2023/02/08/Python%E7%AC%94%E8%AE%B0-%E4%BA%8C/
 https://ssa520.github.io/2023/02/07/Python%E7%AC%94%E8%AE%B0-%E4%B8%80/
@@ -13,8 +17,6 @@ https://ssa520.github.io/2023/01/19/BugKu-where-is-flag-5/
 https://ssa520.github.io/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/
 https://ssa520.github.io/2023/01/10/%E7%BA%AF%E6%96%87%E5%AD%97hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/
 https://ssa520.github.io/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/
-https://ssa520.github.io/categories/index.html
-https://ssa520.github.io/tages/index.html
 https://ssa520.github.io/about/index.html
 https://ssa520.github.io/message/index.html
 https://ssa520.github.io/
@@ -23,4 +25,5 @@ https://ssa520.github.io/tags/crypto/
 https://ssa520.github.io/tags/Python/
 https://ssa520.github.io/tags/hexo/
 https://ssa520.github.io/categories/ctf/
+https://ssa520.github.io/categories/buuctf/
 https://ssa520.github.io/categories/%E6%96%87%E5%AD%97%E5%A4%A9%E4%B8%8B/

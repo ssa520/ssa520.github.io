@@ -72,19 +72,17 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/%E7%9B%AE%E5%BD%95">目录</a></li>
-	        
-				<li><a href="/categories/%E5%88%86%E7%B1%BB">分类</a></li>
+				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 	        
 			</ul>
 		</nav>
 		<nav>
-    <a>总文章数 15</a>
+    <a>总文章数 17</a>
 </nav>
 		<nav class="header-smart-menu">
     		
     			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">目录标签</a>
     			
             
     			
@@ -146,8 +144,6 @@
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
@@ -167,14 +163,12 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 70%">
+				<ul style="width: 50%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/tags/%E7%9B%AE%E5%BD%95">目录</a></li>
-		        
-					<li style="width: 33.333333333333336%"><a href="/categories/%E5%88%86%E7%B1%BB">分类</a></li>
+					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -210,7 +204,17 @@
     字数：199字 | 预计阅读时长：1分钟
 </div>
     
-    <div class="article-entry" itemprop="articleBody">
+    <div 
+
+	
+		<h1 id="lt-gt"><a href="#lt-gt" class="headerlink" title="[+-&lt;&gt;]"></a>[+-&lt;&gt;]</h1><span id="more"></span>
+<p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/001.jpg"><br>brainfuck解密：<a target="_blank" rel="noopener" href="https://ctf.bugku.com/tool/brainfuck">https://ctf.bugku.com/tool/brainfuck</a><br>得flag：flag{0d86208ac54fbf12}</p>
+<h1 id="把猪困在猪圈里"><a href="#把猪困在猪圈里" class="headerlink" title="把猪困在猪圈里"></a>把猪困在猪圈里</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/002.jpg"><br>由题可知，一定是猪圈加密；<br>查看文件，发现末尾是=，又是猪圈，所以base64转图片<a target="_blank" rel="noopener" href="https://tool.jisuapi.com/base642pic.html">https://tool.jisuapi.com/base642pic.html</a><br>再去猪圈解密<a target="_blank" rel="noopener" href="http://www.metools.info/code/c90.html">http://www.metools.info/code/c90.html</a></p>
+<h1 id="你喜欢下棋吗"><a href="#你喜欢下棋吗" class="headerlink" title="你喜欢下棋吗"></a>你喜欢下棋吗</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/003.jpg"><br>第一个棋盘密码<a target="_blank" rel="noopener" href="https://www.qqxiuzi.cn/bianma/qipanmima.php%E8%A7%A3%E5%AF%86%E5%90%8E">https://www.qqxiuzi.cn/bianma/qipanmima.php解密后</a><br>博多密码解密<a target="_blank" rel="noopener" href="https://www.boxentriq.com/code-breaking/baudot-code">https://www.boxentriq.com/code-breaking/baudot-code</a><br>得flag: bugku{baud0tc0de}</p>
+<h1 id="小山丘的秘密"><a href="#小山丘的秘密" class="headerlink" title="小山丘的秘密"></a>小山丘的秘密</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/004.jpg"><br>打开图片后发现是一个棋盘，经查阅发现为希尔密码<br>一般的希尔密码是：A=0 B=1  C=2  但是开局文件就告诉我们  A=1  因此这里我们要更改一下解码时字母表的顺序：  Z=0  A=1  B=2<br>将z提前  得到密钥  abczadefz<br>解码得flag</p>
+
+	
+>
       
         <h1 id="lt-gt"><a href="#lt-gt" class="headerlink" title="[+-&lt;&gt;]"></a>[+-&lt;&gt;]</h1><span id="more"></span>
 <p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/001.jpg"><br>brainfuck解密：<a target="_blank" rel="noopener" href="https://ctf.bugku.com/tool/brainfuck">https://ctf.bugku.com/tool/brainfuck</a><br>得flag：flag{0d86208ac54fbf12}</p>
@@ -501,7 +505,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">目录标签</a></li>
       
         
       
@@ -598,19 +602,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             </li>
           
             <li class="search-li">
-              <a href="/liyilinl.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿林的世界</a>
+              <a href="https://liyilinl.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿林的世界</a>
             </li>
           
             <li class="search-li">
-              <a href="/zhangshi99.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿卓的世界</a>
+              <a href="https://zhangshi99.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿卓的世界</a>
             </li>
           
             <li class="search-li">
-              <a href="/yeshenyue233.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿雷的世界</a>
+              <a href="https://yeshenyue233.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿雷的世界</a>
             </li>
           
             <li class="search-li">
-              <a href="/ayandeboke.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿炎的世界</a>
+              <a href="https://ayandeboke.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>阿炎的世界</a>
             </li>
           
             <li class="search-li">
