@@ -1,396 +1,319 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>buuctf解题</title>
-      <link href="/2023/02/16/buuctf%E8%A7%A3%E9%A2%98/"/>
-      <url>/2023/02/16/buuctf%E8%A7%A3%E9%A2%98/</url>
-      
-        <content type="html"><![CDATA[<h1 id="MD5"><a href="#MD5" class="headerlink" title="MD5"></a>MD5</h1><span id="more"></span><p>直接MD5解密即可得flag</p><h1 id="一眼就解密"><a href="#一眼就解密" class="headerlink" title="一眼就解密"></a>一眼就解密</h1><p>base64解密可得flag</p><h1 id="url编码"><a href="#url编码" class="headerlink" title="url编码"></a>url编码</h1><p>url编码解码得flag</p><h1 id="看我回旋踢"><a href="#看我回旋踢" class="headerlink" title="看我回旋踢"></a>看我回旋踢</h1><p>ROT13解密可得flag<br>ROT13（回转13位）是一种简易的替换式密码算法。它是一种在英文网络论坛用作隐藏八卦、妙句、谜题解答以及某些脏话的工具，目的是逃过版主或管理员的匆匆一瞥。ROT13 也是过去在古罗马开发的凯撒密码的一种变体。ROT13是它自身的逆反，即：要还原成原文只要使用同一算法即可得，故同样的操作可用于加密与解密。该算法并没有提供真正密码学上的保全，故它不应该被用于需要保全的用途上。它常常被当作弱加密示例的典型。</p><h1 id="摩丝"><a href="#摩丝" class="headerlink" title="摩丝"></a>摩丝</h1><p>摩斯密码解密得flag</p><h1 id="password"><a href="#password" class="headerlink" title="password"></a>password</h1><p>打开文件后发现人名以及生日，key{**********}可以知道有10个字符。尝试key{zs+生日}，发现错误。将key调改为flag即可。</p>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>AWD比赛</title>
+    <url>/2023/02/14/AWD%E6%AF%94%E8%B5%9B/</url>
+    <content><![CDATA[<h1 id="AWD比赛总结"><a href="#AWD比赛总结" class="headerlink" title="AWD比赛总结"></a>AWD比赛总结<span id="more"></span></h1><h1 id="比赛介绍"><a href="#比赛介绍" class="headerlink" title="比赛介绍"></a>比赛介绍</h1><p>AWD赛制是按照分组来进行比赛的</p>
+]]></content>
+      <tags>
+        <tag>ctf</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>1和0的故事</title>
+    <url>/2023/02/04/1%E5%92%8C0%E7%9A%84%E6%95%85%E4%BA%8B/</url>
+    <content><![CDATA[<h1 id="1和0的故事"><a href="#1和0的故事" class="headerlink" title="1和0的故事"></a>1和0的故事<span id="more"></span></h1><p><img src="/2023/02/04/1%E5%92%8C0%E7%9A%84%E6%95%85%E4%BA%8B/001.jpg"><br>下载文件后记事本打开，发现全部为1和0，可联想到二维码，尝试转换。<br>利用python脚本转换为二维码<br>以下是我在网络上查找的脚本供参考：<br>from PIL import Image<br>MAX = 25<br>#二维码大小<br>pic = Image.new(“RGB”,(MAX, MAX))<br>#str = “””1111111001110010001111111100000100001111010100000110111010011100010010111011011101010111100001011101101110101010101000101110110000010011000101010000011111111010101010101111111000000000100000110000000011000111011101101000110000001000010110010010010100010011110100001110111001100111101001010110010010011000001001100001001101000111100011111101110010100010110111110011011111101111000110110010010101101100100011110011111111111011100000000101100011000101001111111010010100101010001100000101010101010001100110111010001001111111100101011101000011001011110111101110100100110010010000110000010110000110110110011111111011010000101110101<br>#”””#修改后的二维码<br>str=”””0000000001110010000000000000000000001111010000000000000000011100010000000000000000010111100000000000000000001010101000000000000000000011000101000000000000000010101010100000000000000000100000110000000011000111011101101000110000001000010110010010010100010011110100001110111001100111101001010110010010011000001001100001001101000111100011111101110010100010110111110011011111101111000110110010010101101100100011110011111111111011100000000101100011000101000000000010010100101010001000000001010101010001100100000000001001111111100100000000000011001011110111000000000100110010010000100000000110000110110110010000000011010000101110101<br>“””#原二维码<br>i=0<br>for y in range (0,MAX):<br>    for x in range (0,MAX):<br>        if(str[i] == ‘1’):<br>            pic.putpixel([x,y],(0, 0, 0))<br>        else:<br>            pic.putpixel([x,y],(255,255,255))<br>        i = i+1<br>pic.show()<br>pic.save(“5.png”)<br>#由于直接预览分辨率太低，所以保存下来观看</p>
+<p>“””<br>PIL.Image.new(模式, 大小, 颜色)  //此处需了解并使用PIL<br>“””<br>得到一个残缺的二维码，利用ps进行补齐，扫描二维码得flag：flag{QR_c0de_1s_1nterest1n9}</p>
+]]></content>
+      <tags>
+        <tag>ctf</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>BugKu where is flag 5</title>
+    <url>/2023/01/19/BugKu-where-is-flag-5/</url>
+    <content><![CDATA[<p><img src="/2023/01/19/BugKu-where-is-flag-5/001.jpg"></p>
+<span id="more"></span>
+<p>下载文件后打开：Gx8EAA8SCBIfHQARCxMUHwsAHRwRHh8BEQwaFBQfGwMYCBYRHx4SBRQdGR8HAQ0QFQ==<br>利用base64解码，得到：b’\x1b\x1f\x04\x00\x0f\x12\x08\x12\x1f\x1d\x00\x11\x0b\x13\x14\x1f\x0b\x00\x1d\x1c\x11\x1e\x1f\x01\x11\x0c\x1a\x14\x14\x1f\x1b\x03\x18\x08\x16\x11\x1f\x1e\x12\x05\x14\x1d\x19\x1f\x07\x01\r\x10\x15’<br><img src="/2023/01/19/BugKu-where-is-flag-5/003.jpg"><br>利用如下代码转换为二进制：<br>          enc = ‘Gx8EAA8SCBIfHQARCxMUHwsAHRwRHh8BEQwaFBQfGwMYCBYRHx4SBRQdGR8HAQ0QFQ==’<br>          text = base64.b64decode(enc)<br>          bin_data = [“0”*(5-len(i))+i if len(i)!=5 else i for i in [bin(j).replace(‘0b’,’’) for j in text]]</p>
+<p>将每一个二进制的相同位数的数据取出，再以长度7切片转换为字符：<br>flag = ‘’<br>data1 = ‘’<br>for j in range(5):<br>    for i in bin_data:<br>        data1 +=i[j]<br>for n in range(0,len(data1),7):<br>    flag +=chr(int(str(data1[n:n+7]),2))</p>
+<h1 id="脚本"><a href="#脚本" class="headerlink" title="脚本"></a>脚本</h1><p>import base64</p>
+<p>enc = ‘Gx8EAA8SCBIfHQARCxMUHwsAHRwRHh8BEQwaFBQfGwMYCBYRHx4SBRQdGR8HAQ0QFQ==’<br>text = base64.b64decode(enc)<br>bin_data = [“0”*(5-len(i))+i if len(i)!=5 else i for i in [bin(j).replace(‘0b’,’’) for j in text]]<br>flag = ‘’<br>data1 = ‘’<br>for j in range(5):<br>    for i in bin_data:<br>        data1 +=i[j]<br>for k in range(0,len(data1),7):<br>    flag +=chr(int(str(data1[k:k+7]),2))<br>print(flag)</p>
+<h1 id="flag：bugku-ce26f61d40fea75fc0b980d7588e"><a href="#flag：bugku-ce26f61d40fea75fc0b980d7588e" class="headerlink" title="flag：bugku{ce26f61d40fea75fc0b980d7588e}"></a>flag：bugku{ce26f61d40fea75fc0b980d7588e}</h1>]]></content>
       <categories>
-          
-          <category> buuctf </category>
-          
+        <category>ctf</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> ctf </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>AWD比赛</title>
-      <link href="/2023/02/14/AWD%E6%AF%94%E8%B5%9B/"/>
-      <url>/2023/02/14/AWD%E6%AF%94%E8%B5%9B/</url>
-      
-        <content type="html"><![CDATA[<h1 id="AWD比赛总结"><a href="#AWD比赛总结" class="headerlink" title="AWD比赛总结"></a>AWD比赛总结<span id="more"></span></h1><h1 id="比赛介绍"><a href="#比赛介绍" class="headerlink" title="比赛介绍"></a>比赛介绍</h1><p>AWD赛制是按照分组来进行比赛的</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> ctf </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Python笔记(三)</title>
-      <link href="/2023/02/09/Python%E7%AC%94%E8%AE%B0-%E4%B8%89/"/>
-      <url>/2023/02/09/Python%E7%AC%94%E8%AE%B0-%E4%B8%89/</url>
-      
-        <content type="html"><![CDATA[<h1 id="Python编程第一步"><a href="#Python编程第一步" class="headerlink" title="Python编程第一步"></a>Python编程第一步</h1><span id="more"></span><h1 id="斐波那契数列："><a href="#斐波那契数列：" class="headerlink" title="斐波那契数列："></a>斐波那契数列：</h1><p>a,b = 0,1<br>while b &lt; 10:<br>    print(b)<br>    a,b = b,a+b(先计算右边的表达式，然后同时赋值给左边)<br>输出结果：1 \n 1 \n 2 \n3 \n 5 \n 8<br>第一行包含了一个复合赋值：变量a和b同时得到新值0和1<br>最后一行也使用了复合赋值的方法：等价于c=a,a=b,b=b+c</p><h1 id="end关键字"><a href="#end关键字" class="headerlink" title="end关键字"></a>end关键字</h1><p>关键字end可以用于将结果输出到同一行，或者在输出的末尾添加不同的字符<br>a,b = 0,1<br>while b &lt; 1024:<br>    print(b, end=’,’)<br>    a, b = b, a+b<br>输出结果：1,1,2,3,5,8,13,21,34,55,89,144……</p><h1 id="if条件控制"><a href="#if条件控制" class="headerlink" title="if条件控制"></a>if条件控制</h1><p>age = int(input(“请输入你家狗狗的年龄: “))<br>print(“”)<br>if age &lt; 0:<br>  print(“请输入正确的年龄。”)<br>elif age == 1:<br>  print(“相当于 14 岁的人。”)<br>elif age == 2:<br>  print(“相当于 22 岁的人。”)<br>elif age &gt; 2:<br>  human = 22 + (age -2)*5<br>  print(“对应人类年龄: “, human)</p><h3 id="退出提示，本地环境下可以使用这样的退出提示使代码更易用"><a href="#退出提示，本地环境下可以使用这样的退出提示使代码更易用" class="headerlink" title="退出提示，本地环境下可以使用这样的退出提示使代码更易用"></a>退出提示，本地环境下可以使用这样的退出提示使代码更易用</h3><p>input(‘点击 enter 键退出’)</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Python </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Python笔记(二)</title>
-      <link href="/2023/02/08/Python%E7%AC%94%E8%AE%B0-%E4%BA%8C/"/>
-      <url>/2023/02/08/Python%E7%AC%94%E8%AE%B0-%E4%BA%8C/</url>
-      
-        <content type="html"><![CDATA[<h1 id="空行"><a href="#空行" class="headerlink" title="空行"></a>空行</h1><p>函数之间或类的方法之间用空行分隔，表示一段新代码的开始。<span id="more"></span>类和函数入口之间也用两行空行分隔，以突出函数入口的开始。<br>空行与代码缩进不同。书写时不插入空行，Python解释器运行也不会出错。<br>空行的作用：分隔两段不同功能或含义的代码，便于日后代码的维护或重构。空行也是程序代码的一部分</p><h1 id="输入和等待用户输入"><a href="#输入和等待用户输入" class="headerlink" title="输入和等待用户输入"></a>输入和等待用户输入</h1><p>input函数可以用来接受输入，它可以传入一个字符串，当input函数调用的时候，会在控制台打印这个字符串。<br>input函数会读取输入内容直到读到回车，也就是说，内容输入完毕后要按回车键才能执行。</p><h1 id="同一行显示多条语句"><a href="#同一行显示多条语句" class="headerlink" title="同一行显示多条语句"></a>同一行显示多条语句</h1><p>Python可以在同一行中使用多条语句，语句之间使用分号分隔。</p><h1 id="多个语句构成代码组"><a href="#多个语句构成代码组" class="headerlink" title="多个语句构成代码组"></a>多个语句构成代码组</h1><p>缩进相同的一组语句构成代码块，称之为代码组。<br>像if、while、def和class这样的复合语句，首行以关键字开始，以冒号结束，该行之后的一行或多行代码构成代码组。<br>将首行及后面的代码组称为一个子句</p><h1 id="print输出"><a href="#print输出" class="headerlink" title="print输出"></a>print输出</h1><p>print函数是Python的基本输出函数，可以将变量蔬菜到控制台。<br>print默认输入是换行的，如果要实现不换行需要在变量末尾加上 end=” “</p><h1 id="import与from…import"><a href="#import与from…import" class="headerlink" title="import与from…import"></a>import与from…import</h1><p>在Python中用import或from…import来导入相应的模块<br>将整个模块 (somemodule) 导入，格式为：​ import somemodule​<br>从某个模块中导入某个函数,格式为：​ from somemodule import somefunction​<br>从某个模块中导入多个函数,格式为：​ from somemodule import firstfunc, secondfunc, thirdfunc​<br>将某个模块中的全部函数导入，格式为：​ from somemodule import *​</p><h1 id="命令行参数"><a href="#命令行参数" class="headerlink" title="命令行参数"></a>命令行参数</h1><p>很多程序可以执行一些操作来查看一些基本信息，Python可以使用-h参数查看各参数帮助信息<br>$ python -h<br>usage: python [option] … [-c cmd<br>| -m mod | file | -] [arg] …<br>Options and arguments (and<br>corresponding environment<br>variables):<br>-c cmd : program passed in as<br>string (terminates option list)<br>-d     : debug output from parser<br>(also PYTHONDEBUG=x)<br>-E     : ignore environment<br>variables (such as PYTHONPATH)<br>-h     : print this help message and exit</p><p>【 etc. 】</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Python </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Python笔记(一)</title>
-      <link href="/2023/02/07/Python%E7%AC%94%E8%AE%B0-%E4%B8%80/"/>
-      <url>/2023/02/07/Python%E7%AC%94%E8%AE%B0-%E4%B8%80/</url>
-      
-        <content type="html"><![CDATA[<h1 id="Python基础语法"><a href="#Python基础语法" class="headerlink" title="Python基础语法"></a>Python基础语法</h1><span id="more"></span><h1 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h1><p>默认情况下，Python源码文件为UTF-8编码，所有字符串都是unicode字符串。也可以为源码文件指定不同的编码</p><h1 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h1><p>1、第一个字符必须是字母表中字母或下划线<br>2、标识符的其他部分由字母、数字、下划线组成<br>3、标识符对大小写敏感<br>在Python3中，非ASCII编码的标识符也是允许的</p><h1 id="Python保留字"><a href="#Python保留字" class="headerlink" title="Python保留字"></a>Python保留字</h1><p>保留字即为关键字，不能把他们用作任何标识符名称。Python的标准库提供了一个关键词模块，可以使用它来查看当前版本的所有保留字<br><img src="/2023/02/07/Python%E7%AC%94%E8%AE%B0-%E4%B8%80/001.jpg">此处为解释器执行结果<br>Python脚本应写为：<br>import keyword<br>print(keyword.kwlist)</p><h1 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h1><p>Python中单行注释以#开头，多行注释采用三对单引号或三对双引号将注释括起来</p><h1 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h1><p>Python最具特色的就是使用缩进来表示代码块。缩进的空格数是可变的，但是同一个代码块的语句必须包含相同的缩进空格数。</p><h1 id="标准数据类型"><a href="#标准数据类型" class="headerlink" title="标准数据类型"></a>标准数据类型</h1><p>Python中有六个标准的数据类型：<br>1、Number：数字  2、String：字符串  3、List：列表  4、Tuple：元组  5、Set：集合  6、Dictionary：字典<br>其中，124为不可变数据，356为可变数据<br>(可变数据和不可变数据是相对于引用地址来说的，不可变数据类型不允许变量的值发生变化，如果改变了的变量的值，相当于新建了一个对象，而对于相同的值的对象，内部会有一个引用计数来记录有多少个变量引用了这个对象。可变数据类型允许变量的值发生变化。对变量进行修改操作只会改变变量的值，不会新建对象，变量引用的地址也不会发生变化，不过对于相同的值的不同对象，在内存中则会存在不同的对象，即每个对象都有自己的地址，相当于内存中对于同值的对象保存了多份，这里不存在引用计数，是实实在在的对象。</p><p>简单地讲，可变数据和不可变数据的“变”是相对于引用地址来说的，不是不能改变其数据，而是改变数据的时候会不会改变变量的引用地址。)</p><h1 id="类型判断"><a href="#类型判断" class="headerlink" title="类型判断"></a>类型判断</h1><p>Python可以用type函数来检查一个变量的类型，使用方法如下：</p><blockquote><blockquote><blockquote><p>x = “513yyds”<br>type(x)<br>&lt;type ‘str’&gt;<br>x=100<br>type(x)<br>&lt;type ‘int’&gt;<br>x=(‘1’,’2’,’3’)<br>type(x)<br>&lt;type ‘tuple’&gt;<br>x = [‘1’,’2’,’3’]<br>type(x)<br>&lt;type ‘list’&gt;<br>在脚本中：<br>x = “513yyds”<br>print(type(x))</p></blockquote></blockquote></blockquote><h1 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h1><p>1、Python 中单引号和双引号使用完全相同，但单引号和双引号不能匹配。<br>2、使用三对引号(‘’’或”””)可以囊括一个多行字符串。<br>3、与其他语言相似，python也使用 ‘&#39;作为转义字符<br>4、自然字符串， 通过在字符串前加 r 或 R。 如 r”this is a line with \n” 则\n会显示，并不是换行。<br>5、Python 允许处理 unicode 字符串，加前缀 u 或 U， 如 u”this is an unicode string”。<br>6、字符串是不可变的。<br>7、按字面意义级联字符串，如”this “ “is “ “string”会被自动转换为this is string。<br>8、字符串可以用 + 运算符连接在一起，用 * 运算符重复。<br>9、Python 中的字符串有两种索引方式，从左往右以 0 开始，从右往左以 -1 开始。<br>10、Python中的字符串不能改变。<br>11、Python 没有单独的字符类型，一个字符就是长度为 1 的字符串。<br>12、字符串的截取的语法格式如下：变量 [头下标: 尾下标: 步长]</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Python </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>1和0的故事</title>
-      <link href="/2023/02/04/1%E5%92%8C0%E7%9A%84%E6%95%85%E4%BA%8B/"/>
-      <url>/2023/02/04/1%E5%92%8C0%E7%9A%84%E6%95%85%E4%BA%8B/</url>
-      
-        <content type="html"><![CDATA[<h1 id="1和0的故事"><a href="#1和0的故事" class="headerlink" title="1和0的故事"></a>1和0的故事<span id="more"></span></h1><p><img src="/2023/02/04/1%E5%92%8C0%E7%9A%84%E6%95%85%E4%BA%8B/001.jpg"><br>下载文件后记事本打开，发现全部为1和0，可联想到二维码，尝试转换。<br>利用python脚本转换为二维码<br>以下是我在网络上查找的脚本供参考：<br>from PIL import Image<br>MAX = 25<br>#二维码大小<br>pic = Image.new(“RGB”,(MAX, MAX))<br>#str = “””1111111001110010001111111100000100001111010100000110111010011100010010111011011101010111100001011101101110101010101000101110110000010011000101010000011111111010101010101111111000000000100000110000000011000111011101101000110000001000010110010010010100010011110100001110111001100111101001010110010010011000001001100001001101000111100011111101110010100010110111110011011111101111000110110010010101101100100011110011111111111011100000000101100011000101001111111010010100101010001100000101010101010001100110111010001001111111100101011101000011001011110111101110100100110010010000110000010110000110110110011111111011010000101110101<br>#”””#修改后的二维码<br>str=”””0000000001110010000000000000000000001111010000000000000000011100010000000000000000010111100000000000000000001010101000000000000000000011000101000000000000000010101010100000000000000000100000110000000011000111011101101000110000001000010110010010010100010011110100001110111001100111101001010110010010011000001001100001001101000111100011111101110010100010110111110011011111101111000110110010010101101100100011110011111111111011100000000101100011000101000000000010010100101010001000000001010101010001100100000000001001111111100100000000000011001011110111000000000100110010010000100000000110000110110110010000000011010000101110101<br>“””#原二维码<br>i=0<br>for y in range (0,MAX):<br>    for x in range (0,MAX):<br>        if(str[i] == ‘1’):<br>            pic.putpixel([x,y],(0, 0, 0))<br>        else:<br>            pic.putpixel([x,y],(255,255,255))<br>        i = i+1<br>pic.show()<br>pic.save(“5.png”)<br>#由于直接预览分辨率太低，所以保存下来观看</p><p>“””<br>PIL.Image.new(模式, 大小, 颜色)  //此处需了解并使用PIL<br>“””<br>得到一个残缺的二维码，利用ps进行补齐，扫描二维码得flag：flag{QR_c0de_1s_1nterest1n9}</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> ctf </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>RSA</title>
-      <link href="/2023/02/01/RSA/"/>
-      <url>/2023/02/01/RSA/</url>
-      
-        <content type="html"><![CDATA[<p>  RSA一般指RSA算法(非对称加密算法)<span id="more"></span>，RSA公开密钥密码体制是一种使用不同的加密密钥与解密密钥，“由已知加密密钥推导出解密密钥在计算上是不可行的”密码体制。<br>RSA算法是第一个能同时用于加密和数字签名的算法，也易于理解和操作。RSA的算法涉及三个参数，n、e1、e2。其中，n是两个大质数p、q的积，n的二进制表示时所占用的位数，就是所谓的密钥长度。e1和e2是一对相关的值，e1可以任意取。</p><p>  p和q的位数相同可获得最大程度的安全性，计算乘积n=p*q；RSA加解密的算法完全相同，设A为明文，B为密文，则A=B^d mod n；B=A^e mod n；(mod:相当于求模运算)<br>公钥加密体制中，一般用公钥加密，私钥解密。e1和e2可以互换使用，即：​A=B^e mod n；​B=A^d mod n;</p><p>  明文加密：加密消息m时，首先将它分为比n小的数据分组（采用二级制数，选取小于n的2的最大次幂），也就是说，若果p和n为100位的素数，那么n将有200位，每个消息分组m应该小于200位长<br>　用户加密密钥将数字化明文分组信息加密成密文。由C≡M^e(mod n)得密文<br>  密文解密：用户收到密文，若将其解密，只需要计算 M≡c^d(mod n)得明文</p><p>最常用的三个e值：3, 17, 65537</p><p>RSA计算脚本可借鉴：<a href="https://blog.csdn.net/zip471642048/article/details/123041993">https://blog.csdn.net/zip471642048/article/details/123041993</a></p><p>​</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> ctf </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>ctf-base家族</title>
-      <link href="/2023/01/30/ctf-base%E5%AE%B6%E6%97%8F/"/>
-      <url>/2023/01/30/ctf-base%E5%AE%B6%E6%97%8F/</url>
-      
-        <content type="html"><![CDATA[<h1 id="base16"><a href="#base16" class="headerlink" title="base16"></a>base16</h1><span id="more"></span><p>base16编码使用16个ASCII可打印字符（数字0-9和字母A-F）对任意字节数据进行编码。<br>base16先获取输入字符串每个字节的二进制值（不足8比特在高位补0），然后将其串联进来再按照4比特一组进行切分，将每组二进制数分别转换成十进制<br>Base16不用到填充符号“=”<br><a href="https://ctf.bugku.com/tool/base16">https://ctf.bugku.com/tool/base16</a></p><h1 id="base32"><a href="#base32" class="headerlink" title="base32"></a>base32</h1><p>编码后的字符只会在大写字母（A-Z）和数字234567 32个字符组成，因为base32是5bit为一组，所以编码长度必须是40bit的倍数（5和8的最小公倍数）<br>因为必须为40bit的倍数，所以如果不足的话，会在第一个不满足5bit的小组进行补0，然后进行编码，在结果补上占位符=，一个等号5bit，最多出现6个<br><a href="https://ctf.bugku.com/tool/base32">https://ctf.bugku.com/tool/base32</a></p><h1 id="base36"><a href="#base36" class="headerlink" title="base36"></a>base36</h1><p>base36编码是使用0~9的数字，加上所有26个字母，所有的字母要不全大写，要不全小写。<br><a href="http://www.hiencode.com/base36w.html">http://www.hiencode.com/base36w.html</a></p><h1 id="base58"><a href="#base58" class="headerlink" title="base58"></a>base58</h1><p>字符为：123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz(无I、O、l)<br><a href="https://ctf.bugku.com/tool/base58">https://ctf.bugku.com/tool/base58</a></p><h1 id="base62"><a href="#base62" class="headerlink" title="base62"></a>base62</h1><p>Base62编码是由10个数字、26个大写英文字母和26个小写英文字母组成<br><a href="https://ctf.bugku.com/tool/base62">https://ctf.bugku.com/tool/base62</a></p><h1 id="base64"><a href="#base64" class="headerlink" title="base64"></a>base64</h1><p>编码后的字符只会在A-Z a-z 0-9（共62个）另外加上+  /两个符号,3个字节由4个base64单元来表示<br>如果要编码的字节数不能被3整除，最后会多出1个或2个字节，则用占位符=（一个代表一个字节）所以最多出现两个等号。<br><a href="https://www.qqxiuzi.cn/bianma/base64.htm">https://www.qqxiuzi.cn/bianma/base64.htm</a></p><h1 id="base85"><a href="#base85" class="headerlink" title="base85"></a>base85</h1><p>Base85是一种类似于Base64的二进制文本编码形式，通过使用五个ASCII字符来表示四个字节的二进制数据<br>特点是奇怪的字符比较多，但是很难出现等号<br><a href="http://www.atoolbox.net/Tool.php?Id=934">http://www.atoolbox.net/Tool.php?Id=934</a><br><a href="https://ctf.bugku.com/tool/base85">https://ctf.bugku.com/tool/base85</a></p><h1 id="base91"><a href="#base91" class="headerlink" title="base91"></a>base91</h1><p>base91的密文由91个字符（0-9，a-z，A-Z,!#$%&amp;()*+,./:;&lt;=&gt;?@[]^_`{|}~”）组成<br>从94个可打印ASCII字符（0x21-0x7E）中，以下三个字符被省略以构建base91字母：<br>-（破折号，0x2D）<br>\（反斜杠，0x5C）<br>‘（撇号，0x27）<br><a href="http://www.atoolbox.net/Tool.php?Id=935">http://www.atoolbox.net/Tool.php?Id=935</a></p><h1 id="base92"><a href="#base92" class="headerlink" title="base92"></a>base92</h1><p>比base91 多一个字符 〜<br><a href="https://ctf.bugku.com/tool/base92">https://ctf.bugku.com/tool/base92</a></p><h1 id="base100"><a href="#base100" class="headerlink" title="base100"></a>base100</h1><p><a href="https://ctf.bugku.com/tool/base100">https://ctf.bugku.com/tool/base100</a><br>base100: 👟👜👣👦📦💳💃👮👣👛🐥🐨🐩🐫🐬🐭<br>特征：Emoji表情组成</p>]]></content>
-      
-      
+      <tags>
+        <tag>crypto</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python笔记(一)</title>
+    <url>/2023/02/07/Python%E7%AC%94%E8%AE%B0-%E4%B8%80/</url>
+    <content><![CDATA[<h1 id="Python基础语法"><a href="#Python基础语法" class="headerlink" title="Python基础语法"></a>Python基础语法</h1><span id="more"></span>
+
+<h1 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h1><p>默认情况下，Python源码文件为UTF-8编码，所有字符串都是unicode字符串。也可以为源码文件指定不同的编码</p>
+<h1 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h1><p>1、第一个字符必须是字母表中字母或下划线<br>2、标识符的其他部分由字母、数字、下划线组成<br>3、标识符对大小写敏感<br>在Python3中，非ASCII编码的标识符也是允许的</p>
+<h1 id="Python保留字"><a href="#Python保留字" class="headerlink" title="Python保留字"></a>Python保留字</h1><p>保留字即为关键字，不能把他们用作任何标识符名称。Python的标准库提供了一个关键词模块，可以使用它来查看当前版本的所有保留字<br><img src="/2023/02/07/Python%E7%AC%94%E8%AE%B0-%E4%B8%80/001.jpg">此处为解释器执行结果<br>Python脚本应写为：<br>import keyword<br>print(keyword.kwlist)</p>
+<h1 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h1><p>Python中单行注释以#开头，多行注释采用三对单引号或三对双引号将注释括起来</p>
+<h1 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h1><p>Python最具特色的就是使用缩进来表示代码块。缩进的空格数是可变的，但是同一个代码块的语句必须包含相同的缩进空格数。</p>
+<h1 id="标准数据类型"><a href="#标准数据类型" class="headerlink" title="标准数据类型"></a>标准数据类型</h1><p>Python中有六个标准的数据类型：<br>1、Number：数字  2、String：字符串  3、List：列表  4、Tuple：元组  5、Set：集合  6、Dictionary：字典<br>其中，124为不可变数据，356为可变数据<br>(可变数据和不可变数据是相对于引用地址来说的，不可变数据类型不允许变量的值发生变化，如果改变了的变量的值，相当于新建了一个对象，而对于相同的值的对象，内部会有一个引用计数来记录有多少个变量引用了这个对象。可变数据类型允许变量的值发生变化。对变量进行修改操作只会改变变量的值，不会新建对象，变量引用的地址也不会发生变化，不过对于相同的值的不同对象，在内存中则会存在不同的对象，即每个对象都有自己的地址，相当于内存中对于同值的对象保存了多份，这里不存在引用计数，是实实在在的对象。</p>
+<p>简单地讲，可变数据和不可变数据的“变”是相对于引用地址来说的，不是不能改变其数据，而是改变数据的时候会不会改变变量的引用地址。)</p>
+<h1 id="类型判断"><a href="#类型判断" class="headerlink" title="类型判断"></a>类型判断</h1><p>Python可以用type函数来检查一个变量的类型，使用方法如下：</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>x = “513yyds”<br>type(x)<br>&lt;type ‘str’&gt;<br>x=100<br>type(x)<br>&lt;type ‘int’&gt;<br>x=(‘1’,’2’,’3’)<br>type(x)<br>&lt;type ‘tuple’&gt;<br>x = [‘1’,’2’,’3’]<br>type(x)<br>&lt;type ‘list’&gt;<br>在脚本中：<br>x = “513yyds”<br>print(type(x))</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h1 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h1><p>1、Python 中单引号和双引号使用完全相同，但单引号和双引号不能匹配。<br>2、使用三对引号(‘’’或”””)可以囊括一个多行字符串。<br>3、与其他语言相似，python也使用 ‘&#39;作为转义字符<br>4、自然字符串， 通过在字符串前加 r 或 R。 如 r”this is a line with \n” 则\n会显示，并不是换行。<br>5、Python 允许处理 unicode 字符串，加前缀 u 或 U， 如 u”this is an unicode string”。<br>6、字符串是不可变的。<br>7、按字面意义级联字符串，如”this “ “is “ “string”会被自动转换为this is string。<br>8、字符串可以用 + 运算符连接在一起，用 * 运算符重复。<br>9、Python 中的字符串有两种索引方式，从左往右以 0 开始，从右往左以 -1 开始。<br>10、Python中的字符串不能改变。<br>11、Python 没有单独的字符类型，一个字符就是长度为 1 的字符串。<br>12、字符串的截取的语法格式如下：变量 [头下标: 尾下标: 步长]</p>
+]]></content>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python笔记(三)</title>
+    <url>/2023/02/09/Python%E7%AC%94%E8%AE%B0-%E4%B8%89/</url>
+    <content><![CDATA[<h1 id="Python编程第一步"><a href="#Python编程第一步" class="headerlink" title="Python编程第一步"></a>Python编程第一步</h1><span id="more"></span>
+<h1 id="斐波那契数列："><a href="#斐波那契数列：" class="headerlink" title="斐波那契数列："></a>斐波那契数列：</h1><p>a,b = 0,1<br>while b &lt; 10:<br>    print(b)<br>    a,b = b,a+b(先计算右边的表达式，然后同时赋值给左边)<br>输出结果：1 \n 1 \n 2 \n3 \n 5 \n 8<br>第一行包含了一个复合赋值：变量a和b同时得到新值0和1<br>最后一行也使用了复合赋值的方法：等价于c=a,a=b,b=b+c</p>
+<h1 id="end关键字"><a href="#end关键字" class="headerlink" title="end关键字"></a>end关键字</h1><p>关键字end可以用于将结果输出到同一行，或者在输出的末尾添加不同的字符<br>a,b = 0,1<br>while b &lt; 1024:<br>    print(b, end=’,’)<br>    a, b = b, a+b<br>输出结果：1,1,2,3,5,8,13,21,34,55,89,144……</p>
+<h1 id="if条件控制"><a href="#if条件控制" class="headerlink" title="if条件控制"></a>if条件控制</h1><p>age = int(input(“请输入你家狗狗的年龄: “))<br>print(“”)<br>if age &lt; 0:<br>  print(“请输入正确的年龄。”)<br>elif age == 1:<br>  print(“相当于 14 岁的人。”)<br>elif age == 2:<br>  print(“相当于 22 岁的人。”)<br>elif age &gt; 2:<br>  human = 22 + (age -2)*5<br>  print(“对应人类年龄: “, human)</p>
+<h3 id="退出提示，本地环境下可以使用这样的退出提示使代码更易用"><a href="#退出提示，本地环境下可以使用这样的退出提示使代码更易用" class="headerlink" title="退出提示，本地环境下可以使用这样的退出提示使代码更易用"></a>退出提示，本地环境下可以使用这样的退出提示使代码更易用</h3><p>input(‘点击 enter 键退出’)</p>
+]]></content>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python笔记(二)</title>
+    <url>/2023/02/08/Python%E7%AC%94%E8%AE%B0-%E4%BA%8C/</url>
+    <content><![CDATA[<h1 id="空行"><a href="#空行" class="headerlink" title="空行"></a>空行</h1><p>函数之间或类的方法之间用空行分隔，表示一段新代码的开始。<span id="more"></span>类和函数入口之间也用两行空行分隔，以突出函数入口的开始。<br>空行与代码缩进不同。书写时不插入空行，Python解释器运行也不会出错。<br>空行的作用：分隔两段不同功能或含义的代码，便于日后代码的维护或重构。空行也是程序代码的一部分</p>
+<h1 id="输入和等待用户输入"><a href="#输入和等待用户输入" class="headerlink" title="输入和等待用户输入"></a>输入和等待用户输入</h1><p>input函数可以用来接受输入，它可以传入一个字符串，当input函数调用的时候，会在控制台打印这个字符串。<br>input函数会读取输入内容直到读到回车，也就是说，内容输入完毕后要按回车键才能执行。</p>
+<h1 id="同一行显示多条语句"><a href="#同一行显示多条语句" class="headerlink" title="同一行显示多条语句"></a>同一行显示多条语句</h1><p>Python可以在同一行中使用多条语句，语句之间使用分号分隔。</p>
+<h1 id="多个语句构成代码组"><a href="#多个语句构成代码组" class="headerlink" title="多个语句构成代码组"></a>多个语句构成代码组</h1><p>缩进相同的一组语句构成代码块，称之为代码组。<br>像if、while、def和class这样的复合语句，首行以关键字开始，以冒号结束，该行之后的一行或多行代码构成代码组。<br>将首行及后面的代码组称为一个子句</p>
+<h1 id="print输出"><a href="#print输出" class="headerlink" title="print输出"></a>print输出</h1><p>print函数是Python的基本输出函数，可以将变量蔬菜到控制台。<br>print默认输入是换行的，如果要实现不换行需要在变量末尾加上 end=” “</p>
+<h1 id="import与from…import"><a href="#import与from…import" class="headerlink" title="import与from…import"></a>import与from…import</h1><p>在Python中用import或from…import来导入相应的模块<br>将整个模块 (somemodule) 导入，格式为：​ import somemodule​<br>从某个模块中导入某个函数,格式为：​ from somemodule import somefunction​<br>从某个模块中导入多个函数,格式为：​ from somemodule import firstfunc, secondfunc, thirdfunc​<br>将某个模块中的全部函数导入，格式为：​ from somemodule import *​</p>
+<h1 id="命令行参数"><a href="#命令行参数" class="headerlink" title="命令行参数"></a>命令行参数</h1><p>很多程序可以执行一些操作来查看一些基本信息，Python可以使用-h参数查看各参数帮助信息<br>$ python -h<br>usage: python [option] … [-c cmd<br>| -m mod | file | -] [arg] …<br>Options and arguments (and<br>corresponding environment<br>variables):<br>-c cmd : program passed in as<br>string (terminates option list)<br>-d     : debug output from parser<br>(also PYTHONDEBUG=x)<br>-E     : ignore environment<br>variables (such as PYTHONPATH)<br>-h     : print this help message and exit</p>
+<p>【 etc. 】</p>
+]]></content>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>RSA</title>
+    <url>/2023/02/01/RSA/</url>
+    <content><![CDATA[<p>  RSA一般指RSA算法(非对称加密算法)<span id="more"></span>，RSA公开密钥密码体制是一种使用不同的加密密钥与解密密钥，“由已知加密密钥推导出解密密钥在计算上是不可行的”密码体制。<br>RSA算法是第一个能同时用于加密和数字签名的算法，也易于理解和操作。RSA的算法涉及三个参数，n、e1、e2。其中，n是两个大质数p、q的积，n的二进制表示时所占用的位数，就是所谓的密钥长度。e1和e2是一对相关的值，e1可以任意取。</p>
+<p>  p和q的位数相同可获得最大程度的安全性，计算乘积n=p*q；RSA加解密的算法完全相同，设A为明文，B为密文，则A=B^d mod n；B=A^e mod n；(mod:相当于求模运算)<br>公钥加密体制中，一般用公钥加密，私钥解密。e1和e2可以互换使用，即：​A=B^e mod n；​B=A^d mod n;</p>
+<p>  明文加密：加密消息m时，首先将它分为比n小的数据分组（采用二级制数，选取小于n的2的最大次幂），也就是说，若果p和n为100位的素数，那么n将有200位，每个消息分组m应该小于200位长<br>　用户加密密钥将数字化明文分组信息加密成密文。由C≡M^e(mod n)得密文<br>  密文解密：用户收到密文，若将其解密，只需要计算 M≡c^d(mod n)得明文</p>
+<p>最常用的三个e值：3, 17, 65537</p>
+<p>RSA计算脚本可借鉴：<a href="https://blog.csdn.net/zip471642048/article/details/123041993">https://blog.csdn.net/zip471642048/article/details/123041993</a></p>
+<p>​</p>
+]]></content>
+      <tags>
+        <tag>ctf</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>bugku-crypto-题目(三)</title>
+    <url>/2023/01/27/bugku-crypto-%E9%A2%98%E7%9B%AE-%E4%B8%89/</url>
+    <content><![CDATA[<h1 id="一段新闻"><a href="#一段新闻" class="headerlink" title="一段新闻"></a>一段新闻</h1><span id="more"></span>
+<p><img src="/2023/01/27/bugku-crypto-%E9%A2%98%E7%9B%AE-%E4%B8%89/001.jpg"><br>打开后由列数得知有隐藏字符，隐藏字符解密<br>利用社会主义核心价值观编码解密得flag</p>
+<h1 id="这是个盲兔子-竟然在唱歌"><a href="#这是个盲兔子-竟然在唱歌" class="headerlink" title="这是个盲兔子,竟然在唱歌!"></a>这是个盲兔子,竟然在唱歌!</h1><p><img src="/2023/01/27/bugku-crypto-%E9%A2%98%E7%9B%AE-%E4%B8%89/002.jpg"><br>盲文解密 <a href="https://www.qqxiuzi.cn/bianma/wenbenjiami.php?s=mangwen">https://www.qqxiuzi.cn/bianma/wenbenjiami.php?s=mangwen</a><br>rabbit解密 <a href="https://www.sojson.com/encrypt_rabbit.html">https://www.sojson.com/encrypt_rabbit.html</a><br>音乐解密 <a href="https://www.qqxiuzi.cn/bianma/wenbenjiami.php?s=yinyue">https://www.qqxiuzi.cn/bianma/wenbenjiami.php?s=yinyue</a><br>得出flag</p>
+<h1 id="道友不来算一算凶吉？"><a href="#道友不来算一算凶吉？" class="headerlink" title="道友不来算一算凶吉？"></a>道友不来算一算凶吉？</h1><p><img src="/2023/01/27/bugku-crypto-%E9%A2%98%E7%9B%AE-%E4%B8%89/003.jpg"><br>易经有64卦 采用编码: 000000 — 1111111<br>利用python的字典 依次替换密文,二进制转字符串<br>每8位一组转10进制转ascll字符，base64解密<br>脚本：<br>import base64<br>s = ‘升益艮归妹井萃旅离旅困未济屯未济中孚未济升困噬嗑鼎震巽噬嗑解节井萃离未济蒙归妹大畜无妄解兑临睽升睽未济无妄遁涣归妹’<br>dic = {‘坤’: ‘000000’, ‘剥’: ‘000001’, ‘比’: ‘000010’, ‘观’: ‘000011’, ‘豫’: ‘000100’, ‘晋’: ‘000101’, ‘萃’: ‘000110’, ‘否’: ‘000111’, ‘谦’: ‘001000’, ‘艮’: ‘001001’, ‘蹇’: ‘001010’, ‘渐’: ‘001011’, ‘小过’: ‘001100’, ‘旅’: ‘001101’, ‘咸’: ‘001110’, ‘遁’: ‘001111’, ‘师’: ‘010000’, ‘蒙’: ‘010001’, ‘坎’: ‘010010’, ‘涣’: ‘010011’, ‘解’: ‘010100’, ‘未济’: ‘010101’, ‘困’: ‘010110’, ‘讼’: ‘010111’, ‘升’: ‘011000’, ‘蛊’: ‘011001’, ‘井’: ‘011010’, ‘巽’: ‘011011’, ‘恒’: ‘011100’, ‘鼎’: ‘011101’, ‘大过’: ‘011110’, ‘姤’: ‘011111’,<br>       ‘复’: ‘100000’, ‘颐’: ‘100001’, ‘屯’: ‘100010’, ‘益’: ‘100011’, ‘震’: ‘100100’, ‘噬嗑’: ‘100101’, ‘随’: ‘100110’, ‘无妄’: ‘100111’, ‘明夷’: ‘101000’, ‘贲’: ‘101001’, ‘既济’: ‘101010’, ‘家人’: ‘101011’, ‘丰’: ‘101100’, ‘离’: ‘101101’, ‘革’: ‘101110’, ‘同人’: ‘101111’, ‘临’: ‘110000’, ‘损’: ‘110001’, ‘节’: ‘110010’, ‘中孚’: ‘110011’, ‘归妹’: ‘110100’, ‘睽’: ‘110101’, ‘兑’: ‘110110’, ‘履’: ‘110111’, ‘泰’: ‘111000’, ‘大畜’: ‘111001’, ‘需’: ‘111010’, ‘小畜’: ‘111011’, ‘大壮’: ‘111100’, ‘大有’: ‘111101’, ‘夬’: ‘111110’, ‘乾’: ‘111111’}<br>l = []<br>k = 0  # 两个字符的标志位<br>for i in range(len(s)):<br>    if k == 1:<br>        k = 0<br>        continue<br>    try:<br>        l.append(dic[s[i]])<br>    except:<br>        l.append(dic[s[i]+s[i+1]])<br>        k = 1</p>
+<p>ss = ‘’.join(l)</p>
+<h1 id="print-ss"><a href="#print-ss" class="headerlink" title="print(ss)"></a>print(ss)</h1><p>enc = ‘’<br>for i in range(0, len(ss), 8):<br>    enc += chr(eval(‘0b’+ss[i:i+8]))</p>
+<h1 id="print-enc"><a href="#print-enc" class="headerlink" title="print(enc)"></a>print(enc)</h1><p>s = base64.b64decode(enc).decode()</p>
+<h1 id="print-s"><a href="#print-s" class="headerlink" title="print(s)"></a>print(s)</h1><p>def encrypt4(enc):<br>    temp = ‘’<br>    offset = 5<br>    for i in range(len(enc)):<br>        temp += chr(ord(enc[i])-offset-i)<br>    return(temp)</p>
+<p>def decrypt4(enc):<br>    temp = ‘’<br>    offset = 5<br>    for i in range(len(enc)):<br>        temp += chr(ord(enc[i])+offset+i)<br>    return(temp)</p>
+<p>a, b = 5, 7</p>
+<p>def encrpyt5(flag):<br>    enc = ‘’<br>    for i in flag:<br>        enc += chr((a*(ord(i)-97)+b) % 26+97)<br>    return(enc)</p>
+<p>def decrypt5(flag):<br>    enc = ‘’<br>    for i in flag:<br>        for k in range(20):<br>            if (ord(i) - 97 - b+26*k) % a == 0:<br>                enc += chr((ord(i) - 97 - b + 26 * k) // a + 97)<br>                break<br>    return(enc)</p>
+<p>print(decrypt5(decrypt4(s)))</p>
+<p>得出flag</p>
+<h1 id="散乱的密文"><a href="#散乱的密文" class="headerlink" title="散乱的密文"></a>散乱的密文</h1><p><img src="/2023/01/27/bugku-crypto-%E9%A2%98%E7%9B%AE-%E4%B8%89/004.jpg"><br>考察置换密码<br>根据“一张纸条上凌乱的写着2 1 6 5 3 4”的这个提示分析可知：加密方法为六个字符一组，进行置换<br>求解明文的方法：六个一组按照提示的置换顺序还原<br>查找一个脚本：<br>c=”lf5{ag024c483549d7fd@@1}”<br>table=[2,1,6,5,3,4]<br>flag=’’<br>for i in range(len(c)):<br>    if i%6==0:<br>        temp_str=c[i:i+6]#六个一组做处理<br>        print(temp_str)<br>        temp_dict={k:v for k,v in zip(table,temp_str)}#用zip<br>        print(temp_dict)<br>        sorted_dict=sorted(temp_dict.items(),key=lambda x:x[0])<br>        print(sorted_dict)<br>        for j in range(6):<br>            flag+=sorted_dict[j][1]<br>    else:<br>        continue<br>print(flag[0:-2])<br>可得出flag</p>
+]]></content>
       <categories>
-          
-          <category> ctf </category>
-          
+        <category>ctf</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> crypto </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>bugku-crypto-题目(四)</title>
-      <link href="/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/"/>
-      <url>/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/</url>
-      
-        <content type="html"><![CDATA[<h1 id><a href="#" class="headerlink" title=".!?"></a>.!?</h1><span id="more"></span><p><img src="/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/001.jpg"><br>进入Ook解密：<a href="https://www.splitbrain.org/services/ook">https://www.splitbrain.org/services/ook</a>  得flag<br><img src="/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/002.jpg"></p><h1 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h1><p><img src="/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/003.jpg"><br>打开文件得到各种进制的数字，统一转换为十进制，然后转换ASCII码得flag<br>寻找到一个Python代码：</p><p>text = “d87 x65 x6c x63 o157 d109 o145 b100000 d116 b1101111 o40 x6b b1100101 b1101100 o141 d105 x62 d101 b1101001 d46 o40 d71 x69 d118 x65 x20 b1111001 o157 b1110101 d32 o141 d32 d102 o154 x61 x67 b100000 o141 d115 b100000 b1100001 d32 x67 o151 x66 d116 b101110 b100000 d32 d102 d108 d97 o147 d123 x31 b1100101 b110100 d98 d102 b111000 d49 b1100001 d54 b110011 x39 o64 o144 o145 d53 x61 b1100010 b1100011 o60 d48 o65 b1100001 x63 b110110 d101 o63 b111001 d97 d51 o70 d55 b1100010 d125 x20 b101110 x20 b1001000 d97 d118 o145 x20 d97 o40 d103 d111 d111 x64 d32 o164 b1101001 x6d o145 x7e”</p><p>li=text.split(“ “)<br>list=[]</p><p>def Binary(str1):<br>    s=str1[1:]<br>    s2=int(s,2)<br>    list.append(chr(s2))</p><p>def Octonary(str1):<br>    s=str1[1:]<br>    s2=int(s,8)<br>    list.append(chr(s2))</p><p>def Decimal(str1):<br>    s=str1[1:]<br>    s2=int(s)<br>    list.append(chr(s2))</p><p>def Hex(str1):<br>    s=str1[1:]<br>    s2=int(s,16)<br>    list.append(chr(s2))</p><p>for i in li:<br>    if i.startswith(“b”):<br>        Binary(i)<br>    elif i.startswith(“o”):<br>        Octonary(i)<br>    elif i.startswith(“d”):<br>        Decimal(i)<br>    elif i.startswith(“x”):<br>        Hex(i)<br>print(‘’.join(list))<br>运行可得flag</p><h1 id="贝斯家族"><a href="#贝斯家族" class="headerlink" title="贝斯家族"></a>贝斯家族</h1><p><img src="/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/004.jpg"><br>base91解码得flag</p><h1 id="这不是md5"><a href="#这不是md5" class="headerlink" title="这不是md5"></a>这不是md5</h1><p><img src="/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/005.jpg"><br>16进制解码得flag：<a href="http://www.hiencode.com/hex.html">http://www.hiencode.com/hex.html</a><br>flag：flag{ae73587ba56baef5}</p>]]></content>
-      
-      
+      <tags>
+        <tag>crypto</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>bugku-crypto-题目(四)</title>
+    <url>/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/</url>
+    <content><![CDATA[<h1 id><a href="#" class="headerlink" title=".!?"></a>.!?</h1><span id="more"></span>
+<p><img src="/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/001.jpg"><br>进入Ook解密：<a href="https://www.splitbrain.org/services/ook">https://www.splitbrain.org/services/ook</a>  得flag<br><img src="/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/002.jpg"></p>
+<h1 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h1><p><img src="/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/003.jpg"><br>打开文件得到各种进制的数字，统一转换为十进制，然后转换ASCII码得flag<br>寻找到一个Python代码：</p>
+<p>text = “d87 x65 x6c x63 o157 d109 o145 b100000 d116 b1101111 o40 x6b b1100101 b1101100 o141 d105 x62 d101 b1101001 d46 o40 d71 x69 d118 x65 x20 b1111001 o157 b1110101 d32 o141 d32 d102 o154 x61 x67 b100000 o141 d115 b100000 b1100001 d32 x67 o151 x66 d116 b101110 b100000 d32 d102 d108 d97 o147 d123 x31 b1100101 b110100 d98 d102 b111000 d49 b1100001 d54 b110011 x39 o64 o144 o145 d53 x61 b1100010 b1100011 o60 d48 o65 b1100001 x63 b110110 d101 o63 b111001 d97 d51 o70 d55 b1100010 d125 x20 b101110 x20 b1001000 d97 d118 o145 x20 d97 o40 d103 d111 d111 x64 d32 o164 b1101001 x6d o145 x7e”</p>
+<p>li=text.split(“ “)<br>list=[]</p>
+<p>def Binary(str1):<br>    s=str1[1:]<br>    s2=int(s,2)<br>    list.append(chr(s2))</p>
+<p>def Octonary(str1):<br>    s=str1[1:]<br>    s2=int(s,8)<br>    list.append(chr(s2))</p>
+<p>def Decimal(str1):<br>    s=str1[1:]<br>    s2=int(s)<br>    list.append(chr(s2))</p>
+<p>def Hex(str1):<br>    s=str1[1:]<br>    s2=int(s,16)<br>    list.append(chr(s2))</p>
+<p>for i in li:<br>    if i.startswith(“b”):<br>        Binary(i)<br>    elif i.startswith(“o”):<br>        Octonary(i)<br>    elif i.startswith(“d”):<br>        Decimal(i)<br>    elif i.startswith(“x”):<br>        Hex(i)<br>print(‘’.join(list))<br>运行可得flag</p>
+<h1 id="贝斯家族"><a href="#贝斯家族" class="headerlink" title="贝斯家族"></a>贝斯家族</h1><p><img src="/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/004.jpg"><br>base91解码得flag</p>
+<h1 id="这不是md5"><a href="#这不是md5" class="headerlink" title="这不是md5"></a>这不是md5</h1><p><img src="/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/005.jpg"><br>16进制解码得flag：<a href="http://www.hiencode.com/hex.html">http://www.hiencode.com/hex.html</a><br>flag：flag{ae73587ba56baef5}</p>
+]]></content>
       <categories>
-          
-          <category> ctf </category>
-          
+        <category>ctf</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> crypto </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>bugku-crypto-题目(三)</title>
-      <link href="/2023/01/27/bugku-crypto-%E9%A2%98%E7%9B%AE-%E4%B8%89/"/>
-      <url>/2023/01/27/bugku-crypto-%E9%A2%98%E7%9B%AE-%E4%B8%89/</url>
-      
-        <content type="html"><![CDATA[<h1 id="一段新闻"><a href="#一段新闻" class="headerlink" title="一段新闻"></a>一段新闻</h1><span id="more"></span><p><img src="/2023/01/27/bugku-crypto-%E9%A2%98%E7%9B%AE-%E4%B8%89/001.jpg"><br>打开后由列数得知有隐藏字符，隐藏字符解密<br>利用社会主义核心价值观编码解密得flag</p><h1 id="这是个盲兔子-竟然在唱歌"><a href="#这是个盲兔子-竟然在唱歌" class="headerlink" title="这是个盲兔子,竟然在唱歌!"></a>这是个盲兔子,竟然在唱歌!</h1><p><img src="/2023/01/27/bugku-crypto-%E9%A2%98%E7%9B%AE-%E4%B8%89/002.jpg"><br>盲文解密 <a href="https://www.qqxiuzi.cn/bianma/wenbenjiami.php?s=mangwen">https://www.qqxiuzi.cn/bianma/wenbenjiami.php?s=mangwen</a><br>rabbit解密 <a href="https://www.sojson.com/encrypt_rabbit.html">https://www.sojson.com/encrypt_rabbit.html</a><br>音乐解密 <a href="https://www.qqxiuzi.cn/bianma/wenbenjiami.php?s=yinyue">https://www.qqxiuzi.cn/bianma/wenbenjiami.php?s=yinyue</a><br>得出flag</p><h1 id="道友不来算一算凶吉？"><a href="#道友不来算一算凶吉？" class="headerlink" title="道友不来算一算凶吉？"></a>道友不来算一算凶吉？</h1><p><img src="/2023/01/27/bugku-crypto-%E9%A2%98%E7%9B%AE-%E4%B8%89/003.jpg"><br>易经有64卦 采用编码: 000000 — 1111111<br>利用python的字典 依次替换密文,二进制转字符串<br>每8位一组转10进制转ascll字符，base64解密<br>脚本：<br>import base64<br>s = ‘升益艮归妹井萃旅离旅困未济屯未济中孚未济升困噬嗑鼎震巽噬嗑解节井萃离未济蒙归妹大畜无妄解兑临睽升睽未济无妄遁涣归妹’<br>dic = {‘坤’: ‘000000’, ‘剥’: ‘000001’, ‘比’: ‘000010’, ‘观’: ‘000011’, ‘豫’: ‘000100’, ‘晋’: ‘000101’, ‘萃’: ‘000110’, ‘否’: ‘000111’, ‘谦’: ‘001000’, ‘艮’: ‘001001’, ‘蹇’: ‘001010’, ‘渐’: ‘001011’, ‘小过’: ‘001100’, ‘旅’: ‘001101’, ‘咸’: ‘001110’, ‘遁’: ‘001111’, ‘师’: ‘010000’, ‘蒙’: ‘010001’, ‘坎’: ‘010010’, ‘涣’: ‘010011’, ‘解’: ‘010100’, ‘未济’: ‘010101’, ‘困’: ‘010110’, ‘讼’: ‘010111’, ‘升’: ‘011000’, ‘蛊’: ‘011001’, ‘井’: ‘011010’, ‘巽’: ‘011011’, ‘恒’: ‘011100’, ‘鼎’: ‘011101’, ‘大过’: ‘011110’, ‘姤’: ‘011111’,<br>       ‘复’: ‘100000’, ‘颐’: ‘100001’, ‘屯’: ‘100010’, ‘益’: ‘100011’, ‘震’: ‘100100’, ‘噬嗑’: ‘100101’, ‘随’: ‘100110’, ‘无妄’: ‘100111’, ‘明夷’: ‘101000’, ‘贲’: ‘101001’, ‘既济’: ‘101010’, ‘家人’: ‘101011’, ‘丰’: ‘101100’, ‘离’: ‘101101’, ‘革’: ‘101110’, ‘同人’: ‘101111’, ‘临’: ‘110000’, ‘损’: ‘110001’, ‘节’: ‘110010’, ‘中孚’: ‘110011’, ‘归妹’: ‘110100’, ‘睽’: ‘110101’, ‘兑’: ‘110110’, ‘履’: ‘110111’, ‘泰’: ‘111000’, ‘大畜’: ‘111001’, ‘需’: ‘111010’, ‘小畜’: ‘111011’, ‘大壮’: ‘111100’, ‘大有’: ‘111101’, ‘夬’: ‘111110’, ‘乾’: ‘111111’}<br>l = []<br>k = 0  # 两个字符的标志位<br>for i in range(len(s)):<br>    if k == 1:<br>        k = 0<br>        continue<br>    try:<br>        l.append(dic[s[i]])<br>    except:<br>        l.append(dic[s[i]+s[i+1]])<br>        k = 1</p><p>ss = ‘’.join(l)</p><h1 id="print-ss"><a href="#print-ss" class="headerlink" title="print(ss)"></a>print(ss)</h1><p>enc = ‘’<br>for i in range(0, len(ss), 8):<br>    enc += chr(eval(‘0b’+ss[i:i+8]))</p><h1 id="print-enc"><a href="#print-enc" class="headerlink" title="print(enc)"></a>print(enc)</h1><p>s = base64.b64decode(enc).decode()</p><h1 id="print-s"><a href="#print-s" class="headerlink" title="print(s)"></a>print(s)</h1><p>def encrypt4(enc):<br>    temp = ‘’<br>    offset = 5<br>    for i in range(len(enc)):<br>        temp += chr(ord(enc[i])-offset-i)<br>    return(temp)</p><p>def decrypt4(enc):<br>    temp = ‘’<br>    offset = 5<br>    for i in range(len(enc)):<br>        temp += chr(ord(enc[i])+offset+i)<br>    return(temp)</p><p>a, b = 5, 7</p><p>def encrpyt5(flag):<br>    enc = ‘’<br>    for i in flag:<br>        enc += chr((a*(ord(i)-97)+b) % 26+97)<br>    return(enc)</p><p>def decrypt5(flag):<br>    enc = ‘’<br>    for i in flag:<br>        for k in range(20):<br>            if (ord(i) - 97 - b+26*k) % a == 0:<br>                enc += chr((ord(i) - 97 - b + 26 * k) // a + 97)<br>                break<br>    return(enc)</p><p>print(decrypt5(decrypt4(s)))</p><p>得出flag</p><h1 id="散乱的密文"><a href="#散乱的密文" class="headerlink" title="散乱的密文"></a>散乱的密文</h1><p><img src="/2023/01/27/bugku-crypto-%E9%A2%98%E7%9B%AE-%E4%B8%89/004.jpg"><br>考察置换密码<br>根据“一张纸条上凌乱的写着2 1 6 5 3 4”的这个提示分析可知：加密方法为六个字符一组，进行置换<br>求解明文的方法：六个一组按照提示的置换顺序还原<br>查找一个脚本：<br>c=”lf5{ag024c483549d7fd@@1}”<br>table=[2,1,6,5,3,4]<br>flag=’’<br>for i in range(len(c)):<br>    if i%6==0:<br>        temp_str=c[i:i+6]#六个一组做处理<br>        print(temp_str)<br>        temp_dict={k:v for k,v in zip(table,temp_str)}#用zip<br>        print(temp_dict)<br>        sorted_dict=sorted(temp_dict.items(),key=lambda x:x[0])<br>        print(sorted_dict)<br>        for j in range(6):<br>            flag+=sorted_dict[j][1]<br>    else:<br>        continue<br>print(flag[0:-2])<br>可得出flag</p>]]></content>
-      
-      
+      <tags>
+        <tag>crypto</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>bugku-crypto题目(二)</title>
+    <url>/2023/01/26/bugku-crypto%E9%A2%98%E7%9B%AE-%E4%BA%8C/</url>
+    <content><![CDATA[<h1 id="EN-气泡"><a href="#EN-气泡" class="headerlink" title="EN-气泡"></a>EN-气泡</h1><span id="more"></span>
+<p><img src="/2023/01/26/bugku-crypto%E9%A2%98%E7%9B%AE-%E4%BA%8C/001.jpg"><br>气泡密码解密：<a href="http://www.hiencode.com/bubble.html">http://www.hiencode.com/bubble.html</a><br>连续解三次可得flag</p>
+<h1 id="你以为是md5吗"><a href="#你以为是md5吗" class="headerlink" title="你以为是md5吗"></a>你以为是md5吗</h1><p><img src="/2023/01/26/bugku-crypto%E9%A2%98%E7%9B%AE-%E4%BA%8C/002.jpg"><br>了解md5的构成，其编码后是16进制，所以只有0-9，a-f共16个字符组成<br>只需把在此范围外的字符去掉，再用md5工具解密即可<br><a href="https://www.bejson.com/enc/md5dsc/">https://www.bejson.com/enc/md5dsc/</a><br>得flag：flag{666666666666}</p>
+<h1 id="Math-amp-English"><a href="#Math-amp-English" class="headerlink" title="Math&amp;English"></a>Math&amp;English</h1><p><img src="/2023/01/26/bugku-crypto%E9%A2%98%E7%9B%AE-%E4%BA%8C/003.jpg"><br>考查元音密码<br>计算出计算题答案<br>查找一张元音密码表图对照着解就可以得出flag</p>
+<h1 id="easy-crypto"><a href="#easy-crypto" class="headerlink" title="easy_crypto"></a>easy_crypto</h1><p><img src="/2023/01/26/bugku-crypto%E9%A2%98%E7%9B%AE-%E4%BA%8C/004.jpg"><br>莫斯密码解密：<a href="http://www.hiencode.com/morse.html">http://www.hiencode.com/morse.html</a><br>%u7b解码为{<br>%u7d解码为}<br>进行更换得flag：flag{m0rse_code_1s_interest1n9!}</p>
+]]></content>
       <categories>
-          
-          <category> ctf </category>
-          
+        <category>ctf</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> crypto </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>bugku-crypto题目(二)</title>
-      <link href="/2023/01/26/bugku-crypto%E9%A2%98%E7%9B%AE-%E4%BA%8C/"/>
-      <url>/2023/01/26/bugku-crypto%E9%A2%98%E7%9B%AE-%E4%BA%8C/</url>
-      
-        <content type="html"><![CDATA[<h1 id="EN-气泡"><a href="#EN-气泡" class="headerlink" title="EN-气泡"></a>EN-气泡</h1><span id="more"></span><p><img src="/2023/01/26/bugku-crypto%E9%A2%98%E7%9B%AE-%E4%BA%8C/001.jpg"><br>气泡密码解密：<a href="http://www.hiencode.com/bubble.html">http://www.hiencode.com/bubble.html</a><br>连续解三次可得flag</p><h1 id="你以为是md5吗"><a href="#你以为是md5吗" class="headerlink" title="你以为是md5吗"></a>你以为是md5吗</h1><p><img src="/2023/01/26/bugku-crypto%E9%A2%98%E7%9B%AE-%E4%BA%8C/002.jpg"><br>了解md5的构成，其编码后是16进制，所以只有0-9，a-f共16个字符组成<br>只需把在此范围外的字符去掉，再用md5工具解密即可<br><a href="https://www.bejson.com/enc/md5dsc/">https://www.bejson.com/enc/md5dsc/</a><br>得flag：flag{666666666666}</p><h1 id="Math-amp-English"><a href="#Math-amp-English" class="headerlink" title="Math&amp;English"></a>Math&amp;English</h1><p><img src="/2023/01/26/bugku-crypto%E9%A2%98%E7%9B%AE-%E4%BA%8C/003.jpg"><br>考查元音密码<br>计算出计算题答案<br>查找一张元音密码表图对照着解就可以得出flag</p><h1 id="easy-crypto"><a href="#easy-crypto" class="headerlink" title="easy_crypto"></a>easy_crypto</h1><p><img src="/2023/01/26/bugku-crypto%E9%A2%98%E7%9B%AE-%E4%BA%8C/004.jpg"><br>莫斯密码解密：<a href="http://www.hiencode.com/morse.html">http://www.hiencode.com/morse.html</a><br>%u7b解码为{<br>%u7d解码为}<br>进行更换得flag：flag{m0rse_code_1s_interest1n9!}</p>]]></content>
-      
-      
+      <tags>
+        <tag>crypto</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>bugku-crypto题目</title>
+    <url>/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/</url>
+    <content><![CDATA[<h1 id="抄错的字符"><a href="#抄错的字符" class="headerlink" title="抄错的字符"></a>抄错的字符</h1><span id="more"></span>
+<p><img src="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/001.jpg"><br>找出与数字形状相近的字母：I=&gt;1;b=&gt;6;g=&gt;9;Z=&gt;2;S=&gt;5<br>字符串后加一个‘=’,分为四个一组,利用base64解码得flag<br>QW1h base64解码为 Ama<br>BL92 base64解码为 _v<br>ZXJ5 base64解码为 ery<br>X2Nv base64解码为 _co<br>b2w= base64解码为 ol<br>得flag：flag{Aman_very_cool}</p>
+<h1 id><a href="#" class="headerlink" title="/.-"></a>/.-</h1><p><img src="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/002.jpg"><br>摩斯密码解密： <a href="https://www.atool99.com/morse.php">https://www.atool99.com/morse.php</a><br>解密得：FLAG%u7bD3FCBF17F9399504%u7d<br>%u7b和%u7d就是两个花括号,所有字母均改为小写</p>
+<h1 id="聪明的小羊"><a href="#聪明的小羊" class="headerlink" title="聪明的小羊"></a>聪明的小羊</h1><p><img src="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/003.jpg"><br>提示用栅栏密码解密：<a href="https://www.qqxiuzi.cn/bianma/zhalanmima.php">https://www.qqxiuzi.cn/bianma/zhalanmima.php</a><br>两个栅栏，使用两个一组<br>解密得flag</p>
+<h1 id="ok"><a href="#ok" class="headerlink" title="ok"></a>ok</h1><p><img src="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/004.jpg"><br>打开文件复制所有内容<br>打开 <a href="https://www.splitbrain.org/services/ook">https://www.splitbrain.org/services/ook</a><br>解密得flag</p>
+]]></content>
       <categories>
-          
-          <category> ctf </category>
-          
+        <category>ctf</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> crypto </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>ctf-crypto题目</title>
-      <link href="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/"/>
-      <url>/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/</url>
-      
-        <content type="html"><![CDATA[<h1 id="lt-gt"><a href="#lt-gt" class="headerlink" title="[+-&lt;&gt;]"></a>[+-&lt;&gt;]</h1><span id="more"></span><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/001.jpg"><br>brainfuck解密：<a href="https://ctf.bugku.com/tool/brainfuck">https://ctf.bugku.com/tool/brainfuck</a><br>得flag：flag{0d86208ac54fbf12}</p><h1 id="把猪困在猪圈里"><a href="#把猪困在猪圈里" class="headerlink" title="把猪困在猪圈里"></a>把猪困在猪圈里</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/002.jpg"><br>由题可知，一定是猪圈加密；<br>查看文件，发现末尾是=，又是猪圈，所以base64转图片<a href="https://tool.jisuapi.com/base642pic.html">https://tool.jisuapi.com/base642pic.html</a><br>再去猪圈解密<a href="http://www.metools.info/code/c90.html">http://www.metools.info/code/c90.html</a></p><h1 id="你喜欢下棋吗"><a href="#你喜欢下棋吗" class="headerlink" title="你喜欢下棋吗"></a>你喜欢下棋吗</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/003.jpg"><br>第一个棋盘密码<a href="https://www.qqxiuzi.cn/bianma/qipanmima.php%E8%A7%A3%E5%AF%86%E5%90%8E">https://www.qqxiuzi.cn/bianma/qipanmima.php解密后</a><br>博多密码解密<a href="https://www.boxentriq.com/code-breaking/baudot-code">https://www.boxentriq.com/code-breaking/baudot-code</a><br>得flag: bugku{baud0tc0de}</p><h1 id="小山丘的秘密"><a href="#小山丘的秘密" class="headerlink" title="小山丘的秘密"></a>小山丘的秘密</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/004.jpg"><br>打开图片后发现是一个棋盘，经查阅发现为希尔密码<br>一般的希尔密码是：A=0 B=1  C=2  但是开局文件就告诉我们  A=1  因此这里我们要更改一下解码时字母表的顺序：  Z=0  A=1  B=2<br>将z提前  得到密钥  abczadefz<br>解码得flag</p>]]></content>
-      
-      
+      <tags>
+        <tag>crypto</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ctf-base家族</title>
+    <url>/2023/01/30/ctf-base%E5%AE%B6%E6%97%8F/</url>
+    <content><![CDATA[<h1 id="base16"><a href="#base16" class="headerlink" title="base16"></a>base16</h1><span id="more"></span>
+<p>base16编码使用16个ASCII可打印字符（数字0-9和字母A-F）对任意字节数据进行编码。<br>base16先获取输入字符串每个字节的二进制值（不足8比特在高位补0），然后将其串联进来再按照4比特一组进行切分，将每组二进制数分别转换成十进制<br>Base16不用到填充符号“=”<br><a href="https://ctf.bugku.com/tool/base16">https://ctf.bugku.com/tool/base16</a></p>
+<h1 id="base32"><a href="#base32" class="headerlink" title="base32"></a>base32</h1><p>编码后的字符只会在大写字母（A-Z）和数字234567 32个字符组成，因为base32是5bit为一组，所以编码长度必须是40bit的倍数（5和8的最小公倍数）<br>因为必须为40bit的倍数，所以如果不足的话，会在第一个不满足5bit的小组进行补0，然后进行编码，在结果补上占位符=，一个等号5bit，最多出现6个<br><a href="https://ctf.bugku.com/tool/base32">https://ctf.bugku.com/tool/base32</a></p>
+<h1 id="base36"><a href="#base36" class="headerlink" title="base36"></a>base36</h1><p>base36编码是使用0~9的数字，加上所有26个字母，所有的字母要不全大写，要不全小写。<br><a href="http://www.hiencode.com/base36w.html">http://www.hiencode.com/base36w.html</a></p>
+<h1 id="base58"><a href="#base58" class="headerlink" title="base58"></a>base58</h1><p>字符为：123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz(无I、O、l)<br><a href="https://ctf.bugku.com/tool/base58">https://ctf.bugku.com/tool/base58</a></p>
+<h1 id="base62"><a href="#base62" class="headerlink" title="base62"></a>base62</h1><p>Base62编码是由10个数字、26个大写英文字母和26个小写英文字母组成<br><a href="https://ctf.bugku.com/tool/base62">https://ctf.bugku.com/tool/base62</a></p>
+<h1 id="base64"><a href="#base64" class="headerlink" title="base64"></a>base64</h1><p>编码后的字符只会在A-Z a-z 0-9（共62个）另外加上+  /两个符号,3个字节由4个base64单元来表示<br>如果要编码的字节数不能被3整除，最后会多出1个或2个字节，则用占位符=（一个代表一个字节）所以最多出现两个等号。<br><a href="https://www.qqxiuzi.cn/bianma/base64.htm">https://www.qqxiuzi.cn/bianma/base64.htm</a></p>
+<h1 id="base85"><a href="#base85" class="headerlink" title="base85"></a>base85</h1><p>Base85是一种类似于Base64的二进制文本编码形式，通过使用五个ASCII字符来表示四个字节的二进制数据<br>特点是奇怪的字符比较多，但是很难出现等号<br><a href="http://www.atoolbox.net/Tool.php?Id=934">http://www.atoolbox.net/Tool.php?Id=934</a><br><a href="https://ctf.bugku.com/tool/base85">https://ctf.bugku.com/tool/base85</a></p>
+<h1 id="base91"><a href="#base91" class="headerlink" title="base91"></a>base91</h1><p>base91的密文由91个字符（0-9，a-z，A-Z,!#$%&amp;()*+,./:;&lt;=&gt;?@[]^_`{|}~”）组成<br>从94个可打印ASCII字符（0x21-0x7E）中，以下三个字符被省略以构建base91字母：<br>-（破折号，0x2D）<br>\（反斜杠，0x5C）<br>‘（撇号，0x27）<br><a href="http://www.atoolbox.net/Tool.php?Id=935">http://www.atoolbox.net/Tool.php?Id=935</a></p>
+<h1 id="base92"><a href="#base92" class="headerlink" title="base92"></a>base92</h1><p>比base91 多一个字符 〜<br><a href="https://ctf.bugku.com/tool/base92">https://ctf.bugku.com/tool/base92</a></p>
+<h1 id="base100"><a href="#base100" class="headerlink" title="base100"></a>base100</h1><p><a href="https://ctf.bugku.com/tool/base100">https://ctf.bugku.com/tool/base100</a><br>base100: 👟👜👣👦📦💳💃👮👣👛🐥🐨🐩🐫🐬🐭<br>特征：Emoji表情组成</p>
+]]></content>
       <categories>
-          
-          <category> ctf </category>
-          
+        <category>ctf</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> crypto </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>bugku-crypto题目</title>
-      <link href="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/"/>
-      <url>/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/</url>
-      
-        <content type="html"><![CDATA[<h1 id="抄错的字符"><a href="#抄错的字符" class="headerlink" title="抄错的字符"></a>抄错的字符</h1><span id="more"></span><p><img src="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/001.jpg"><br>找出与数字形状相近的字母：I=&gt;1;b=&gt;6;g=&gt;9;Z=&gt;2;S=&gt;5<br>字符串后加一个‘=’,分为四个一组,利用base64解码得flag<br>QW1h base64解码为 Ama<br>BL92 base64解码为 _v<br>ZXJ5 base64解码为 ery<br>X2Nv base64解码为 _co<br>b2w= base64解码为 ol<br>得flag：flag{Aman_very_cool}</p><h1 id><a href="#" class="headerlink" title="/.-"></a>/.-</h1><p><img src="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/002.jpg"><br>摩斯密码解密： <a href="https://www.atool99.com/morse.php">https://www.atool99.com/morse.php</a><br>解密得：FLAG%u7bD3FCBF17F9399504%u7d<br>%u7b和%u7d就是两个花括号,所有字母均改为小写</p><h1 id="聪明的小羊"><a href="#聪明的小羊" class="headerlink" title="聪明的小羊"></a>聪明的小羊</h1><p><img src="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/003.jpg"><br>提示用栅栏密码解密：<a href="https://www.qqxiuzi.cn/bianma/zhalanmima.php">https://www.qqxiuzi.cn/bianma/zhalanmima.php</a><br>两个栅栏，使用两个一组<br>解密得flag</p><h1 id="ok"><a href="#ok" class="headerlink" title="ok"></a>ok</h1><p><img src="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/004.jpg"><br>打开文件复制所有内容<br>打开 <a href="https://www.splitbrain.org/services/ook">https://www.splitbrain.org/services/ook</a><br>解密得flag</p>]]></content>
-      
-      
+      <tags>
+        <tag>crypto</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ctf-crypto题目</title>
+    <url>/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/</url>
+    <content><![CDATA[<h1 id="lt-gt"><a href="#lt-gt" class="headerlink" title="[+-&lt;&gt;]"></a>[+-&lt;&gt;]</h1><span id="more"></span>
+<p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/001.jpg"><br>brainfuck解密：<a href="https://ctf.bugku.com/tool/brainfuck">https://ctf.bugku.com/tool/brainfuck</a><br>得flag：flag{0d86208ac54fbf12}</p>
+<h1 id="把猪困在猪圈里"><a href="#把猪困在猪圈里" class="headerlink" title="把猪困在猪圈里"></a>把猪困在猪圈里</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/002.jpg"><br>由题可知，一定是猪圈加密；<br>查看文件，发现末尾是=，又是猪圈，所以base64转图片<a href="https://tool.jisuapi.com/base642pic.html">https://tool.jisuapi.com/base642pic.html</a><br>再去猪圈解密<a href="http://www.metools.info/code/c90.html">http://www.metools.info/code/c90.html</a></p>
+<h1 id="你喜欢下棋吗"><a href="#你喜欢下棋吗" class="headerlink" title="你喜欢下棋吗"></a>你喜欢下棋吗</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/003.jpg"><br>第一个棋盘密码<a href="https://www.qqxiuzi.cn/bianma/qipanmima.php%E8%A7%A3%E5%AF%86%E5%90%8E">https://www.qqxiuzi.cn/bianma/qipanmima.php解密后</a><br>博多密码解密<a href="https://www.boxentriq.com/code-breaking/baudot-code">https://www.boxentriq.com/code-breaking/baudot-code</a><br>得flag: bugku{baud0tc0de}</p>
+<h1 id="小山丘的秘密"><a href="#小山丘的秘密" class="headerlink" title="小山丘的秘密"></a>小山丘的秘密</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/004.jpg"><br>打开图片后发现是一个棋盘，经查阅发现为希尔密码<br>一般的希尔密码是：A=0 B=1  C=2  但是开局文件就告诉我们  A=1  因此这里我们要更改一下解码时字母表的顺序：  Z=0  A=1  B=2<br>将z提前  得到密钥  abczadefz<br>解码得flag</p>
+]]></content>
       <categories>
-          
-          <category> ctf </category>
-          
+        <category>ctf</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> crypto </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>BugKu where is flag 5</title>
-      <link href="/2023/01/19/BugKu-where-is-flag-5/"/>
-      <url>/2023/01/19/BugKu-where-is-flag-5/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/2023/01/19/BugKu-where-is-flag-5/001.jpg"></p><span id="more"></span><p>下载文件后打开：Gx8EAA8SCBIfHQARCxMUHwsAHRwRHh8BEQwaFBQfGwMYCBYRHx4SBRQdGR8HAQ0QFQ==<br>利用base64解码，得到：b’\x1b\x1f\x04\x00\x0f\x12\x08\x12\x1f\x1d\x00\x11\x0b\x13\x14\x1f\x0b\x00\x1d\x1c\x11\x1e\x1f\x01\x11\x0c\x1a\x14\x14\x1f\x1b\x03\x18\x08\x16\x11\x1f\x1e\x12\x05\x14\x1d\x19\x1f\x07\x01\r\x10\x15’<br><img src="/2023/01/19/BugKu-where-is-flag-5/003.jpg"><br>利用如下代码转换为二进制：<br>          enc = ‘Gx8EAA8SCBIfHQARCxMUHwsAHRwRHh8BEQwaFBQfGwMYCBYRHx4SBRQdGR8HAQ0QFQ==’<br>          text = base64.b64decode(enc)<br>          bin_data = [“0”*(5-len(i))+i if len(i)!=5 else i for i in [bin(j).replace(‘0b’,’’) for j in text]]</p><p>将每一个二进制的相同位数的数据取出，再以长度7切片转换为字符：<br>flag = ‘’<br>data1 = ‘’<br>for j in range(5):<br>    for i in bin_data:<br>        data1 +=i[j]<br>for n in range(0,len(data1),7):<br>    flag +=chr(int(str(data1[n:n+7]),2))</p><h1 id="脚本"><a href="#脚本" class="headerlink" title="脚本"></a>脚本</h1><p>import base64</p><p>enc = ‘Gx8EAA8SCBIfHQARCxMUHwsAHRwRHh8BEQwaFBQfGwMYCBYRHx4SBRQdGR8HAQ0QFQ==’<br>text = base64.b64decode(enc)<br>bin_data = [“0”*(5-len(i))+i if len(i)!=5 else i for i in [bin(j).replace(‘0b’,’’) for j in text]]<br>flag = ‘’<br>data1 = ‘’<br>for j in range(5):<br>    for i in bin_data:<br>        data1 +=i[j]<br>for k in range(0,len(data1),7):<br>    flag +=chr(int(str(data1[k:k+7]),2))<br>print(flag)</p><h1 id="flag：bugku-ce26f61d40fea75fc0b980d7588e"><a href="#flag：bugku-ce26f61d40fea75fc0b980d7588e" class="headerlink" title="flag：bugku{ce26f61d40fea75fc0b980d7588e}"></a>flag：bugku{ce26f61d40fea75fc0b980d7588e}</h1>]]></content>
-      
-      
+      <tags>
+        <tag>crypto</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>buuctf解题</title>
+    <url>/2023/02/16/buuctf%E8%A7%A3%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="MD5"><a href="#MD5" class="headerlink" title="MD5"></a>MD5</h1><span id="more"></span>
+<p>直接MD5解密即可得flag</p>
+<h1 id="一眼就解密"><a href="#一眼就解密" class="headerlink" title="一眼就解密"></a>一眼就解密</h1><p>base64解密可得flag</p>
+<h1 id="url编码"><a href="#url编码" class="headerlink" title="url编码"></a>url编码</h1><p>url编码解码得flag</p>
+<h1 id="看我回旋踢"><a href="#看我回旋踢" class="headerlink" title="看我回旋踢"></a>看我回旋踢</h1><p>ROT13解密可得flag<br>ROT13（回转13位）是一种简易的替换式密码算法。它是一种在英文网络论坛用作隐藏八卦、妙句、谜题解答以及某些脏话的工具，目的是逃过版主或管理员的匆匆一瞥。ROT13 也是过去在古罗马开发的凯撒密码的一种变体。ROT13是它自身的逆反，即：要还原成原文只要使用同一算法即可得，故同样的操作可用于加密与解密。该算法并没有提供真正密码学上的保全，故它不应该被用于需要保全的用途上。它常常被当作弱加密示例的典型。</p>
+<h1 id="摩丝"><a href="#摩丝" class="headerlink" title="摩丝"></a>摩丝</h1><p>摩斯密码解密得flag</p>
+<h1 id="password"><a href="#password" class="headerlink" title="password"></a>password</h1><p>打开文件后发现人名以及生日，key{**********}可以知道有10个字符。尝试key{zs+生日}，发现错误。将key调改为flag即可。</p>
+]]></content>
       <categories>
-          
-          <category> ctf </category>
-          
+        <category>buuctf</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> crypto </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>ctf古典密码</title>
-      <link href="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/"/>
-      <url>/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/</url>
-      
-        <content type="html"><![CDATA[<h1 id="1、埃及文字"><a href="#1、埃及文字" class="headerlink" title="1、埃及文字"></a>1、埃及文字</h1><span id="more"></span><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/001.jpg"></p><h1 id="2、跳舞的小人"><a href="#2、跳舞的小人" class="headerlink" title="2、跳舞的小人"></a>2、跳舞的小人</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/001.png"></p><h1 id="3、盲文"><a href="#3、盲文" class="headerlink" title="3、盲文"></a>3、盲文</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/002.jpg"></p><h1 id="4、音乐密码"><a href="#4、音乐密码" class="headerlink" title="4、音乐密码"></a>4、音乐密码</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/003.png"></p><h1 id="5、猪圈密码"><a href="#5、猪圈密码" class="headerlink" title="5、猪圈密码"></a>5、猪圈密码</h1><p><a href="http://www.metools.info/code/c90.html">http://www.metools.info/code/c90.html</a></p><h1 id="6、棋盘密码"><a href="#6、棋盘密码" class="headerlink" title="6、棋盘密码"></a>6、棋盘密码</h1><p><a href="https://www.qqxiuzi.cn/bianma/qipanmima.php">https://www.qqxiuzi.cn/bianma/qipanmima.php</a></p><h1 id="7、元音密码"><a href="#7、元音密码" class="headerlink" title="7、元音密码"></a>7、元音密码</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/004.png"></p><h1 id="8、培根密码"><a href="#8、培根密码" class="headerlink" title="8、培根密码"></a>8、培根密码</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/005.png"></p><h1 id="9、栅栏密码"><a href="#9、栅栏密码" class="headerlink" title="9、栅栏密码"></a>9、栅栏密码</h1><p><a href="https://www.qqxiuzi.cn/bianma/zhalanmima.php">https://www.qqxiuzi.cn/bianma/zhalanmima.php</a></p><h1 id="10、博多密码"><a href="#10、博多密码" class="headerlink" title="10、博多密码"></a>10、博多密码</h1><p><a href="https://www.boxentriq.com/code-breaking/baudot-code">https://www.boxentriq.com/code-breaking/baudot-code</a></p>]]></content>
-      
-      
+      <tags>
+        <tag>ctf</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ctf古典密码</title>
+    <url>/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/</url>
+    <content><![CDATA[<h1 id="1、埃及文字"><a href="#1、埃及文字" class="headerlink" title="1、埃及文字"></a>1、埃及文字</h1><span id="more"></span>
+<p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/001.jpg"></p>
+<h1 id="2、跳舞的小人"><a href="#2、跳舞的小人" class="headerlink" title="2、跳舞的小人"></a>2、跳舞的小人</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/001.png"></p>
+<h1 id="3、盲文"><a href="#3、盲文" class="headerlink" title="3、盲文"></a>3、盲文</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/002.jpg"></p>
+<h1 id="4、音乐密码"><a href="#4、音乐密码" class="headerlink" title="4、音乐密码"></a>4、音乐密码</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/003.png"></p>
+<h1 id="5、猪圈密码"><a href="#5、猪圈密码" class="headerlink" title="5、猪圈密码"></a>5、猪圈密码</h1><p><a href="http://www.metools.info/code/c90.html">http://www.metools.info/code/c90.html</a></p>
+<h1 id="6、棋盘密码"><a href="#6、棋盘密码" class="headerlink" title="6、棋盘密码"></a>6、棋盘密码</h1><p><a href="https://www.qqxiuzi.cn/bianma/qipanmima.php">https://www.qqxiuzi.cn/bianma/qipanmima.php</a></p>
+<h1 id="7、元音密码"><a href="#7、元音密码" class="headerlink" title="7、元音密码"></a>7、元音密码</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/004.png"></p>
+<h1 id="8、培根密码"><a href="#8、培根密码" class="headerlink" title="8、培根密码"></a>8、培根密码</h1><p><img src="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/005.png"></p>
+<h1 id="9、栅栏密码"><a href="#9、栅栏密码" class="headerlink" title="9、栅栏密码"></a>9、栅栏密码</h1><p><a href="https://www.qqxiuzi.cn/bianma/zhalanmima.php">https://www.qqxiuzi.cn/bianma/zhalanmima.php</a></p>
+<h1 id="10、博多密码"><a href="#10、博多密码" class="headerlink" title="10、博多密码"></a>10、博多密码</h1><p><a href="https://www.boxentriq.com/code-breaking/baudot-code">https://www.boxentriq.com/code-breaking/baudot-code</a></p>
+]]></content>
       <categories>
-          
-          <category> ctf </category>
-          
+        <category>ctf</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> crypto </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>hexo博客修饰</title>
-      <link href="/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/"/>
-      <url>/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/</url>
-      
-        <content type="html"><![CDATA[<p>接上集：上集讲到了搭建hexo博客,但是似乎有些平淡,这一集就为他好好打扮一番吧！<span id="more"></span><br>注意：有些文件,如css、yml等不能打开,可切换为txt文件进行打开,并修改内容,修改过后记得去掉.txt哦！</p><p>第一步：安装主题，这里以yilia主题作为讲解。在myblog文件夹下打开git,输入命令：git clone <a href="https://github.com/litten/hexo-theme-yilia.git">https://github.com/litten/hexo-theme-yilia.git</a><br>第二步：打开根目录下的_config.yml文件,找到theme,修改为主题文件名,即 theme: yilia<br>第三步：根目录下打开git,输入命令hexo -clean；hexo -g；hexo -s 打开本地网页,进行查看,先不要关,后面的修改尽量做到完成一项或两项就刷新一遍,查看是否有问题,无则下一步,否则把刚才的修改暂时改回(记得为自己留个备份~)<br>第四步：请在主题配置文件(_config.yml)中开头添加以下内容：<br>#Site 网站<br>title: ‘’             # 网站标题<br>subtitle: ‘’          # 网站副标题<br>description: ‘’       # 网站描述<br>keywords: ‘’<br>author: ‘’            # 博主的名字<br>language: zh-CN       # 网站使用的语言<br>timezone: ‘’          # 网站时区。Hexo 默认使用您电脑的时区<br><img src="/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/001.jpg"><br>第五步：配置–所有文章,步骤可在本地博客打开”所有文章”查看。<br>第六步：代码高亮<br>在主题目录下打开配置文件,添加如下代码：<br>#代码高亮<br>highlight:<br>  enable: true<br>  line_number: true<br>  auto_detect: true<br>  tab_replace: ‘’<br>  wrap: true<br>  hljs: false<br>第七步：打开主题配置文件,修改头像、图标等。可把图片存入主题目录下的source-img文件中<br><img src="/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/002.jpg"><br>第八步：左侧显示总文章数,打开themes\yilia\layout_partical\left-col.ejs文件<br>找到下面一段：<br><img src="/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/003.jpg"><br>在后面添加：</p><nav>    总文章数 <%=site.posts.length%></%=site.posts.length%></nav><p>第九步：添加字数统计,输入命令安装hexo-wordcount：npm install hexo-wordcount –save<br>打开layout_partical\article.ejs文件,在header下面添加如下代码：</p><div align="center" class="post-count">    字数：<%= wordcount(post.content) %>字 | 预计阅读时长：<%= min2read(post.content) %>分钟</%=></%=></div><p>打开layout_partical\left-col.ejs文件,添加如下代码：</p><nav>    总字数 <span class="post-count"><%= totalcount(site, '0,0.0a') %></%=></span></nav>第十步：背景添加、音乐、头像旋转等功能,可参考以下文章：https://blog.csdn.net/weixin_41599858/article/details/104786874https://blog.csdn.net/weixin_41599858/article/details/104786874]]></content>
-      
-      
+      <tags>
+        <tag>crypto</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo博客修饰</title>
+    <url>/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/</url>
+    <content><![CDATA[<p>接上集：上集讲到了搭建hexo博客,但是似乎有些平淡,这一集就为他好好打扮一番吧！<span id="more"></span><br>注意：有些文件,如css、yml等不能打开,可切换为txt文件进行打开,并修改内容,修改过后记得去掉.txt哦！</p>
+<p>第一步：安装主题，这里以yilia主题作为讲解。在myblog文件夹下打开git,输入命令：git clone <a href="https://github.com/litten/hexo-theme-yilia.git">https://github.com/litten/hexo-theme-yilia.git</a><br>第二步：打开根目录下的_config.yml文件,找到theme,修改为主题文件名,即 theme: yilia<br>第三步：根目录下打开git,输入命令hexo -clean；hexo -g；hexo -s 打开本地网页,进行查看,先不要关,后面的修改尽量做到完成一项或两项就刷新一遍,查看是否有问题,无则下一步,否则把刚才的修改暂时改回(记得为自己留个备份~)<br>第四步：请在主题配置文件(_config.yml)中开头添加以下内容：<br>#Site 网站<br>title: ‘’             # 网站标题<br>subtitle: ‘’          # 网站副标题<br>description: ‘’       # 网站描述<br>keywords: ‘’<br>author: ‘’            # 博主的名字<br>language: zh-CN       # 网站使用的语言<br>timezone: ‘’          # 网站时区。Hexo 默认使用您电脑的时区<br><img src="/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/001.jpg"><br>第五步：配置–所有文章,步骤可在本地博客打开”所有文章”查看。<br>第六步：代码高亮<br>在主题目录下打开配置文件,添加如下代码：<br>#代码高亮<br>highlight:<br>  enable: true<br>  line_number: true<br>  auto_detect: true<br>  tab_replace: ‘’<br>  wrap: true<br>  hljs: false<br>第七步：打开主题配置文件,修改头像、图标等。可把图片存入主题目录下的source-img文件中<br><img src="/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/002.jpg"><br>第八步：左侧显示总文章数,打开themes\yilia\layout_partical\left-col.ejs文件<br>找到下面一段：<br><img src="/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/003.jpg"><br>在后面添加：</p>
+<nav>
+    总文章数 <%=site.posts.length%>
+</%=site.posts.length%></nav>
+
+<p>第九步：添加字数统计,输入命令安装hexo-wordcount：npm install hexo-wordcount –save<br>打开layout_partical\article.ejs文件,在header下面添加如下代码：</p>
+<div align="center" class="post-count">
+    字数：<%= wordcount(post.content) %>字 | 预计阅读时长：<%= min2read(post.content) %>分钟
+</%=></%=></div>
+
+<p>打开layout_partical\left-col.ejs文件,添加如下代码：</p>
+<nav>
+    总字数 <span class="post-count"><%= totalcount(site, '0,0.0a') %></%=></span>
+</nav>
+第十步：背景添加、音乐、头像旋转等功能,可参考以下文章：https://blog.csdn.net/weixin_41599858/article/details/104786874
+https://blog.csdn.net/weixin_41599858/article/details/104786874
+
+
+
+]]></content>
       <categories>
-          
-          <category> 文字天下 </category>
-          
+        <category>文字天下</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>纯文字hexo博客搭建教程</title>
-      <link href="/2023/01/10/%E7%BA%AF%E6%96%87%E5%AD%97hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
-      <url>/2023/01/10/%E7%BA%AF%E6%96%87%E5%AD%97hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
-      
-        <content type="html"><![CDATA[<p>​            关于Hexo博客搭建，一步一个脚印慢慢来，不要因为一个不在意，换来后面东寻西问都难以解决的问题，那就得不偿失了。<span id="more"></span>别放弃，问题实在解决不了大不了重头再来嘛~没准就可以顺利成功了呢！</p><p>​           首先，搭建hexo博客我们要祭出两大法宝——一个git，一个node.js，快去官网下载吧！至于为什么要下载他们,嗯…我想：应该是他们上辈子积德深厚吧！下载好了嘛？那就开始吧！踏向成功第一步：请点击win+R，输入cmd，点个确定试试看啦！踏向成功第二步：请输入命令—1、git -v,2、node -v，什么？不对？！我早有准备，请点开你的设置，搜索高级系统设置，打开继续走—&gt;环境变量—&gt;path(上面一个，下面一个)—&gt;编辑—&gt;新建。复制你的git文件路径，粘贴到你的新建上面(上下均贴)，node同上。再次输入命令，看见版本号了吧？恭喜你，离成功又近了一步！！！</p><p>​           接下来，就是hexo的舞台了！在此之前，我想请你在非C盘处新建一个名为myblog的文件夹。为什么非C？当然是为你，啊不，为你的电脑着想了！在此文件夹内点击右键，寻找一下git bash here，打开后输入命令—npm install -g hexo-cil。安装好了就接着输入hexo init 进行hexo初始化。去看看文件夹里面是不是多了好多文件？惊不惊喜，意不意外？！接着我们继续输入命令hexo -s，查看能否启动成功，是不是有个http开头的网址？去浏览器打开看看，一个以hexo为大标题的页面展现在你的眼前，Hello World作为赠品就免费送你了！恭喜你，离起点又远了一步！！！</p><p>​            别急，还没结束呢，页面你是能看到了，得让别人看到嘞。这时候，第三件法宝横空出世！没错，他就是人见人爱，花见花开，车见车爆胎的-Github！！！接下来，还得麻烦你去Github官网创建你的世界，英文看不懂？！请前往英语词典进行查找，网易有道你也值得拥有。踏向成功第六步：登录后把箭头放在你的右上角头像处，点开你的仓库，点击new新建一个仓库吧！仓库名请设置为：GitHub用户名+.github.io  (谁要是把加号也输进去,给我发私信,我保证不笑)，请为下面的Add a README file拉勾，点击Create repository。踏向成功第七步：生成ssh添加到Github—打开git bash here—&gt;输入命令git config –global user.name “yourname”(yourname是你的GitHub用户名,不要整错了嘞)，什么都没显示，紧接着输入git config –global user.email “your github email”(也就是你创建GitHub时的邮箱)，还是什么也没有？！再一再二不再三了哈!紧接着输入命令ssh-keygen -t rsa -C “your github email”，大写小写分清楚哦~连敲三次回车(Enter)。打开文件查找.ssh，发现有一个公钥，一个私钥，id_rsa.pub是公钥，打开他复制里面所有内容。进入GitHub，箭头放在右上角头像上，进入下面的setting，点击ssh and GPG keys—&gt;New SSH key。title您随意，Key处是要粘贴公钥嘀!点击SSH key。恭喜你，离中点已经有些距离了！！！</p><p>​             最后！激动不？！请打开你的myblog文件夹下的_config.yml文件，如果你电脑上没有打开这类文件的工具且不想下载的话，请将该文件改为txt文件，记事本打开！翻到最后一点，看到deploy，欧克欧克，进行修改，修改如下：注意！！！冒号后面有一个空格,格式万不可出错！</p><p>deploy:</p><p>type: git</p><p>repo: 你的GitHub仓库的SSH链接</p><p>branch: main                                                      接下来，我们需要安装一个插件，在myblog文件夹中打开git bash here,输入命令：npm install hexo-deployer-git –save。依次执行以下命令hexo -c;hexo -g;hexo -d。(其中，hexo -c可使用hexo -clean,hexo -d可使用hexo -deploy)。注意：最后一条命令(hexo -d)最后会让输入一个yes，不要忘了哈!，回到GitHub上打开仓库，看到各种各样的文件，表示部署成功，此时你的博客链接为：<a href="https://github用户名+.github.io,打开.恭喜你,走向成功!!!/">https://GitHub用户名+.github.io,打开.恭喜你，走向成功！！！</a></p><p>​            是不是对页面不太感兴趣？莫慌莫慌，俺也一样！！！明天教你，嘻嘻~加油！！！如果过程中有问题，欢迎加我qq进行询问！可是我是小白诶,我也不可能都会，如果我也解决不了，请你不要着急！！！待我去找学长聊聊天</p>]]></content>
-      
-      
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>纯文字hexo博客搭建教程</title>
+    <url>/2023/01/10/%E7%BA%AF%E6%96%87%E5%AD%97hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>​            关于Hexo博客搭建，一步一个脚印慢慢来，不要因为一个不在意，换来后面东寻西问都难以解决的问题，那就得不偿失了。<span id="more"></span>别放弃，问题实在解决不了大不了重头再来嘛~没准就可以顺利成功了呢！</p>
+<p>​           首先，搭建hexo博客我们要祭出两大法宝——一个git，一个node.js，快去官网下载吧！至于为什么要下载他们,嗯…我想：应该是他们上辈子积德深厚吧！下载好了嘛？那就开始吧！踏向成功第一步：请点击win+R，输入cmd，点个确定试试看啦！踏向成功第二步：请输入命令—1、git -v,2、node -v，什么？不对？！我早有准备，请点开你的设置，搜索高级系统设置，打开继续走—&gt;环境变量—&gt;path(上面一个，下面一个)—&gt;编辑—&gt;新建。复制你的git文件路径，粘贴到你的新建上面(上下均贴)，node同上。再次输入命令，看见版本号了吧？恭喜你，离成功又近了一步！！！</p>
+<p>​           接下来，就是hexo的舞台了！在此之前，我想请你在非C盘处新建一个名为myblog的文件夹。为什么非C？当然是为你，啊不，为你的电脑着想了！在此文件夹内点击右键，寻找一下git bash here，打开后输入命令—npm install -g hexo-cil。安装好了就接着输入hexo init 进行hexo初始化。去看看文件夹里面是不是多了好多文件？惊不惊喜，意不意外？！接着我们继续输入命令hexo -s，查看能否启动成功，是不是有个http开头的网址？去浏览器打开看看，一个以hexo为大标题的页面展现在你的眼前，Hello World作为赠品就免费送你了！恭喜你，离起点又远了一步！！！</p>
+<p>​            别急，还没结束呢，页面你是能看到了，得让别人看到嘞。这时候，第三件法宝横空出世！没错，他就是人见人爱，花见花开，车见车爆胎的-Github！！！接下来，还得麻烦你去Github官网创建你的世界，英文看不懂？！请前往英语词典进行查找，网易有道你也值得拥有。踏向成功第六步：登录后把箭头放在你的右上角头像处，点开你的仓库，点击new新建一个仓库吧！仓库名请设置为：GitHub用户名+.github.io  (谁要是把加号也输进去,给我发私信,我保证不笑)，请为下面的Add a README file拉勾，点击Create repository。踏向成功第七步：生成ssh添加到Github—打开git bash here—&gt;输入命令git config –global user.name “yourname”(yourname是你的GitHub用户名,不要整错了嘞)，什么都没显示，紧接着输入git config –global user.email “your github email”(也就是你创建GitHub时的邮箱)，还是什么也没有？！再一再二不再三了哈!紧接着输入命令ssh-keygen -t rsa -C “your github email”，大写小写分清楚哦~连敲三次回车(Enter)。打开文件查找.ssh，发现有一个公钥，一个私钥，id_rsa.pub是公钥，打开他复制里面所有内容。进入GitHub，箭头放在右上角头像上，进入下面的setting，点击ssh and GPG keys—&gt;New SSH key。title您随意，Key处是要粘贴公钥嘀!点击SSH key。恭喜你，离中点已经有些距离了！！！</p>
+<p>​             最后！激动不？！请打开你的myblog文件夹下的_config.yml文件，如果你电脑上没有打开这类文件的工具且不想下载的话，请将该文件改为txt文件，记事本打开！翻到最后一点，看到deploy，欧克欧克，进行修改，修改如下：注意！！！冒号后面有一个空格,格式万不可出错！</p>
+<p>deploy:</p>
+<p>type: git</p>
+<p>repo: 你的GitHub仓库的SSH链接</p>
+<p>branch: main                                                      接下来，我们需要安装一个插件，在myblog文件夹中打开git bash here,输入命令：npm install hexo-deployer-git –save。依次执行以下命令hexo -c;hexo -g;hexo -d。(其中，hexo -c可使用hexo -clean,hexo -d可使用hexo -deploy)。注意：最后一条命令(hexo -d)最后会让输入一个yes，不要忘了哈!，回到GitHub上打开仓库，看到各种各样的文件，表示部署成功，此时你的博客链接为：<a href="https://github用户名+.github.io,打开.恭喜你,走向成功!!!/">https://GitHub用户名+.github.io,打开.恭喜你，走向成功！！！</a></p>
+<p>​            是不是对页面不太感兴趣？莫慌莫慌，俺也一样！！！明天教你，嘻嘻~加油！！！如果过程中有问题，欢迎加我qq进行询问！可是我是小白诶,我也不可能都会，如果我也解决不了，请你不要着急！！！待我去找学长聊聊天</p>
+]]></content>
       <categories>
-          
-          <category> 文字天下 </category>
-          
+        <category>文字天下</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
 </search>
