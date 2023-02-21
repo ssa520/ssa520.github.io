@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>AWD比赛</title>
-    <url>/2023/02/14/AWD%E6%AF%94%E8%B5%9B/</url>
-    <content><![CDATA[<h1 id="AWD比赛总结"><a href="#AWD比赛总结" class="headerlink" title="AWD比赛总结"></a>AWD比赛总结<span id="more"></span></h1><h1 id="比赛介绍"><a href="#比赛介绍" class="headerlink" title="比赛介绍"></a>比赛介绍</h1><p>AWD赛制是按照分组来进行比赛的</p>
+    <title>1和0的故事</title>
+    <url>/2023/02/04/1%E5%92%8C0%E7%9A%84%E6%95%85%E4%BA%8B/</url>
+    <content><![CDATA[<h1 id="1和0的故事"><a href="#1和0的故事" class="headerlink" title="1和0的故事"></a>1和0的故事<span id="more"></span></h1><p><img src="/2023/02/04/1%E5%92%8C0%E7%9A%84%E6%95%85%E4%BA%8B/001.jpg"><br>下载文件后记事本打开，发现全部为1和0，可联想到二维码，尝试转换。<br>利用python脚本转换为二维码<br>以下是我在网络上查找的脚本供参考：<br>from PIL import Image<br>MAX = 25<br>#二维码大小<br>pic = Image.new(“RGB”,(MAX, MAX))<br>#str = “””1111111001110010001111111100000100001111010100000110111010011100010010111011011101010111100001011101101110101010101000101110110000010011000101010000011111111010101010101111111000000000100000110000000011000111011101101000110000001000010110010010010100010011110100001110111001100111101001010110010010011000001001100001001101000111100011111101110010100010110111110011011111101111000110110010010101101100100011110011111111111011100000000101100011000101001111111010010100101010001100000101010101010001100110111010001001111111100101011101000011001011110111101110100100110010010000110000010110000110110110011111111011010000101110101<br>#”””#修改后的二维码<br>str=”””0000000001110010000000000000000000001111010000000000000000011100010000000000000000010111100000000000000000001010101000000000000000000011000101000000000000000010101010100000000000000000100000110000000011000111011101101000110000001000010110010010010100010011110100001110111001100111101001010110010010011000001001100001001101000111100011111101110010100010110111110011011111101111000110110010010101101100100011110011111111111011100000000101100011000101000000000010010100101010001000000001010101010001100100000000001001111111100100000000000011001011110111000000000100110010010000100000000110000110110110010000000011010000101110101<br>“””#原二维码<br>i=0<br>for y in range (0,MAX):<br>    for x in range (0,MAX):<br>        if(str[i] == ‘1’):<br>            pic.putpixel([x,y],(0, 0, 0))<br>        else:<br>            pic.putpixel([x,y],(255,255,255))<br>        i = i+1<br>pic.show()<br>pic.save(“5.png”)<br>#由于直接预览分辨率太低，所以保存下来观看</p>
+<p>“””<br>PIL.Image.new(模式, 大小, 颜色)  //此处需了解并使用PIL<br>“””<br>得到一个残缺的二维码，利用ps进行补齐，扫描二维码得flag：flag{QR_c0de_1s_1nterest1n9}</p>
 ]]></content>
       <tags>
         <tag>ctf</tag>
       </tags>
   </entry>
   <entry>
-    <title>1和0的故事</title>
-    <url>/2023/02/04/1%E5%92%8C0%E7%9A%84%E6%95%85%E4%BA%8B/</url>
-    <content><![CDATA[<h1 id="1和0的故事"><a href="#1和0的故事" class="headerlink" title="1和0的故事"></a>1和0的故事<span id="more"></span></h1><p><img src="/2023/02/04/1%E5%92%8C0%E7%9A%84%E6%95%85%E4%BA%8B/001.jpg"><br>下载文件后记事本打开，发现全部为1和0，可联想到二维码，尝试转换。<br>利用python脚本转换为二维码<br>以下是我在网络上查找的脚本供参考：<br>from PIL import Image<br>MAX = 25<br>#二维码大小<br>pic = Image.new(“RGB”,(MAX, MAX))<br>#str = “””1111111001110010001111111100000100001111010100000110111010011100010010111011011101010111100001011101101110101010101000101110110000010011000101010000011111111010101010101111111000000000100000110000000011000111011101101000110000001000010110010010010100010011110100001110111001100111101001010110010010011000001001100001001101000111100011111101110010100010110111110011011111101111000110110010010101101100100011110011111111111011100000000101100011000101001111111010010100101010001100000101010101010001100110111010001001111111100101011101000011001011110111101110100100110010010000110000010110000110110110011111111011010000101110101<br>#”””#修改后的二维码<br>str=”””0000000001110010000000000000000000001111010000000000000000011100010000000000000000010111100000000000000000001010101000000000000000000011000101000000000000000010101010100000000000000000100000110000000011000111011101101000110000001000010110010010010100010011110100001110111001100111101001010110010010011000001001100001001101000111100011111101110010100010110111110011011111101111000110110010010101101100100011110011111111111011100000000101100011000101000000000010010100101010001000000001010101010001100100000000001001111111100100000000000011001011110111000000000100110010010000100000000110000110110110010000000011010000101110101<br>“””#原二维码<br>i=0<br>for y in range (0,MAX):<br>    for x in range (0,MAX):<br>        if(str[i] == ‘1’):<br>            pic.putpixel([x,y],(0, 0, 0))<br>        else:<br>            pic.putpixel([x,y],(255,255,255))<br>        i = i+1<br>pic.show()<br>pic.save(“5.png”)<br>#由于直接预览分辨率太低，所以保存下来观看</p>
-<p>“””<br>PIL.Image.new(模式, 大小, 颜色)  //此处需了解并使用PIL<br>“””<br>得到一个残缺的二维码，利用ps进行补齐，扫描二维码得flag：flag{QR_c0de_1s_1nterest1n9}</p>
+    <title>AWD比赛</title>
+    <url>/2023/02/14/AWD%E6%AF%94%E8%B5%9B/</url>
+    <content><![CDATA[<h1 id="AWD比赛总结"><a href="#AWD比赛总结" class="headerlink" title="AWD比赛总结"></a>AWD比赛总结<span id="more"></span></h1><h1 id="比赛介绍"><a href="#比赛介绍" class="headerlink" title="比赛介绍"></a>比赛介绍</h1><p>AWD赛制是按照分组来进行比赛的</p>
 ]]></content>
       <tags>
         <tag>ctf</tag>
@@ -132,29 +132,6 @@
       </tags>
   </entry>
   <entry>
-    <title>bugku-crypto-题目(四)</title>
-    <url>/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/</url>
-    <content><![CDATA[<h1 id><a href="#" class="headerlink" title=".!?"></a>.!?</h1><span id="more"></span>
-<p><img src="/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/001.jpg"><br>进入Ook解密：<a href="https://www.splitbrain.org/services/ook">https://www.splitbrain.org/services/ook</a>  得flag<br><img src="/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/002.jpg"></p>
-<h1 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h1><p><img src="/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/003.jpg"><br>打开文件得到各种进制的数字，统一转换为十进制，然后转换ASCII码得flag<br>寻找到一个Python代码：</p>
-<p>text = “d87 x65 x6c x63 o157 d109 o145 b100000 d116 b1101111 o40 x6b b1100101 b1101100 o141 d105 x62 d101 b1101001 d46 o40 d71 x69 d118 x65 x20 b1111001 o157 b1110101 d32 o141 d32 d102 o154 x61 x67 b100000 o141 d115 b100000 b1100001 d32 x67 o151 x66 d116 b101110 b100000 d32 d102 d108 d97 o147 d123 x31 b1100101 b110100 d98 d102 b111000 d49 b1100001 d54 b110011 x39 o64 o144 o145 d53 x61 b1100010 b1100011 o60 d48 o65 b1100001 x63 b110110 d101 o63 b111001 d97 d51 o70 d55 b1100010 d125 x20 b101110 x20 b1001000 d97 d118 o145 x20 d97 o40 d103 d111 d111 x64 d32 o164 b1101001 x6d o145 x7e”</p>
-<p>li=text.split(“ “)<br>list=[]</p>
-<p>def Binary(str1):<br>    s=str1[1:]<br>    s2=int(s,2)<br>    list.append(chr(s2))</p>
-<p>def Octonary(str1):<br>    s=str1[1:]<br>    s2=int(s,8)<br>    list.append(chr(s2))</p>
-<p>def Decimal(str1):<br>    s=str1[1:]<br>    s2=int(s)<br>    list.append(chr(s2))</p>
-<p>def Hex(str1):<br>    s=str1[1:]<br>    s2=int(s,16)<br>    list.append(chr(s2))</p>
-<p>for i in li:<br>    if i.startswith(“b”):<br>        Binary(i)<br>    elif i.startswith(“o”):<br>        Octonary(i)<br>    elif i.startswith(“d”):<br>        Decimal(i)<br>    elif i.startswith(“x”):<br>        Hex(i)<br>print(‘’.join(list))<br>运行可得flag</p>
-<h1 id="贝斯家族"><a href="#贝斯家族" class="headerlink" title="贝斯家族"></a>贝斯家族</h1><p><img src="/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/004.jpg"><br>base91解码得flag</p>
-<h1 id="这不是md5"><a href="#这不是md5" class="headerlink" title="这不是md5"></a>这不是md5</h1><p><img src="/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/005.jpg"><br>16进制解码得flag：<a href="http://www.hiencode.com/hex.html">http://www.hiencode.com/hex.html</a><br>flag：flag{ae73587ba56baef5}</p>
-]]></content>
-      <categories>
-        <category>ctf</category>
-      </categories>
-      <tags>
-        <tag>crypto</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>bugku-crypto题目(二)</title>
     <url>/2023/01/26/bugku-crypto%E9%A2%98%E7%9B%AE-%E4%BA%8C/</url>
     <content><![CDATA[<h1 id="EN-气泡"><a href="#EN-气泡" class="headerlink" title="EN-气泡"></a>EN-气泡</h1><span id="more"></span>
@@ -187,35 +164,20 @@
       </tags>
   </entry>
   <entry>
-    <title>ctf-base家族</title>
-    <url>/2023/01/30/ctf-base%E5%AE%B6%E6%97%8F/</url>
-    <content><![CDATA[<h1 id="base16"><a href="#base16" class="headerlink" title="base16"></a>base16</h1><span id="more"></span>
-<p>base16编码使用16个ASCII可打印字符（数字0-9和字母A-F）对任意字节数据进行编码。<br>base16先获取输入字符串每个字节的二进制值（不足8比特在高位补0），然后将其串联进来再按照4比特一组进行切分，将每组二进制数分别转换成十进制<br>Base16不用到填充符号“=”<br><a href="https://ctf.bugku.com/tool/base16">https://ctf.bugku.com/tool/base16</a></p>
-<h1 id="base32"><a href="#base32" class="headerlink" title="base32"></a>base32</h1><p>编码后的字符只会在大写字母（A-Z）和数字234567 32个字符组成，因为base32是5bit为一组，所以编码长度必须是40bit的倍数（5和8的最小公倍数）<br>因为必须为40bit的倍数，所以如果不足的话，会在第一个不满足5bit的小组进行补0，然后进行编码，在结果补上占位符=，一个等号5bit，最多出现6个<br><a href="https://ctf.bugku.com/tool/base32">https://ctf.bugku.com/tool/base32</a></p>
-<h1 id="base36"><a href="#base36" class="headerlink" title="base36"></a>base36</h1><p>base36编码是使用0~9的数字，加上所有26个字母，所有的字母要不全大写，要不全小写。<br><a href="http://www.hiencode.com/base36w.html">http://www.hiencode.com/base36w.html</a></p>
-<h1 id="base58"><a href="#base58" class="headerlink" title="base58"></a>base58</h1><p>字符为：123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz(无I、O、l)<br><a href="https://ctf.bugku.com/tool/base58">https://ctf.bugku.com/tool/base58</a></p>
-<h1 id="base62"><a href="#base62" class="headerlink" title="base62"></a>base62</h1><p>Base62编码是由10个数字、26个大写英文字母和26个小写英文字母组成<br><a href="https://ctf.bugku.com/tool/base62">https://ctf.bugku.com/tool/base62</a></p>
-<h1 id="base64"><a href="#base64" class="headerlink" title="base64"></a>base64</h1><p>编码后的字符只会在A-Z a-z 0-9（共62个）另外加上+  /两个符号,3个字节由4个base64单元来表示<br>如果要编码的字节数不能被3整除，最后会多出1个或2个字节，则用占位符=（一个代表一个字节）所以最多出现两个等号。<br><a href="https://www.qqxiuzi.cn/bianma/base64.htm">https://www.qqxiuzi.cn/bianma/base64.htm</a></p>
-<h1 id="base85"><a href="#base85" class="headerlink" title="base85"></a>base85</h1><p>Base85是一种类似于Base64的二进制文本编码形式，通过使用五个ASCII字符来表示四个字节的二进制数据<br>特点是奇怪的字符比较多，但是很难出现等号<br><a href="http://www.atoolbox.net/Tool.php?Id=934">http://www.atoolbox.net/Tool.php?Id=934</a><br><a href="https://ctf.bugku.com/tool/base85">https://ctf.bugku.com/tool/base85</a></p>
-<h1 id="base91"><a href="#base91" class="headerlink" title="base91"></a>base91</h1><p>base91的密文由91个字符（0-9，a-z，A-Z,!#$%&amp;()*+,./:;&lt;=&gt;?@[]^_`{|}~”）组成<br>从94个可打印ASCII字符（0x21-0x7E）中，以下三个字符被省略以构建base91字母：<br>-（破折号，0x2D）<br>\（反斜杠，0x5C）<br>‘（撇号，0x27）<br><a href="http://www.atoolbox.net/Tool.php?Id=935">http://www.atoolbox.net/Tool.php?Id=935</a></p>
-<h1 id="base92"><a href="#base92" class="headerlink" title="base92"></a>base92</h1><p>比base91 多一个字符 〜<br><a href="https://ctf.bugku.com/tool/base92">https://ctf.bugku.com/tool/base92</a></p>
-<h1 id="base100"><a href="#base100" class="headerlink" title="base100"></a>base100</h1><p><a href="https://ctf.bugku.com/tool/base100">https://ctf.bugku.com/tool/base100</a><br>base100: 👟👜👣👦📦💳💃👮👣👛🐥🐨🐩🐫🐬🐭<br>特征：Emoji表情组成</p>
-]]></content>
-      <categories>
-        <category>ctf</category>
-      </categories>
-      <tags>
-        <tag>crypto</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ctf-crypto题目</title>
-    <url>/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/</url>
-    <content><![CDATA[<h1 id="lt-gt"><a href="#lt-gt" class="headerlink" title="[+-&lt;&gt;]"></a>[+-&lt;&gt;]</h1><span id="more"></span>
-<p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/001.jpg"><br>brainfuck解密：<a href="https://ctf.bugku.com/tool/brainfuck">https://ctf.bugku.com/tool/brainfuck</a><br>得flag：flag{0d86208ac54fbf12}</p>
-<h1 id="把猪困在猪圈里"><a href="#把猪困在猪圈里" class="headerlink" title="把猪困在猪圈里"></a>把猪困在猪圈里</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/002.jpg"><br>由题可知，一定是猪圈加密；<br>查看文件，发现末尾是=，又是猪圈，所以base64转图片<a href="https://tool.jisuapi.com/base642pic.html">https://tool.jisuapi.com/base642pic.html</a><br>再去猪圈解密<a href="http://www.metools.info/code/c90.html">http://www.metools.info/code/c90.html</a></p>
-<h1 id="你喜欢下棋吗"><a href="#你喜欢下棋吗" class="headerlink" title="你喜欢下棋吗"></a>你喜欢下棋吗</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/003.jpg"><br>第一个棋盘密码<a href="https://www.qqxiuzi.cn/bianma/qipanmima.php%E8%A7%A3%E5%AF%86%E5%90%8E">https://www.qqxiuzi.cn/bianma/qipanmima.php解密后</a><br>博多密码解密<a href="https://www.boxentriq.com/code-breaking/baudot-code">https://www.boxentriq.com/code-breaking/baudot-code</a><br>得flag: bugku{baud0tc0de}</p>
-<h1 id="小山丘的秘密"><a href="#小山丘的秘密" class="headerlink" title="小山丘的秘密"></a>小山丘的秘密</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/004.jpg"><br>打开图片后发现是一个棋盘，经查阅发现为希尔密码<br>一般的希尔密码是：A=0 B=1  C=2  但是开局文件就告诉我们  A=1  因此这里我们要更改一下解码时字母表的顺序：  Z=0  A=1  B=2<br>将z提前  得到密钥  abczadefz<br>解码得flag</p>
+    <title>bugku-crypto-题目(四)</title>
+    <url>/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/</url>
+    <content><![CDATA[<h1 id><a href="#" class="headerlink" title=".!?"></a>.!?</h1><span id="more"></span>
+<p><img src="/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/001.jpg"><br>进入Ook解密：<a href="https://www.splitbrain.org/services/ook">https://www.splitbrain.org/services/ook</a>  得flag<br><img src="/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/002.jpg"></p>
+<h1 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h1><p><img src="/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/003.jpg"><br>打开文件得到各种进制的数字，统一转换为十进制，然后转换ASCII码得flag<br>寻找到一个Python代码：</p>
+<p>text = “d87 x65 x6c x63 o157 d109 o145 b100000 d116 b1101111 o40 x6b b1100101 b1101100 o141 d105 x62 d101 b1101001 d46 o40 d71 x69 d118 x65 x20 b1111001 o157 b1110101 d32 o141 d32 d102 o154 x61 x67 b100000 o141 d115 b100000 b1100001 d32 x67 o151 x66 d116 b101110 b100000 d32 d102 d108 d97 o147 d123 x31 b1100101 b110100 d98 d102 b111000 d49 b1100001 d54 b110011 x39 o64 o144 o145 d53 x61 b1100010 b1100011 o60 d48 o65 b1100001 x63 b110110 d101 o63 b111001 d97 d51 o70 d55 b1100010 d125 x20 b101110 x20 b1001000 d97 d118 o145 x20 d97 o40 d103 d111 d111 x64 d32 o164 b1101001 x6d o145 x7e”</p>
+<p>li=text.split(“ “)<br>list=[]</p>
+<p>def Binary(str1):<br>    s=str1[1:]<br>    s2=int(s,2)<br>    list.append(chr(s2))</p>
+<p>def Octonary(str1):<br>    s=str1[1:]<br>    s2=int(s,8)<br>    list.append(chr(s2))</p>
+<p>def Decimal(str1):<br>    s=str1[1:]<br>    s2=int(s)<br>    list.append(chr(s2))</p>
+<p>def Hex(str1):<br>    s=str1[1:]<br>    s2=int(s,16)<br>    list.append(chr(s2))</p>
+<p>for i in li:<br>    if i.startswith(“b”):<br>        Binary(i)<br>    elif i.startswith(“o”):<br>        Octonary(i)<br>    elif i.startswith(“d”):<br>        Decimal(i)<br>    elif i.startswith(“x”):<br>        Hex(i)<br>print(‘’.join(list))<br>运行可得flag</p>
+<h1 id="贝斯家族"><a href="#贝斯家族" class="headerlink" title="贝斯家族"></a>贝斯家族</h1><p><img src="/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/004.jpg"><br>base91解码得flag</p>
+<h1 id="这不是md5"><a href="#这不是md5" class="headerlink" title="这不是md5"></a>这不是md5</h1><p><img src="/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/005.jpg"><br>16进制解码得flag：<a href="http://www.hiencode.com/hex.html">http://www.hiencode.com/hex.html</a><br>flag：flag{ae73587ba56baef5}</p>
 ]]></content>
       <categories>
         <category>ctf</category>
@@ -240,6 +202,44 @@
       </categories>
       <tags>
         <tag>ctf</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ctf-crypto题目</title>
+    <url>/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/</url>
+    <content><![CDATA[<h1 id="lt-gt"><a href="#lt-gt" class="headerlink" title="[+-&lt;&gt;]"></a>[+-&lt;&gt;]</h1><span id="more"></span>
+<p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/001.jpg"><br>brainfuck解密：<a href="https://ctf.bugku.com/tool/brainfuck">https://ctf.bugku.com/tool/brainfuck</a><br>得flag：flag{0d86208ac54fbf12}</p>
+<h1 id="把猪困在猪圈里"><a href="#把猪困在猪圈里" class="headerlink" title="把猪困在猪圈里"></a>把猪困在猪圈里</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/002.jpg"><br>由题可知，一定是猪圈加密；<br>查看文件，发现末尾是=，又是猪圈，所以base64转图片<a href="https://tool.jisuapi.com/base642pic.html">https://tool.jisuapi.com/base642pic.html</a><br>再去猪圈解密<a href="http://www.metools.info/code/c90.html">http://www.metools.info/code/c90.html</a></p>
+<h1 id="你喜欢下棋吗"><a href="#你喜欢下棋吗" class="headerlink" title="你喜欢下棋吗"></a>你喜欢下棋吗</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/003.jpg"><br>第一个棋盘密码<a href="https://www.qqxiuzi.cn/bianma/qipanmima.php%E8%A7%A3%E5%AF%86%E5%90%8E">https://www.qqxiuzi.cn/bianma/qipanmima.php解密后</a><br>博多密码解密<a href="https://www.boxentriq.com/code-breaking/baudot-code">https://www.boxentriq.com/code-breaking/baudot-code</a><br>得flag: bugku{baud0tc0de}</p>
+<h1 id="小山丘的秘密"><a href="#小山丘的秘密" class="headerlink" title="小山丘的秘密"></a>小山丘的秘密</h1><p><img src="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/004.jpg"><br>打开图片后发现是一个棋盘，经查阅发现为希尔密码<br>一般的希尔密码是：A=0 B=1  C=2  但是开局文件就告诉我们  A=1  因此这里我们要更改一下解码时字母表的顺序：  Z=0  A=1  B=2<br>将z提前  得到密钥  abczadefz<br>解码得flag</p>
+]]></content>
+      <categories>
+        <category>ctf</category>
+      </categories>
+      <tags>
+        <tag>crypto</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ctf-base家族</title>
+    <url>/2023/01/30/ctf-base%E5%AE%B6%E6%97%8F/</url>
+    <content><![CDATA[<h1 id="base16"><a href="#base16" class="headerlink" title="base16"></a>base16</h1><span id="more"></span>
+<p>base16编码使用16个ASCII可打印字符（数字0-9和字母A-F）对任意字节数据进行编码。<br>base16先获取输入字符串每个字节的二进制值（不足8比特在高位补0），然后将其串联进来再按照4比特一组进行切分，将每组二进制数分别转换成十进制<br>Base16不用到填充符号“=”<br><a href="https://ctf.bugku.com/tool/base16">https://ctf.bugku.com/tool/base16</a></p>
+<h1 id="base32"><a href="#base32" class="headerlink" title="base32"></a>base32</h1><p>编码后的字符只会在大写字母（A-Z）和数字234567 32个字符组成，因为base32是5bit为一组，所以编码长度必须是40bit的倍数（5和8的最小公倍数）<br>因为必须为40bit的倍数，所以如果不足的话，会在第一个不满足5bit的小组进行补0，然后进行编码，在结果补上占位符=，一个等号5bit，最多出现6个<br><a href="https://ctf.bugku.com/tool/base32">https://ctf.bugku.com/tool/base32</a></p>
+<h1 id="base36"><a href="#base36" class="headerlink" title="base36"></a>base36</h1><p>base36编码是使用0~9的数字，加上所有26个字母，所有的字母要不全大写，要不全小写。<br><a href="http://www.hiencode.com/base36w.html">http://www.hiencode.com/base36w.html</a></p>
+<h1 id="base58"><a href="#base58" class="headerlink" title="base58"></a>base58</h1><p>字符为：123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz(无I、O、l)<br><a href="https://ctf.bugku.com/tool/base58">https://ctf.bugku.com/tool/base58</a></p>
+<h1 id="base62"><a href="#base62" class="headerlink" title="base62"></a>base62</h1><p>Base62编码是由10个数字、26个大写英文字母和26个小写英文字母组成<br><a href="https://ctf.bugku.com/tool/base62">https://ctf.bugku.com/tool/base62</a></p>
+<h1 id="base64"><a href="#base64" class="headerlink" title="base64"></a>base64</h1><p>编码后的字符只会在A-Z a-z 0-9（共62个）另外加上+  /两个符号,3个字节由4个base64单元来表示<br>如果要编码的字节数不能被3整除，最后会多出1个或2个字节，则用占位符=（一个代表一个字节）所以最多出现两个等号。<br><a href="https://www.qqxiuzi.cn/bianma/base64.htm">https://www.qqxiuzi.cn/bianma/base64.htm</a></p>
+<h1 id="base85"><a href="#base85" class="headerlink" title="base85"></a>base85</h1><p>Base85是一种类似于Base64的二进制文本编码形式，通过使用五个ASCII字符来表示四个字节的二进制数据<br>特点是奇怪的字符比较多，但是很难出现等号<br><a href="http://www.atoolbox.net/Tool.php?Id=934">http://www.atoolbox.net/Tool.php?Id=934</a><br><a href="https://ctf.bugku.com/tool/base85">https://ctf.bugku.com/tool/base85</a></p>
+<h1 id="base91"><a href="#base91" class="headerlink" title="base91"></a>base91</h1><p>base91的密文由91个字符（0-9，a-z，A-Z,!#$%&amp;()*+,./:;&lt;=&gt;?@[]^_`{|}~”）组成<br>从94个可打印ASCII字符（0x21-0x7E）中，以下三个字符被省略以构建base91字母：<br>-（破折号，0x2D）<br>\（反斜杠，0x5C）<br>‘（撇号，0x27）<br><a href="http://www.atoolbox.net/Tool.php?Id=935">http://www.atoolbox.net/Tool.php?Id=935</a></p>
+<h1 id="base92"><a href="#base92" class="headerlink" title="base92"></a>base92</h1><p>比base91 多一个字符 〜<br><a href="https://ctf.bugku.com/tool/base92">https://ctf.bugku.com/tool/base92</a></p>
+<h1 id="base100"><a href="#base100" class="headerlink" title="base100"></a>base100</h1><p><a href="https://ctf.bugku.com/tool/base100">https://ctf.bugku.com/tool/base100</a><br>base100: 👟👜👣👦📦💳💃👮👣👛🐥🐨🐩🐫🐬🐭<br>特征：Emoji表情组成</p>
+]]></content>
+      <categories>
+        <category>ctf</category>
+      </categories>
+      <tags>
+        <tag>crypto</tag>
       </tags>
   </entry>
   <entry>
