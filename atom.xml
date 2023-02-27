@@ -6,7 +6,7 @@
   <link href="https://ssa520.github.io/atom.xml" rel="self"/>
   
   <link href="https://ssa520.github.io/"/>
-  <updated>2023-02-20T15:51:00.580Z</updated>
+  <updated>2023-02-26T01:32:26.762Z</updated>
   <id>https://ssa520.github.io/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>少年的梦</title>
+    <link href="https://ssa520.github.io/2023/02/26/%E5%B0%91%E5%B9%B4%E7%9A%84%E6%A2%A6/"/>
+    <id>https://ssa520.github.io/2023/02/26/%E5%B0%91%E5%B9%B4%E7%9A%84%E6%A2%A6/</id>
+    <published>2023-02-26T01:32:26.000Z</published>
+    <updated>2023-02-26T01:32:26.762Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>buuctf解题</title>
