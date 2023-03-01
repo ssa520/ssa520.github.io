@@ -6,7 +6,7 @@
   <link href="https://ssa520.github.io/atom.xml" rel="self"/>
   
   <link href="https://ssa520.github.io/"/>
-  <updated>2023-02-26T01:32:26.762Z</updated>
+  <updated>2023-02-26T03:08:37.912Z</updated>
   <id>https://ssa520.github.io/</id>
   
   <author>
@@ -17,12 +17,16 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>少年的梦</title>
+    <title>少年的心</title>
     <link href="https://ssa520.github.io/2023/02/26/%E5%B0%91%E5%B9%B4%E7%9A%84%E6%A2%A6/"/>
     <id>https://ssa520.github.io/2023/02/26/%E5%B0%91%E5%B9%B4%E7%9A%84%E6%A2%A6/</id>
     <published>2023-02-26T01:32:26.000Z</published>
-    <updated>2023-02-26T01:32:26.762Z</updated>
+    <updated>2023-02-26T03:08:37.912Z</updated>
     
+    <content type="html"><![CDATA[<p>  少年不知何为心动,轻风拂柳,漫步人生。<span id="more"></span></p><p>  曾以为,心动是遇见自己喜欢的人时的紧张;是看到美好风景时的欣赏;是取得成功时的喜悦。实则是:似乎是一见钟情的浪漫,却又不相识、不了解。怦然心动的瞬间,期待的是下次的相见。掩饰着心底的慌慌张张,心跳的频率升升降降,升于眼前的你,降于平淡的四季,竟如此的美丽!少年明白,此为心动,仅在于一眼之间,便已是沦陷,何时才能抵达你的身边?好像需要更加努力一些来弥补不足的优点。一瞥间,四目相对之时,花盛满城,千乐合声。</p><p>  细雨常相思,春风难相过。我欲与尔相携手,共赴春秋季,相约夏冬节！岁月作赠礼,少年当相依。未知姑娘姓与名,匆匆十八年,心动的感觉,缘来如此。</p><p>  心动了,是喜欢吗?应该是的,一周只见一次面,见一次面要想一周。可是心却如同sin的平方加cos的平方,始终如一。司马昭的心,路人皆明知,而少年要等到何时,才能够勇敢地迈出那一步,告诉你关于我的心思。</p><p>  少年于心动,梦中当相念！</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;  少年不知何为心动,轻风拂柳,漫步人生。&lt;/p&gt;</summary>
     
     
     
@@ -44,25 +48,6 @@
     
     
     <category term="buuctf" scheme="https://ssa520.github.io/categories/buuctf/"/>
-    
-    
-    <category term="ctf" scheme="https://ssa520.github.io/tags/ctf/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AWD比赛</title>
-    <link href="https://ssa520.github.io/2023/02/14/AWD%E6%AF%94%E8%B5%9B/"/>
-    <id>https://ssa520.github.io/2023/02/14/AWD%E6%AF%94%E8%B5%9B/</id>
-    <published>2023-02-14T07:11:02.000Z</published>
-    <updated>2023-02-14T07:24:46.338Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="AWD比赛总结"><a href="#AWD比赛总结" class="headerlink" title="AWD比赛总结"></a>AWD比赛总结<span id="more"></span></h1><h1 id="比赛介绍"><a href="#比赛介绍" class="headerlink" title="比赛介绍"></a>比赛介绍</h1><p>AWD赛制是按照分组来进行比赛的</p>]]></content>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;AWD比赛总结&quot;&gt;&lt;a href=&quot;#AWD比赛总结&quot; class=&quot;headerlink&quot; title=&quot;AWD比赛总结&quot;&gt;&lt;/a&gt;AWD比赛总结&lt;/h1&gt;</summary>
-    
-    
     
     
     <category term="ctf" scheme="https://ssa520.github.io/tags/ctf/"/>

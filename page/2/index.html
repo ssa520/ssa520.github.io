@@ -5,14 +5,14 @@
 <meta property="og:site_name" content="秋的故事书">
 <meta property="og:description" content="爱意与你">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://ssa520.github.io/img/mao.jpg">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:author" content="秋的故事书">
 <meta property="article:tag" content="#">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://ssa520.github.io/img/mao.jpg"><link rel="shortcut icon" href="/img/521.jpg"><link rel="canonical" href="https://ssa520.github.io/page/2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://ssa520.github.io/page/2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
-  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  localSearch: undefined,
   translate: undefined,
   noticeOutdate: undefined,
   highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
@@ -22,10 +22,10 @@
     noSupport: '浏览器不支持'
   },
   relativeDate: {
-    homepage: true,
-    post: true
+    homepage: false,
+    post: false
   },
-  runtime: '天',
+  runtime: '',
   date_suffix: {
     just: '刚刚',
     min: '分钟前',
@@ -33,7 +33,7 @@
     day: '天前',
     month: '个月前'
   },
-  copyright: {"limitCount":50,"languages":{"author":"作者: 秋的故事书","link":"链接: ","source":"来源: 秋的故事书","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  copyright: undefined,
   lightbox: 'fancybox',
   Snackbar: undefined,
   source: {
@@ -46,16 +46,16 @@
   islazyload: false,
   isAnchor: false,
   percent: {
-    toc: ture,
+    toc: true,
     rightside: false,
   }
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
   title: '秋的故事书',
   isPost: false,
   isHome: true,
-  isHighlightShrink: ture,
+  isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2023-02-26 09:39:48'
+  postUpdate: '2023-03-01 19:40:51'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -127,6 +127,23 @@
       document.head.appendChild(link)
     })
   
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
       const asideStatus = saveToLocal.get('aside-status')
       if (asideStatus !== undefined) {
         if (asideStatus === 'hide') {
@@ -142,36 +159,15 @@
       }
     }
     detectApple()
-    })(window)</script><link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&display=swap" rel="stylesheet"><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="秋的故事书" type="application/atom+xml">
-</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>const preloader = {
-  endLoading: () => {
-    document.body.style.overflow = 'auto';
-    document.getElementById('loading-box').classList.add("loaded")
-  },
-  initLoading: () => {
-    document.body.style.overflow = '';
-    document.getElementById('loading-box').classList.remove("loaded")
-
-  }
-}
-window.addEventListener('load',()=> { preloader.endLoading() })
-
-if (true) {
-  document.addEventListener('pjax:send', () => { preloader.initLoading() })
-  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
-}</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/mao.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/1314017.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="秋的故事书"><span class="site-name">秋的故事书</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">秋的故事书</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/ssa520/ssa520.github.io" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/" title="ctf-crypto题目">ctf-crypto题目</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-21T16:33:55.000Z" title="发表于 2023-01-22 00:33:55">2023-01-22</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-01-21T17:12:45.338Z" title="更新于 2023-01-22 01:12:45">2023-01-22</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/ctf/">ctf</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/crypto/">crypto</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/#post-comment"><span class="valine-comment-count" data-xid="/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">[+-&lt;&gt;]
-brainfuck解密：https://ctf.bugku.com/tool/brainfuck得flag：flag{0d86208ac54fbf12}
-把猪困在猪圈里由题可知，一定是猪圈加密；查看文件，发现末尾是=，又是猪圈，所以base64转图片https://tool.jisuapi.com/base642pic.html再去猪圈解密http://www.metools.info/code/c90.html
-你喜欢下棋吗第一个棋盘密码https://www.qqxiuzi.cn/bianma/qipanmima.php解密后博多密码解密https://www.boxentriq.com/code-breaking/baudot-code得flag: bugku{baud0tc0de}
-小山丘的秘密打开图片后发现是一个棋盘，经查阅发现为希尔密码一般的希尔密码是：A=0 B=1  C=2  但是开局文件就告诉我们  A=1  因此这里我们要更改一下解码时字母表的顺序：  Z=0  A=1  B=2将z提前  得到密钥  abczadefz解码得flag
-</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/" title="bugku-crypto题目">bugku-crypto题目</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-20T09:05:11.000Z" title="发表于 2023-01-20 17:05:11">2023-01-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-01-20T12:08:37.419Z" title="更新于 2023-01-20 20:08:37">2023-01-20</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/ctf/">ctf</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/crypto/">crypto</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/#post-comment"><span class="valine-comment-count" data-xid="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">抄错的字符
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="秋的故事书" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="秋的故事书"><span class="site-name">秋的故事书</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">秋的故事书</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/" title="bugku-crypto题目">bugku-crypto题目</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-01-20T09:05:11.000Z" title="发表于 2023-01-20 17:05:11">2023-01-20</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/ctf/">ctf</a></span></div><div class="content">抄错的字符
 找出与数字形状相近的字母：I=&gt;1;b=&gt;6;g=&gt;9;Z=&gt;2;S=&gt;5字符串后加一个‘=’,分为四个一组,利用base64解码得flagQW1h base64解码为 AmaBL92 base64解码为 _vZXJ5 base64解码为 eryX2Nv base64解码为 _cob2w= base64解码为 ol得flag：flag{Aman_very_cool}
 /.-摩斯密码解密： https://www.atool99.com/morse.php解密得：FLAG%u7bD3FCBF17F9399504%u7d%u7b和%u7d就是两个花括号,所有字母均改为小写
 聪明的小羊提示用栅栏密码解密：https://www.qqxiuzi.cn/bianma/zhalanmima.php两个栅栏，使用两个一组解密得flag
 ok打开文件复制所有内容打开 https://www.splitbrain.org/services/ook解密得flag
-</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/01/19/BugKu-where-is-flag-5/" title="BugKu where is flag 5">BugKu where is flag 5</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-19T06:12:59.000Z" title="发表于 2023-01-19 14:12:59">2023-01-19</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-01-19T06:31:41.445Z" title="更新于 2023-01-19 14:31:41">2023-01-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/ctf/">ctf</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/crypto/">crypto</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2023/01/19/BugKu-where-is-flag-5/#post-comment"><span class="valine-comment-count" data-xid="/2023/01/19/BugKu-where-is-flag-5/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/01/19/BugKu-where-is-flag-5/" title="BugKu where is flag 5">BugKu where is flag 5</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-01-19T06:12:59.000Z" title="发表于 2023-01-19 14:12:59">2023-01-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/ctf/">ctf</a></span></div><div class="content">
 
-下载文件后打开：Gx8EAA8SCBIfHQARCxMUHwsAHRwRHh8BEQwaFBQfGwMYCBYRHx4SBRQdGR8HAQ0QFQ==利用base64解码，得到：b’\x1b\x1f\x04\x00\x0f\x12\x08\x12\x1f\x1d\x00\x11\x0b\x13\x14\x1f\x0b\x00\x1d\x1c\x11\x1e\x1f\x01\x11\x0c\x1a\x14\x14\x1f\x1b\x03\x18\x08\x16\x11\x1f\x1e\x12\x05\x14\x1d\x19\x1f\x07\x01\r\x10\x15’利用如下代码转换为二进制：          enc = ‘Gx8EAA8SCBIfHQARCxMUHwsAHRwRHh8BEQwaFBQfGwMYCBYRHx4SBRQdGR8HAQ0QFQ==’          text = base64.b64decode(enc)          bin_data = [“0”*(5-len(i))+i if len(i)!=5 else i for i in [bin(j ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/" title="ctf古典密码">ctf古典密码</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-13T05:34:22.000Z" title="发表于 2023-01-13 13:34:22">2023-01-13</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-01-14T12:02:38.029Z" title="更新于 2023-01-14 20:02:38">2023-01-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/ctf/">ctf</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/crypto/">crypto</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/#post-comment"><span class="valine-comment-count" data-xid="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">1、埃及文字
+下载文件后打开：Gx8EAA8SCBIfHQARCxMUHwsAHRwRHh8BEQwaFBQfGwMYCBYRHx4SBRQdGR8HAQ0QFQ==利用base64解码，得到：b’\x1b\x1f\x04\x00\x0f\x12\x08\x12\x1f\x1d\x00\x11\x0b\x13\x14\x1f\x0b\x00\x1d\x1c\x11\x1e\x1f\x01\x11\x0c\x1a\x14\x14\x1f\x1b\x03\x18\x08\x16\x11\x1f\x1e\x12\x05\x14\x1d\x19\x1f\x07\x01\r\x10\x15’利用如下代码转换为二进制：          enc = ‘Gx8EAA8SCBIfHQARCxMUHwsAHRwRHh8BEQwaFBQfGwMYCBYRHx4SBRQdGR8HAQ0QFQ==’          text = base64.b64decode(enc)          bin_data = [“0”*(5-len(i))+i if len(i)!=5 else i for i in [bin(j ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/" title="ctf古典密码">ctf古典密码</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-01-13T05:34:22.000Z" title="发表于 2023-01-13 13:34:22">2023-01-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/ctf/">ctf</a></span></div><div class="content">1、埃及文字
 
 2、跳舞的小人
 3、盲文
@@ -182,132 +178,14 @@ ok打开文件复制所有内容打开 https://www.splitbrain.org/services/ook�
 8、培根密码
 9、栅栏密码https://www.qqxiuzi.cn/bianma/zhalanmima.php
 10、博多密码https://www.boxentriq.com/code-breaking/baudot-code
-</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/" title="hexo博客修饰">hexo博客修饰</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-12T02:56:12.000Z" title="发表于 2023-01-12 10:56:12">2023-01-12</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-01-14T09:54:09.419Z" title="更新于 2023-01-14 17:54:09">2023-01-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%96%87%E5%AD%97%E5%A4%A9%E4%B8%8B/">文字天下</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/hexo/">hexo</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/#post-comment"><span class="valine-comment-count" data-xid="/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">接上集：上集讲到了搭建hexo博客,但是似乎有些平淡,这一集就为他好好打扮一番吧！注意：有些文件,如css、yml等不能打开,可切换为txt文件进行打开,并修改内容,修改过后记得去掉.txt哦！
-第一步：安装主题，这里以yilia主题作为讲解。在myblog文件夹下打开git,输入命令：git clone https://github.com/litten/hexo-theme-yilia.git第二步：打开根目录下的_config.yml文件,找到theme,修改为主题文件名,即 theme: yilia第三步：根目录下打开git,输入命令hexo -clean；hexo -g；hexo -s 打开本地网页,进行查看,先不要关,后面的修改尽量做到完成一项或两项就刷新一遍,查看是否有问题,无则下一步,否则把刚才的修改暂时改回(记得为自己留个备份~)第四步：请在主题配置文件(_config.yml)中开头添加以下内容：#Site 网站title: ‘’             # 网站标题subtitle: ‘’          # 网站副标题description: ‘’       ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/01/10/%E7%BA%AF%E6%96%87%E5%AD%97hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" title="纯文字hexo博客搭建教程">纯文字hexo博客搭建教程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-10T05:31:21.000Z" title="发表于 2023-01-10 13:31:21">2023-01-10</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-01-14T10:01:17.506Z" title="更新于 2023-01-14 18:01:17">2023-01-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%96%87%E5%AD%97%E5%A4%A9%E4%B8%8B/">文字天下</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/hexo/">hexo</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2023/01/10/%E7%BA%AF%E6%96%87%E5%AD%97hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/#post-comment"><span class="valine-comment-count" data-xid="/2023/01/10/%E7%BA%AF%E6%96%87%E5%AD%97hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">​            关于Hexo博客搭建，一步一个脚印慢慢来，不要因为一个不在意，换来后面东寻西问都难以解决的问题，那就得不偿失了。别放弃，问题实在解决不了大不了重头再来嘛~没准就可以顺利成功了呢！
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/" title="hexo博客修饰">hexo博客修饰</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-01-12T02:56:12.000Z" title="发表于 2023-01-12 10:56:12">2023-01-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%96%87%E5%AD%97%E5%A4%A9%E4%B8%8B/">文字天下</a></span></div><div class="content">接上集：上集讲到了搭建hexo博客,但是似乎有些平淡,这一集就为他好好打扮一番吧！注意：有些文件,如css、yml等不能打开,可切换为txt文件进行打开,并修改内容,修改过后记得去掉.txt哦！
+第一步：安装主题，这里以yilia主题作为讲解。在myblog文件夹下打开git,输入命令：git clone https://github.com/litten/hexo-theme-yilia.git第二步：打开根目录下的_config.yml文件,找到theme,修改为主题文件名,即 theme: yilia第三步：根目录下打开git,输入命令hexo -clean；hexo -g；hexo -s 打开本地网页,进行查看,先不要关,后面的修改尽量做到完成一项或两项就刷新一遍,查看是否有问题,无则下一步,否则把刚才的修改暂时改回(记得为自己留个备份~)第四步：请在主题配置文件(_config.yml)中开头添加以下内容：#Site 网站title: ‘’             # 网站标题subtitle: ‘’          # 网站副标题description: ‘’       ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/01/10/%E7%BA%AF%E6%96%87%E5%AD%97hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" title="纯文字hexo博客搭建教程">纯文字hexo博客搭建教程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-01-10T05:31:21.000Z" title="发表于 2023-01-10 13:31:21">2023-01-10</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%96%87%E5%AD%97%E5%A4%A9%E4%B8%8B/">文字天下</a></span></div><div class="content">​            关于Hexo博客搭建，一步一个脚印慢慢来，不要因为一个不在意，换来后面东寻西问都难以解决的问题，那就得不偿失了。别放弃，问题实在解决不了大不了重头再来嘛~没准就可以顺利成功了呢！
 ​           首先，搭建hexo博客我们要祭出两大法宝——一个git，一个node.js，快去官网下载吧！至于为什么要下载他们,嗯…我想：应该是他们上辈子积德深厚吧！下载好了嘛？那就开始吧！踏向成功第一步：请点击win+R，输入cmd，点个确定试试看啦！踏向成功第二步：请输入命令—1、git -v,2、node -v，什么？不对？！我早有准备，请点开你的设置，搜索高级系统设置，打开继续走—&gt;环境变量—&gt;path(上面一个，下面一个)—&gt;编辑—&gt;新建。复制你的git文件路径，粘贴到你的新建上面(上下均贴)，node同上。再次输入命令，看见版本号了吧？恭喜你，离成功又近了一步！！！
-​           接下来，就是hexo的舞台了！在此之前，我想请你在非C盘处新建一个名为myblog的文件夹。为什么非C？当然是为你，啊不，为你的电脑着想了！在此文件夹 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/mao.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">秋的故事书</div><div class="author-info__description">爱意与你</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/ssa520/ssa520.github.io" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到我的世界！</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/02/26/%E5%B0%91%E5%B9%B4%E7%9A%84%E6%A2%A6/" title="少年的梦">少年的梦</a><time datetime="2023-02-26T01:32:26.000Z" title="发表于 2023-02-26 09:32:26">2023-02-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/02/16/buuctf%E8%A7%A3%E9%A2%98/" title="buuctf解题"><img src="/img/1314040.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="buuctf解题"/></a><div class="content"><a class="title" href="/2023/02/16/buuctf%E8%A7%A3%E9%A2%98/" title="buuctf解题">buuctf解题</a><time datetime="2023-02-16T12:05:40.000Z" title="发表于 2023-02-16 20:05:40">2023-02-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/02/14/AWD%E6%AF%94%E8%B5%9B/" title="AWD比赛">AWD比赛</a><time datetime="2023-02-14T07:11:02.000Z" title="发表于 2023-02-14 15:11:02">2023-02-14</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/02/09/Python%E7%AC%94%E8%AE%B0-%E4%B8%89/" title="Python笔记(三)">Python笔记(三)</a><time datetime="2023-02-09T02:11:09.000Z" title="发表于 2023-02-09 10:11:09">2023-02-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/02/08/Python%E7%AC%94%E8%AE%B0-%E4%BA%8C/" title="Python笔记(二)">Python笔记(二)</a><time datetime="2023-02-08T02:01:10.000Z" title="发表于 2023-02-08 10:01:10">2023-02-08</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+​           接下来，就是hexo的舞台了！在此之前，我想请你在非C盘处新建一个名为myblog的文件夹。为什么非C？当然是为你，啊不，为你的电脑着想了！在此文件夹 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">秋的故事书</div><div class="author-info__description">爱意与你</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/02/26/%E5%B0%91%E5%B9%B4%E7%9A%84%E6%A2%A6/" title="少年的心"><img src="/img/1314002.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="少年的心"/></a><div class="content"><a class="title" href="/2023/02/26/%E5%B0%91%E5%B9%B4%E7%9A%84%E6%A2%A6/" title="少年的心">少年的心</a><time datetime="2023-02-26T01:32:26.000Z" title="发表于 2023-02-26 09:32:26">2023-02-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/02/16/buuctf%E8%A7%A3%E9%A2%98/" title="buuctf解题"><img src="/img/1314040.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="buuctf解题"/></a><div class="content"><a class="title" href="/2023/02/16/buuctf%E8%A7%A3%E9%A2%98/" title="buuctf解题">buuctf解题</a><time datetime="2023-02-16T12:05:40.000Z" title="发表于 2023-02-16 20:05:40">2023-02-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/02/09/Python%E7%AC%94%E8%AE%B0-%E4%B8%89/" title="Python笔记(三)">Python笔记(三)</a><time datetime="2023-02-09T02:11:09.000Z" title="发表于 2023-02-09 10:11:09">2023-02-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/02/08/Python%E7%AC%94%E8%AE%B0-%E4%BA%8C/" title="Python笔记(二)">Python笔记(二)</a><time datetime="2023-02-08T02:01:10.000Z" title="发表于 2023-02-08 10:01:10">2023-02-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/02/07/Python%E7%AC%94%E8%AE%B0-%E4%B8%80/" title="Python笔记(一)">Python笔记(一)</a><time datetime="2023-02-07T02:34:11.000Z" title="发表于 2023-02-07 10:34:11">2023-02-07</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
             <i class="fas fa-folder-open"></i>
             <span>分类</span>
             
             </div>
             <ul class="card-category-list" id="aside-cat-list">
             <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/buuctf/"><span class="card-category-list-name">buuctf</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/ctf/"><span class="card-category-list-name">ctf</span><span class="card-category-list-count">8</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%96%87%E5%AD%97%E5%A4%A9%E4%B8%8B/"><span class="card-category-list-name">文字天下</span><span class="card-category-list-count">2</span></a></li>
-            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/crypto/" style="font-size: 1.5em; color: #99a9bf">crypto</a> <a href="/tags/Python/" style="font-size: 1.23em; color: #999ea6">Python</a> <a href="/tags/ctf/" style="font-size: 1.37em; color: #99a4b2">ctf</a> <a href="/tags/hexo/" style="font-size: 1.1em; color: #999">hexo</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><span class="card-archive-list-count">8</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">一月 2023</span><span class="card-archive-list-count">10</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">18</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2022-12-29T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">6.8k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-02-26T01:39:47.920Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/1314002.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By 秋的故事书</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
-  function loadValine () {
-    function initValine () {
-      let initData = {
-        el: '#vcomment',
-        appId: '',
-        appKey: '',
-        serverURLs: ''
-      }
-      
-      const valine = new Valine(initData)
-    }
-
-    if (typeof Valine === 'function') initValine() 
-    else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
-  }
-
-  window.pjax ? loadValine() : window.addEventListener('load', loadValine)
-})()</script><script>window.typedJSFn = {
-  init: (str) => {
-    window.typed = new Typed('#subtitle', Object.assign({
-      strings: str,
-      startDelay: 300,
-      typeSpeed: 150,
-      loop: true,
-      backSpeed: 50,
-    }, true))
-  },
-  run: (subtitleType) => {
-    if (true) {
-      if (typeof Typed === 'function') {
-        subtitleType()
-      } else {
-        getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
-      }
-    } else {
-      subtitleType()
-    }
-  }
-}
-</script><script>function subtitleType () {
-  if (true) {
-    typedJSFn.init(["隔窗观雨落&#44;心念尔身旁~","我与思念皆在&#44;努力向前行！","用心去学习&#44;岁月作赠礼~","凛冬散尽&#44;星河长明~","烟火向星辰&#44;所愿皆成真！","本来就没有什么永恒&#44;又何必在乎后悔~","我相信你总会到来，像云朵总会等来月亮=","云雾消散&#44;我爱你众人皆知~","玫瑰在枯萎，世界在坠落，但浪漫永存！","有空爱自己，别人都很忙","年轻人的热爱&#44;不用大惊小怪","预祝你我有数不尽的鲜花与浪漫~","影子向玫瑰献忱&#44;落日与夕阳亲抚迟暮~","好希望能被你点赞收藏呀~！","玫红的玫瑰湖与森绿的薄荷岛&#44;好像都没办法拒绝"])
-  } else {
-    document.getElementById("subtitle").innerHTML = '隔窗观雨落&#44;心念尔身旁~'
-  }
-}
-typedJSFn.run(subtitleType)</script></div><canvas class="fireworks" mobile="ture"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
-POWERMODE.shake = true;
-POWERMODE.mobile = ture;
-document.body.addEventListener('input', POWERMODE);
-</script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
-
-var pjax = new Pjax({
-  elements: 'a:not([target="_blank"])',
-  selectors: pjaxSelectors,
-  cacheBust: false,
-  analytics: false,
-  scrollRestoration: false
-})
-
-document.addEventListener('pjax:send', function () {
-
-  // removeEventListener scroll 
-  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
-  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
-
-  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
-  
-  if (window.aplayers) {
-    for (let i = 0; i < window.aplayers.length; i++) {
-      if (!window.aplayers[i].options.fixed) {
-        window.aplayers[i].destroy()
-      }
-    }
-  }
-
-  typeof typed === 'object' && typed.destroy()
-
-  //reset readmode
-  const $bodyClassList = document.body.classList
-  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
-
-  typeof disqusjs === 'object' && disqusjs.destroy()
-})
-
-document.addEventListener('pjax:complete', function () {
-  window.refreshFn()
-
-  document.querySelectorAll('script[data-pjax]').forEach(item => {
-    const newScript = document.createElement('script')
-    const content = item.text || item.textContent || item.innerHTML || ""
-    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
-    newScript.appendChild(document.createTextNode(content))
-    item.parentNode.replaceChild(newScript, item)
-  })
-
-  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
-
-  typeof chatBtnFn === 'function' && chatBtnFn()
-  typeof panguInit === 'function' && panguInit()
-
-  // google analytics
-  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
-
-  // baidu analytics
-  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
-
-  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
-
-  // prismjs
-  typeof Prism === 'object' && Prism.highlightAll()
-})
-
-document.addEventListener('pjax:error', (e) => {
-  if (e.request.status === 404) {
-    pjax.loadUrl('/404.html')
-  }
-})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/crypto/" style="font-size: 1.5em; color: #99a9bf">crypto</a> <a href="/tags/Python/" style="font-size: 1.3em; color: #99a1ac">Python</a> <a href="/tags/ctf/" style="font-size: 1.3em; color: #99a1ac">ctf</a> <a href="/tags/hexo/" style="font-size: 1.1em; color: #999">hexo</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><span class="card-archive-list-count">7</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">一月 2023</span><span class="card-archive-list-count">10</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">17</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-03-01T11:40:50.958Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By 秋的故事书</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
