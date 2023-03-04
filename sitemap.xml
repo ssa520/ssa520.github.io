@@ -20,15 +20,6 @@
   </url>
   
   <url>
-    <loc>https://ssa520.github.io/2023/02/16/buuctf%E8%A7%A3%E9%A2%98/</loc>
-    
-    <lastmod>2023-02-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://ssa520.github.io/categories/index.html</loc>
     
     <lastmod>2023-02-13</lastmod>
@@ -41,141 +32,6 @@
     <loc>https://ssa520.github.io/tags/index.html</loc>
     
     <lastmod>2023-02-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ssa520.github.io/2023/02/09/Python%E7%AC%94%E8%AE%B0-%E4%B8%89/</loc>
-    
-    <lastmod>2023-02-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ssa520.github.io/2023/02/08/Python%E7%AC%94%E8%AE%B0-%E4%BA%8C/</loc>
-    
-    <lastmod>2023-02-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ssa520.github.io/2023/02/07/Python%E7%AC%94%E8%AE%B0-%E4%B8%80/</loc>
-    
-    <lastmod>2023-02-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ssa520.github.io/2023/02/04/1%E5%92%8C0%E7%9A%84%E6%95%85%E4%BA%8B/</loc>
-    
-    <lastmod>2023-02-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ssa520.github.io/2023/02/01/RSA/</loc>
-    
-    <lastmod>2023-02-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ssa520.github.io/2023/01/30/ctf-base%E5%AE%B6%E6%97%8F/</loc>
-    
-    <lastmod>2023-01-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ssa520.github.io/2023/01/27/bugku-crypto-%E9%A2%98%E7%9B%AE-%E4%B8%89/</loc>
-    
-    <lastmod>2023-01-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ssa520.github.io/2023/01/28/bugku-crypto-%E9%A2%98%E7%9B%AE-%E5%9B%9B/</loc>
-    
-    <lastmod>2023-01-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ssa520.github.io/2023/01/26/bugku-crypto%E9%A2%98%E7%9B%AE-%E4%BA%8C/</loc>
-    
-    <lastmod>2023-01-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ssa520.github.io/2023/01/22/ctf-crypto%E9%A2%98%E7%9B%AE/</loc>
-    
-    <lastmod>2023-01-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ssa520.github.io/2023/01/20/bugku-crypto%E9%A2%98%E7%9B%AE/</loc>
-    
-    <lastmod>2023-01-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ssa520.github.io/2023/01/19/BugKu-where-is-flag-5/</loc>
-    
-    <lastmod>2023-01-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ssa520.github.io/2023/01/13/ctf%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/</loc>
-    
-    <lastmod>2023-01-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ssa520.github.io/2023/01/10/%E7%BA%AF%E6%96%87%E5%AD%97hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</loc>
-    
-    <lastmod>2023-01-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ssa520.github.io/2023/01/12/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E9%A5%B0/</loc>
-    
-    <lastmod>2023-01-14</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -202,61 +58,12 @@
 
   <url>
     <loc>https://ssa520.github.io/</loc>
-    <lastmod>2023-03-02</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
-  <url>
-    <loc>https://ssa520.github.io/tags/ctf/</loc>
-    <lastmod>2023-03-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ssa520.github.io/tags/crypto/</loc>
-    <lastmod>2023-03-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ssa520.github.io/tags/Python/</loc>
-    <lastmod>2023-03-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ssa520.github.io/tags/hexo/</loc>
-    <lastmod>2023-03-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
-  
-  <url>
-    <loc>https://ssa520.github.io/categories/ctf/</loc>
-    <lastmod>2023-03-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ssa520.github.io/categories/buuctf/</loc>
-    <lastmod>2023-03-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ssa520.github.io/categories/%E6%96%87%E5%AD%97%E5%A4%A9%E4%B8%8B/</loc>
-    <lastmod>2023-03-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
 </urlset>
